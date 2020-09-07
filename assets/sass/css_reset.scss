@@ -4,10 +4,14 @@ body {
   position: relative;
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
 /*ШРИФТ */
-/** {*/
-/*    font-family: "WorkSans" ;*/
-/*}*/
+
+* {
+   font-family: 'Ubuntu', sans-serif;
+}
 
 /* Указываем box sizing */
 *,
