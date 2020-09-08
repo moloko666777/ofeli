@@ -1,0 +1,8 @@
+@media (hover: hover) {
+  .header {
+    &__links a:hover {
+      font-weight: 500;
+      color: #214099;
+    }
+  }
+}
