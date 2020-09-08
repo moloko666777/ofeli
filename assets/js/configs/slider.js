@@ -1,10 +1,11 @@
 new Swiper('.swiper-container',{
-    slidesPerView: 1,
+    slidesPerView: 2.5,
     slidesPerGroup: 1,
+    spaceBetween: 30,
     speed: 400,
     pagination: {
-        el: '.swiper-pagination-1',
-        type: 'bullets',
+        // el: '.swiper-pagination-1',
+        // type: 'bullets',
     },
     navigation: {
         nextEl: '.slider-button-next',
