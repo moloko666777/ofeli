@@ -11,26 +11,26 @@ new Swiper('.swiper-container',{
         nextEl: '.slider-button-next',
         prevEl: '.slider-button-prev',
     },
-    // breakpoints: {
-    //     320: {
-    //         spaceBetween: 40,
-    //         slidesPerView: 1,
-    //         slidesPerGroup: 1,
-    //     },
-    //     430: {
-    //         spaceBetween: 40,
-    //         slidesPerView: 2,
-    //         slidesPerGroup: 2,
-    //     },
-    //     768: {
-    //         spaceBetween: 45,
-    //         slidesPerView: 3,
-    //         slidesPerGroup: 3,
-    //     },
-    //     1024: {
-    //         spaceBetween: 80,
-    //         slidesPerView: 3,
-    //         slidesPerGroup: 3,
-    //     }
-    // }
-})
+    breakpoints: {
+        320: {
+            spaceBetween: 10,
+            slidesPerView: 1.12,
+            slidesPerGroup: 1,
+        },
+        430: {
+            spaceBetween: 10,
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+        },
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+        },
+        1024: {
+            spaceBetween: 30,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+        }
+    }
+});

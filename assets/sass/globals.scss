@@ -1,6 +1,7 @@
 .container {
   max-width: 114rem;
   margin: 0 auto;
+  //padding: 0 2rem;
 }
 
 //@mixin base-btn {
@@ -27,6 +28,7 @@ $cloudy-blue: #c2d1d9;
 $cool-grey: #999b9f;
 $white-two: #f6f6f6;
 $white-three: #fafafa;
+$rouge: #c61519;
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $cool-grey;
@@ -39,4 +41,25 @@ input:-ms-input-placeholder { /* IE 10+ */
 }
 input:-moz-placeholder { /* Firefox 18- */
   color: $cool-grey;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 29rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 98rem;
+    margin: 0 auto;
+  }
 }
