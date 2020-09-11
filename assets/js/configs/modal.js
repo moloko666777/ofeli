@@ -21,17 +21,27 @@ let menu = document.querySelector('.header__mobile-menu');
 
 openMobileMenu.addEventListener('click', function () {
     menu.classList.toggle('open-menu');
-})
+});
+
+let showFormButton = document.querySelector('.open-form__button');
+let showForm = document.querySelector('.mobile-form__form');
+let cancelForm = document.querySelector('.mobile-form__form-cancel')
+
+showFormButton.addEventListener('click', function () {
+    showForm.classList.add('open-form');
+});
+
+cancelForm.addEventListener('click', function () {
+    showForm.classList.remove('open-form');
+});
+
+// let controller = new ScrollMagic.Controller();
 //
-//
-//
-// document.querySelector('.header__mobile-menu-icon').onclick = function () {
-//     if (document.querySelector('.header__mobile-menu')) {
-//         document.querySelector('.header__mobile-menu').remove('open-menu')
-//     } else {
-//         document.querySelector('.header__mobile-menu').add('open-menu');
-//     }
-//
-// };
+// let scene = new ScrollMagic.Scene({
+//     triggerElement: '.how-works'
+// })
+// .setClassToggle('.how-works', 'show')
+//     .addTo(controller);
+
 
 
