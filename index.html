@@ -287,34 +287,24 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="header__links">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
+            <nav class="header__links-nav">
+                <ul class="header__links-top-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="info.html">Loans</a>
+                        <ul class="header__links-submenu">
+                            <li><a class="header__links-drop-down" href="info-loan.html">e-Loan</a></li>
+                            <li><a class="header__links-drop-down" href="#">Car Title Loan</a></li>
+                            <li><a class="header__links-drop-down" href="#">Collateral Loan</a></li>
+                            <li><a class="header__links-drop-down" href="#">Repair Loan</a></li>
+                            <li><a class="header__links-drop-down" href="#">Motorcycle & Other Storage Loan</a></li>
+                        </ul>
                     </li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="info.html">Loans</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="about-us.html">About Us</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
+            </nav>
             </div>
             <div class="header__phone">
                 <div class="header__phone-first header__phone-link">
@@ -1144,7 +1134,7 @@
                 <div class="offers__wrapper">
                     <div class="offers__content title-loan">
                         <span>Title Loan</span>
-                        <p>Borrow up to $25,000 using a debt free vehicle 9 years old or newer as collateral.</p>
+<!--                        <p>Borrow up to $25,000 using a debt free vehicle 9 years old or newer as collateral.</p>-->
                         <a href="#">Read More
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 21">
                                 <defs>
@@ -1173,7 +1163,7 @@
                     </div>
                     <div class="offers__content collateral-loan">
                         <span>Collateral Loan</span>
-                        <p>Borrow $25,000 plus using collateral that we can hold during the loan.</p>
+<!--                        <p>Borrow $25,000 plus using collateral that we can hold during the loan.</p>-->
                         <a href="#">Read More
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 21">
                                 <defs>
@@ -1202,7 +1192,7 @@
                     </div>
                     <div class="offers__content repair-loan">
                         <span>Repair Loan</span>
-                        <p>Borrow for repairs on your vehicle, it may be leased or financed.</p>
+<!--                        <p>Borrow for repairs on your vehicle, it may be leased or financed.</p>-->
                         <a href="#">Read More
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 21">
                                 <defs>
@@ -1230,8 +1220,37 @@
                         </a>
                     </div>
                     <div class="offers__content moto">
-                        <span>Motorcycle & Other Storage Loan</span>
-                        <p>Borrow up to $10,000 by storing your debt free Motorcycle or other</p>
+                        <span>Motorcycle Storage Loan</span>
+<!--                        <p>Borrow up to $10,000 by storing your debt free Motorcycle or other</p>-->
+                        <a href="#">Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 21">
+                                <defs>
+                                    <filter id="9h5estezra">
+                                        <feColorMatrix in="SourceGraphic"
+                                                       values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                    </filter>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <g>
+                                            <g filter="url(#9h5estezra)"
+                                               transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                <g>
+                                                    <g fill="#214099">
+                                                        <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                              transform="translate(170 2) translate(97 8)"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="offers__content e-loan">
+                        <span>eLoan</span>
+                        <!--                        <p>Borrow up to $10,000 by storing your debt free Motorcycle or other</p>-->
                         <a href="#">Read More
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 21">
                                 <defs>
@@ -1300,7 +1319,7 @@
                     </svg>
                     <p>Still have questions? Check our FAQ page or contact us via email</p>
                 </div>
-                <a href="info.html">Go to FAQ</a>
+                <a href="faq.html">Go to FAQ</a>
             </div>
         </div>
     </section>
@@ -1513,19 +1532,19 @@
                     <p>Fast Action</p>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li>
-                            <a href="#">FAQ</a>
+                            <a href="faq.html">FAQ</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="contacts.html">Contact Us</a>
                         </li>
                         <li>
                             <a href="#">Locations</a>
@@ -1536,7 +1555,7 @@
                     <p>loans</p>
                     <ul>
                         <li>
-                            <a href="#">eLoan</a>
+                            <a href="info-loan.html">eLoan</a>
                         </li>
                         <li>
                             <a href="#">Car Loan</a>
@@ -1558,15 +1577,15 @@
                 <ul>
                     <li>
                         Email:
-                        <a href="#">info@fastaction.ca</a>
+                        <a href="mailto:info@fastaction.ca">info@fastaction.ca</a>
                     </li>
                     <li>
                         Toll-free:
-                        <a href="#">1-877-346-2274</a>
+                        <a href=tel:1-877-346-2274">1-877-346-2274</a>
                     </li>
                     <li>
                         Phone:
-                        <a href="#">416-239-2906</a>
+                        <a href="tel:416-239-2906">416-239-2906</a>
                     </li>
                     <li>
                         Hours: Mon-Fri 9:00am - 5:00pm
@@ -1580,7 +1599,7 @@
         </div>
         <div class="footer__copyrighting">
             <div class="footer__privacy">
-                <a href="#">Terms and conditions</a>
+                <a href="terms.html">Terms and conditions</a>
                 <a href="#">Privacy Policy</a>
             </div>
             <div class="footer__copyrighting-text">

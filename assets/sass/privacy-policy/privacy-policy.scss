@@ -1,0 +1,86 @@
+.privacy-title {
+  background: url("../../assets/images/car1.jpg");
+  width: 100%;
+  height: 31.4rem;
+  opacity: 0.85;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__background {
+    background-image: linear-gradient(263deg, rgba(69, 116, 201, 0.78) 102%, #0a2573 2%);
+    height: 100%;
+
+    h3 {
+      font-size: 6.6rem;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $white;
+    }
+  }
+}
+
+.privacy {
+  position: relative;
+
+  &__wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 8rem 0 20rem;
+
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.36;
+      color: $black;
+      margin-bottom: 3rem;
+    }
+    h3{
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1.48;
+      color: $black;
+      margin-bottom: 2rem;
+    }
+    h4{
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.5;
+      color: $black;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $black;
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+  &-mail{
+    font-weight: 700;
+  }
+  &-phone {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $black;
+    text-decoration: none;
+  }
+}

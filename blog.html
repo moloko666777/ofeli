@@ -205,7 +205,7 @@
                     </svg>
                 </div>
                 <div class="header__mobile-menu">
-                    <div class="header__mobile-menu-head">
+                    <div class="header__mobile-menu-head ">
                         <div class="header__mobile-menu-logo">
                             Menu
                         </div>
@@ -287,34 +287,24 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="header__links">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="info.html">Loans</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="about-us.html">About Us</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
+                <nav class="header__links-nav">
+                    <ul class="header__links-top-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="info.html">Loans</a>
+                            <ul class="header__links-submenu">
+                                <li><a class="header__links-drop-down" href="info-loan.html">e-Loan</a></li>
+                                <li><a class="header__links-drop-down" href="#">Car Title Loan</a></li>
+                                <li><a class="header__links-drop-down" href="#">Collateral Loan</a></li>
+                                <li><a class="header__links-drop-down" href="#">Repair Loan</a></li>
+                                <li><a class="header__links-drop-down" href="#">Motorcycle & Other Storage Loan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="header__phone">
                 <div class="header__phone-first header__phone-link">
@@ -372,7 +362,605 @@
     </div>
 </header>
 <main>
-<h1>info</h1>
+    <section>
+        <div class="blog__main-wrapper">
+            <div class="blog__main container">
+                <div class="blog__main-title">
+                    <h2>Blog</h2>
+                </div>
+                <div class="blog__main-form-wrapper">
+                    <div class="blog__main-form">
+                        <form>
+                            <input type="search" placeholder="Search">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <path id="8b0g51zcia"
+                                              d="M14.71 14l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.293 4.284c.39.39 1.023.39 1.413 0l.078-.078c.39-.39.39-1.022 0-1.413L15.5 14h-.79zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <mask id="k6blz6zcwb" fill="#fff">
+                                                <use xlink:href="#8b0g51zcia"/>
+                                            </mask>
+                                            <use fill="#C2D1D9" xlink:href="#8b0g51zcia"/>
+                                            <g fill="#C2D1D9" mask="url(#k6blz6zcwb)">
+                                                <g>
+                                                    <path d="M0 0H24V24H0z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="blog__main-form-month">
+                        <form>
+                            <label class="blog__label-month">
+                                <select class="blog__select-month" id="city">
+                                    <option value="hide">Select month</option>
+                                    <option value="2010">January</option>
+                                    <option value="2011">February</option>
+                                    <option value="2012">March</option>
+                                    <option value="2013">April</option>
+                                    <option value="2014">May</option>
+                                    <option value="2015">June</option>
+                                    <option value="2015">July</option>
+                                    <option value="2015">August</option>
+                                    <option value="2015">September</option>
+                                    <option value="2015">October</option>
+                                    <option value="2015">November</option>
+                                    <option value="2015">December</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog-car container">
+            <div class="blog-car__wrapper">
+                <div class="blog-car__title title-underline">
+                    <h2>Car Title Loan</h2>
+                </div>
+                <div class="blog-car__card">
+                    <div class="blog-car__card-image">
+                        <img src="./assets/images/car1.jpg" alt="imageCar">
+                    </div>
+                    <div class="blog-car__card-description">
+                        <span class="blog-car__description-date">Jun 29, 2020</span>
+                        <h2 class="blog-car__description-title">Ontario Car Title Loans Near Me: Your Guide to the Best
+                            Deal</h2>
+                        <p class="blog-car__description-text">Are you in Ontario and need quick funding? Do you have a
+                            payment that you need to break up into smaller payments? If so, then there's no better
+                            option than finding a car title loan. It allows you to take back control of your
+                            finances…</p>
+                        <a class="blog-car__description-link" href="blog-article.html">Read more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                <defs>
+                                    <filter id="9h5estezra">
+                                        <feColorMatrix in="SourceGraphic"
+                                                       values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                    </filter>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <g>
+                                            <g filter="url(#9h5estezra)"
+                                               transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                <g>
+                                                    <g fill="#214099">
+                                                        <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                              transform="translate(170 2) translate(97 8)"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-car__card">
+                    <div class="blog-car__card-image">
+                        <img src="./assets/images/car2.jpg" alt="imageCar">
+                    </div>
+                    <div class="blog-car__card-description">
+                        <span class="blog-car__description-date">Jun 29, 2020</span>
+                        <h2 class="blog-car__description-title">5 Mistakes to Avoid When Getting Car Title Loans in
+                            Ontario</h2>
+                        <p class="blog-car__description-text">Are you looking for ways to receive emergency cash?
+                            Perhaps you had a costly expense or two come up out of nowhere. Maybe you need a bit more
+                            financial wiggle room in the short term. Whatever the case might be, a car title loan...</p>
+                        <a class="blog-car__description-link" href="blog-article.html">Read more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                <defs>
+                                    <filter id="9h5estezra">
+                                        <feColorMatrix in="SourceGraphic"
+                                                       values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                    </filter>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <g>
+                                            <g filter="url(#9h5estezra)"
+                                               transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                <g>
+                                                    <g fill="#214099">
+                                                        <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                              transform="translate(170 2) translate(97 8)"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog container">
+            <div class="blog__posts-wrapper">
+                <div class="blog__posts">
+                    <div class="blog__wrapper">
+                        <div class="blog__posts-title title-underline">
+                            <h2>Recent posts</h2>
+                        </div>
+                        <div class="blog__post-first">
+                            <div class="blog-car__card">
+                                <div class="blog__card-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-description">
+                                    <span class="blog__description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__description-title">Ontario Car Title Loans Near Me: Your Guide to
+                                        the Best
+                                        Deal</h2>
+                                    <p class="blog__description-text">Are you in Ontario and need quick funding? Do you
+                                        have a
+                                        payment that you need to break up into smaller payments? If so, then there's no
+                                        better
+                                        option than finding a car title loan. It allows you to take back control of your
+                                        finances…</p>
+                                    <a class="blog-car__description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__post-second">
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">What Is the Canada Emergency Business
+                                        Account also know as CEBA?</h2>
+                                    <p class="blog__second-description-text">It has been said that a global pandemic
+                                        hits the world every 100 years. As history teaches us...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Here’s How a Car Title Loan Can Help
+                                        Lower Your Overall Debt</h2>
+                                    <p class="blog__second-description-text">While the global economy has been steady
+                                        for years, some now say we have already begun a worldwide...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Wondering About Yor Car Title Loan
+                                        Estimate? Here’s How Your Car’s Value Is Determined In Canada</h2>
+                                    <p class="blog__second-description-text">If you're in need of some short-term cash,
+                                        a car title loan estimate could be a good option. A car title loan is...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__wrapper">
+                        <div class="blog__posts-title title-underline">
+                            <h2>All posts</h2>
+                        </div>
+                        <div class="blog__post-second">
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">What Is the Canada Emergency Business
+                                        Account also know as CEBA?</h2>
+                                    <p class="blog__second-description-text">It has been said that a global pandemic
+                                        hits the world every 100 years. As history teaches us...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Here’s How a Car Title Loan Can Help
+                                        Lower Your Overall Debt</h2>
+                                    <p class="blog__second-description-text">While the global economy has been steady
+                                        for years, some now say we have already begun a worldwide...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Wondering About Yor Car Title Loan
+                                        Estimate? Here’s How Your Car’s Value Is Determined In Canada</h2>
+                                    <p class="blog__second-description-text">If you're in need of some short-term cash,
+                                        a car title loan estimate could be a good option. A car title loan is...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">What Is the Canada Emergency Business
+                                        Account also know as CEBA?</h2>
+                                    <p class="blog__second-description-text">It has been said that a global pandemic
+                                        hits the world every 100 years. As history teaches us...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Here’s How a Car Title Loan Can Help
+                                        Lower Your Overall Debt</h2>
+                                    <p class="blog__second-description-text">While the global economy has been steady
+                                        for years, some now say we have already begun a worldwide...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog__card-second">
+                                <div class="blog__card-second-image">
+                                    <img src="./assets/images/car1.jpg" alt="imageCar">
+                                </div>
+                                <div class="blog__card-second-description">
+                                    <span class="blog__second-description-date">Jun 29, 2020</span>
+                                    <h2 class="blog__second-description-title">Wondering About Yor Car Title Loan
+                                        Estimate? Here’s How Your Car’s Value Is Determined In Canada</h2>
+                                    <p class="blog__second-description-text">If you're in need of some short-term cash,
+                                        a car title loan estimate could be a good option. A car title loan is...</p>
+                                    <a class="blog__second-description-link" href="blog-article.html">Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                             viewBox="0 0 20 21">
+                                            <defs>
+                                                <filter id="9h5estezra">
+                                                    <feColorMatrix in="SourceGraphic"
+                                                                   values="0 0 0 0 0.129412 0 0 0 0 0.250980 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g>
+                                                    <g>
+                                                        <g filter="url(#9h5estezra)"
+                                                           transform="translate(-1099 -1366) translate(0 899) translate(832 457)">
+                                                            <g>
+                                                                <g fill="#214099">
+                                                                    <path d="M9.412 3.92c-.324.325-.324.852 0 1.176l4.063 4.07H4.167c-.46 0-.834.374-.834.834 0 .46.373.833.834.833h9.308l-4.063 4.07c-.324.325-.324.852 0 1.176.325.325.851.325 1.175 0L16.668 10l-6.08-6.08c-.324-.324-.85-.324-1.175 0z"
+                                                                          transform="translate(170 2) translate(97 8)"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__side-bar">
+                    <div class="blog__side-bar-sticky">
+                        <div class="blog__side-bar-title title-underline">
+                            <h2>Popular posts</h2>
+                        </div>
+                        <a class="blog__side-bar-popular">
+                            <span>1</span>
+                            <div class="blog__side-bar-popular__content">
+                                <p>Jun 29, 2020</p>
+                                <h3>How Title Loans Work: Debunking Common Myths</h3>
+                            </div>
+                        </a>
+                        <div class="blog__side-bar-popular">
+                            <span>2</span>
+                            <div class="blog__side-bar-popular__content">
+                                <p>Jun 29, 2020</p>
+                                <h3>How Do Title Loans Work? Everything You Need to Know About Car Title Loans</h3>
+                            </div>
+                        </div>
+                        <div class="blog__side-bar-popular">
+                            <span>3</span>
+                            <div class="blog__side-bar-popular__content">
+                                <p>Jun 29, 2020</p>
+                                <h3>How to Qualify for a Car Title Loan</h3>
+                            </div>
+                        </div>
+                        <div class="blog__side-bar-popular">
+                            <span>4</span>
+                            <div class="blog__side-bar-popular__content">
+                                <p>Jun 29, 2020</p>
+                                <h3>What to Bring When Applying for a Car Title Loan</h3>
+                            </div>
+                        </div>
+                        <div class="blog__side-bar-popular">
+                            <span>5</span>
+                            <div class="blog__side-bar-popular__content">
+                                <p>Jun 29, 2020</p>
+                                <h3>Ways to Borrow Money in Canada (Even if You Have Poor Credit)</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="footer container">
@@ -582,19 +1170,19 @@
                     <p>Fast Action</p>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li>
-                            <a href="#">FAQ</a>
+                            <a href="faq.html">FAQ</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="contacts.html">Contact Us</a>
                         </li>
                         <li>
                             <a href="#">Locations</a>
@@ -605,7 +1193,7 @@
                     <p>loans</p>
                     <ul>
                         <li>
-                            <a href="#">eLoan</a>
+                            <a href="info-loan.html">eLoan</a>
                         </li>
                         <li>
                             <a href="#">Car Loan</a>
@@ -627,15 +1215,15 @@
                 <ul>
                     <li>
                         Email:
-                        <a href="#">info@fastaction.ca</a>
+                        <a href="mailto:info@fastaction.ca">info@fastaction.ca</a>
                     </li>
                     <li>
                         Toll-free:
-                        <a href="#">1-877-346-2274</a>
+                        <a href=tel:1-877-346-2274">1-877-346-2274</a>
                     </li>
                     <li>
                         Phone:
-                        <a href="#">416-239-2906</a>
+                        <a href="tel:416-239-2906">416-239-2906</a>
                     </li>
                     <li>
                         Hours: Mon-Fri 9:00am - 5:00pm
@@ -649,7 +1237,7 @@
         </div>
         <div class="footer__copyrighting">
             <div class="footer__privacy">
-                <a href="#">Terms and conditions</a>
+                <a href="terms.html">Terms and conditions</a>
                 <a href="#">Privacy Policy</a>
             </div>
             <div class="footer__copyrighting-text">
