@@ -1,0 +1,124 @@
+.loans-car {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+  h2 {
+    width: 48.6%;
+    font-size: 6.6rem;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 2.4rem;
+  }
+
+  p {
+    width: 40.8%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $white;
+    margin-bottom: 3.4rem;
+  }
+
+  &__background {
+    background-image: linear-gradient(260deg, rgba(69, 116, 201, 0.78) 101%, #0a2573 2%);
+    //opacity: 0.85;
+    height: 100%;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 49rem;
+    background: url("../../assets/images/loan-car-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    width: 48.6%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.5rem;
+    height: 4rem;
+    border-radius: .4rem;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.86;
+    color: #214099;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 3rem;
+  }
+
+  &__button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $white;
+    text-decoration: underline;
+  }
+  &__text-wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 6rem 0;
+  }
+  &__list{
+    h2{
+      font-size: 3.8rem;
+      font-weight: 700;
+      line-height: 1.26;
+      color: $black;
+      margin-bottom: 3rem;
+    }
+    h3{
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1.48;
+      color: $black;
+      margin-bottom: 2rem;
+    }
+    p{
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $black;
+      margin-bottom: 2rem;
+    }
+  }
+  &-dots{
+    padding-left: 2rem !important;
+    margin-bottom: 3rem !important;
+    li{
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000000;
+      margin-bottom: 1rem;
+      list-style-type: disc;
+    }
+  }
+  &-num{
+    //padding-left: 2rem !important;
+    margin-bottom: 3rem !important;
+    li{
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+  }
+  &__link-check {
+    color: $cobalt;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+}
