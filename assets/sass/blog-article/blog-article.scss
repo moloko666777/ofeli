@@ -59,20 +59,21 @@
   }
 
   &__contacts-wrapper {
-    background-image: linear-gradient(107deg, rgba(69, 116, 201, 0.02) -10%, rgba(40, 72, 141, 0.54) 105%, #0d2159 115%, #0d2159 115%);
+    background-image: linear-gradient(105deg, #173874 14%, #274892 100%);
     width: 100%;
     height: 49.4rem;
   }
 
   &__contacts {
     display: flex;
+    align-items: center;
     height: 100%;
 
     &-image {
-      width: 63.8rem;
-      height: 41.8rem;
-      margin-top: -4rem;
-      margin-right: 11.7rem;
+      width: 72rem;
+      height: 43.4rem;
+      //margin-top: -4rem;
+      margin-right: 5.5rem;
 
       img {
         width: 100%;
@@ -85,7 +86,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 55.5rem;
+      width: 50rem;
 
       h4 {
         font-size: 2.8rem;
@@ -238,6 +239,12 @@
     border-radius: 4px;
     margin-right: 2.4rem;
     text-decoration: none;
+  }
+  .post-button-desktop{
+    display: block;
+  }
+  .post-button-mobile{
+    display: none;
   }
 }
 

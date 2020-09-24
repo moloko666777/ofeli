@@ -2,14 +2,16 @@ new Swiper('.swiper-container',{
     slidesPerView: 2.5,
     slidesPerGroup: 1,
     spaceBetween: 30,
+    loop: true,
     speed: 400,
     pagination: {
-        // el: '.swiper-pagination-1',
-        // type: 'bullets',
+        el: '.swiper-pagination',
+        type: 'bullets',
+
     },
     navigation: {
-        nextEl: '.slider-button-next',
-        prevEl: '.slider-button-prev',
+        nextEl: '.swiper-button-next',
+        // prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         320: {

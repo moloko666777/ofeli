@@ -1,0 +1,151 @@
+@media only screen and (max-width: 425px) {
+  .blog-article {
+    flex-direction: column;
+
+    &__social {
+      order: 2;
+      margin-right: 0;
+      margin-bottom: 11.2rem;
+
+      &-sticky {
+        ul {
+          display: flex
+        }
+
+        li {
+          margin: 0 2.4rem 0 0;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &__post-wrapper {
+      order: 1;
+      margin-bottom: 3.2rem;
+      padding: 0;
+    }
+
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__post {
+      width: 100%;
+      margin-bottom: 4rem;
+
+      h2 {
+        width: 100%;
+        font-size: 2.1rem;
+        line-height: 1.48;
+        margin-bottom: 2rem;
+        font-weight: 700;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 2.1rem;
+        line-height: 1.48;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+
+      img {
+        width: 28.8rem;
+        height: 16.3rem;
+        object-fit: cover;
+        margin: 0 auto 3rem;
+      }
+    }
+
+    &__contacts {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-wrapper {
+        height: 100%;
+        padding-bottom: 6rem;
+      }
+
+      &-image {
+        width: 30.4rem;
+        height: 21.8rem;
+        margin-right: 0;
+        margin-top: -4.4rem;
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      &-text {
+        width: 100%;
+        padding: 0 1.6rem;
+
+        h4 {
+          font-size: 2.1rem;
+          line-height: 1.48;
+        }
+      }
+
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+  .contact-blog-form{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+    &__wrapper{
+      padding: 6rem 1.6rem 3rem;
+      box-shadow: unset;
+      border-radius: 0;
+      h3{
+        font-size: 2.8rem;
+        line-height: 1.36;
+        margin-bottom: 2rem;
+      }
+    }
+    &__warning{
+      align-items: flex-start;
+    }
+    &__form{
+      form{
+        flex-direction: column;
+      }
+    }
+    &__input{
+      margin-right: 0;
+      input{
+        width: 100%;
+      }
+    }
+    &__button{
+      width: 100%;
+    }
+    &__textarea{
+      margin-bottom: 1rem;
+      textarea{
+        width: 100%;
+      }
+    }
+    .post-button-desktop{
+      display: none;
+    }
+    .post-button-mobile{
+      display: block;
+    }
+
+  }
+}
+
+
+

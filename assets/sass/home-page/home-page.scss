@@ -194,6 +194,8 @@
   background-image: url("../../assets/images/mainbg.jpg");
   width: 100%;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &__wrapper {
     display: flex;
@@ -213,8 +215,8 @@
     li {
       display: flex;
       align-items: center;
-      font-size: 2.8rem;
-      line-height: 1.33;
+      font-size: 2.1rem;
+      line-height: 1.14;
       color: $white;
       margin-bottom: 2.4rem;
 
@@ -882,7 +884,8 @@
 }
 
 .reviews {
-  padding: 6.4rem 0;
+  position: relative;
+  padding: 6.4rem 0 13.1rem 0;
   background-color: $white-two;
 
   &__title {
@@ -909,6 +912,7 @@
   }
 
   &__slider {
+    position: relative;
     margin-left: 25rem;
     margin-right: 0;
   }
@@ -926,6 +930,35 @@
     }
   }
 
+  .swiper-button-next{
+    left: -6.4rem;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .swiper-pagination{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6.4rem;
+  }
+
+  .swiper-pagination-bullet{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .8rem;
+    opacity: 1;
+    background: none;
+    border: 2px solid $cool-grey;
+  }
+  .swiper-pagination-bullet-active{
+    background: $cobalt;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+
+  }
   &__people-name {
     span {
       font-size: 1.6rem;
