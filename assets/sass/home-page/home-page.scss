@@ -1,10 +1,9 @@
-.use-steps__wrapper {
-  display: block;
-  opacity: 0;
-  transition: 3s;
-  width: 0%;
-
-}
+//.use-steps__wrapper {
+//  display: block;
+//  opacity: 0;
+//  transition: 3s;
+//  width: 0%;
+//}
 
 .use-steps__wrapper.show {
   opacity: 1;
@@ -15,6 +14,7 @@
   display: inline-block;
   position: relative;
 }
+
 .header__links-top-menu {
   display: flex;
   justify-content: space-between;
@@ -25,34 +25,22 @@
     text-transform: uppercase;
   }
 
-  //.active:before {
-  //  content: '';
-  //  position: absolute;
-  //  width: 0;
-  //  height: .1rem;
-  //  background-color: greenyellow;
-  //  bottom: 2.5rem;
-  //  left: 40%;
-  //  transform: translateX(-40%);
-  //}
-
   .active:hover:before {
     width: 20%;
     transition: .8s ease;
   }
 
-  //li:hover {
-  //  fill: $color-yellow;
-  //  transition: .8s ease;
-  //}
 }
+
 .header__links-top-menu > li:last-child {
   margin-right: 0;
 }
+
 .fa {
   color: inherit;
   padding-left: 10px;
 }
+
 .header__links-submenu {
   position: absolute;
   top: 100%;
@@ -64,6 +52,7 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
 .header__links-nav {
   width: 100%;
   height: 100%;
@@ -78,10 +67,12 @@
     background-color: $white;
   }
 }
-.header__links-drop-down{
+
+.header__links-drop-down {
   display: block;
   padding: 1.1rem 2.3rem 1.2rem 2rem;
 }
+
 //.four ul {
 //  background: blue;
 //}
@@ -99,12 +90,14 @@
   width: 20.8rem;
   padding-top: 2rem;
 }
+
 .header__links-nav ul li:hover .header__links-submenu {
   -webkit-transform: scaleY(1);
   -ms-transform: scaleY(1);
   transform: scaleY(1);
   //display: block;
 }
+
 .header__links-submenu {
   li {
     text-transform: capitalize;
@@ -114,6 +107,7 @@
     color: $cobalt;
   }
 }
+
 .header__links-nav ul a {
   font-size: 1.2rem;
   font-weight: 400;
@@ -932,21 +926,21 @@
     }
   }
 
-  .swiper-button-next{
+  .swiper-button-next {
     left: -6.4rem;
 
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
 
-  .swiper-pagination{
+  .swiper-pagination {
     left: 50%;
     transform: translateX(-50%);
     bottom: 6.4rem;
   }
 
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 1rem;
     height: 1rem;
     margin: 0 .8rem;
@@ -954,13 +948,18 @@
     background: none;
     border: 2px solid $cool-grey;
   }
-  .swiper-pagination-bullet-active{
+
+  .swiper-pagination-bullet-active {
     background: $cobalt;
     width: 1rem;
     height: 1rem;
     border: none;
-
   }
+
+  .swiper-button-next:after {
+    content: none;
+  }
+
   &__people-name {
     span {
       font-size: 1.6rem;
@@ -1086,6 +1085,7 @@
     padding: 4.6rem 2rem 1.3rem 2rem;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+
     span {
       display: block;
       font-size: 2.1rem;
