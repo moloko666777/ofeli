@@ -13,20 +13,21 @@ clean = require('gulp-clean')
 cleanCSS = require('gulp-clean-css')
 browserSync = require('browser-sync')
 livereload = require('gulp-livereload')
-order = require("gulp-order");
+order = require("gulp-order")
+minify = require("gulp-babel-minify");
 
 
 gulp.task('sass-watch', function () {
     return gulp
         .src('./assets/sass/**/*.scss')
         .pipe(gulp.src('./assets/css/**/*.css'))
+        .pipe(sourcemaps.init())
         .pipe(concat('app.css'))
         .pipe(
             sass({
                 paths: [path.join(__dirname, 'sass', 'includes')]
             })
         )
-        .pipe(sourcemaps.init())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./build/css'))
         .pipe(livereload());
@@ -87,6 +88,11 @@ gulp.task('js-min', function () {
         ]))
         .pipe(concat('app.js'))
         .pipe(babel())
+        .pipe(minify({
+            mangle : {
+                keepClassName: true
+            }
+        }))
         .pipe(uglify({
             compress: {
                 sequences: true,
@@ -103,13 +109,13 @@ gulp.task('js-min', function () {
 });
 gulp.task('img-min', function () {
     return gulp
-        .src('./../../uploads/**/*')
+        .src('./assets/images/**/*')
         .pipe(imagemin({
             interlaced: true,
             progressive: true,
             optimizationLevel: 5
         }))
-        .pipe(gulp.dest('./../../uploads/'))
+        .pipe(gulp.dest('./build/img'));
 });
 gulp.task('clean', function () {
     return gulp.src('./build', {read: false, allowEmpty: true})
@@ -122,7 +128,7 @@ gulp.task('fonts', function () {
 });
 gulp.task('img', function () {
     return gulp
-        .src('./assets/img/**/*')
+        .src('./assets/images/**/*')
         .pipe(gulp.dest('./build/img'));
 });
 

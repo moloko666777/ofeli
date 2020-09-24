@@ -191,7 +191,7 @@
 }
 
 .main-page {
-  background-image: url("../../assets/images/mainbg.jpg");
+  background-image: url("../../build/img/mainbg.jpg");
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -349,7 +349,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../../assets/images/dropdown.svg");
+      background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
@@ -393,7 +393,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../../assets/images/dropdown.svg");
+      background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
@@ -456,7 +456,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../../assets/images/dropdown.svg");
+      background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
@@ -499,7 +499,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../../assets/images/dropdown.svg");
+      background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
@@ -543,7 +543,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../../assets/images/dropdown.svg");
+      background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
@@ -1083,7 +1083,7 @@
     position: relative;
     padding: 4.6rem 2rem 1.3rem 2rem;
     text-align: center;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
     span {
       display: block;
       font-size: 2.1rem;
@@ -1134,31 +1134,31 @@
 
 .title-loan {
   &:before {
-    background: url("../../assets/images/title-loan.svg");
+    background: url("../../build/img/title-loan.svg");
   }
 }
 
 .collateral-loan {
   &:before {
-    background: url("../../assets/images/collateral-loan.svg");
+    background: url("../../build/img/collateral-loan.svg");
   }
 }
 
 .repair-loan {
   &:before {
-    background: url("../../assets/images/repair-loan.svg");
+    background: url("../../build/img/repair-loan.svg");
   }
 }
 
 .moto {
   &:before {
-    background: url("../../assets/images/moto.svg");
+    background: url("../../build/img/moto.svg");
   }
 }
 
 .e-loan {
   &:before {
-    background: url("../../assets/images/moto.svg");
+    background: url("../../build/img/moto.svg");
   }
 }
 

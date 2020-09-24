@@ -1,5 +1,5 @@
 .contact-title {
-  background: url("../../assets/images/car1.jpg");
+  background: url("../../build/img/car1.jpg");
   width: 100%;
   height: 31.4rem;
   opacity: 0.85;
@@ -161,7 +161,7 @@
       bottom: 0;
       width: 20px;
       height: 18px;
-      background: url("../../assets/images/user-line.svg") center / contain no-repeat;
+      background: url("../../build/img/user-line.svg") center / contain no-repeat;
       transform: translateY(-50%);
     }
   }
@@ -177,7 +177,7 @@
       bottom: 0;
       width: 20px;
       height: 18px;
-      background: url("../../assets/images/phoneCon.svg") center / contain no-repeat;
+      background: url("../../build/img/phoneCon.svg") center / contain no-repeat;
       transform: translateY(-50%);
     }
   }
@@ -193,7 +193,7 @@
       bottom: 0;
       width: 22px;
       height: 18px;
-      background: url("../../assets/images/mailform.svg") center / contain no-repeat;
+      background: url("../../build/img/mailform.svg") center / contain no-repeat;
       transform: translateY(-50%);
     }
   }
