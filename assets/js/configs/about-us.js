@@ -2,10 +2,10 @@ $('body').on('change', '.about-us__tab input', function () {
 
     let account__value = $(this).val();
 
-    $('.about-us__item').each(function () {
+    $('.about-us-tab').each(function () {
         let account_item = $(this).data('account');
         if ( account_item == account__value ) {
-            $('.about-us__item').removeClass('active');
+            $('.about-us-tab').removeClass('active');
             $(this).addClass('active');
         }
     })
