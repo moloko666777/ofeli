@@ -366,17 +366,6 @@
 </header>
 <main>
     <section>
-        <!--        <div class="about-us">-->
-        <!--                <div class="about-us__wrapper">-->
-        <!--                    <div class="about-us__title container">-->
-        <!--                        <h3>About Us</h3>-->
-        <!--                        <p>It is a long established fact that a reader will be distracted by the readable content of a-->
-        <!--                            page-->
-        <!--                            when looking at its layout.</p>-->
-        <!--                    </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
         <div class="about-us__wrapper">
             <div class="about-us container">
                 <h2>About Us</h2>
@@ -386,8 +375,8 @@
         </div>
     </section>
     <section>
-        <div class="loans__text-wrapper">
-            <div class="loans__list">
+        <div class="loans__text-wrapper about-us__list-wrapper">
+            <div class="loans__list about-us__list">
                 <h2>General info</h2>
                 <p>Fast Action Finance, started in 1997, is one of the longest established Title Loan companies serving
                     Ontario, with the highest loan approval rate in the industry.
@@ -415,28 +404,28 @@
                 <div class="about-us__tab active">
                     <label>
                         <input type="radio" class="account__input-hide" checked name="log_radio"
-                               value="account">
+                               value="car">
                         <span>Car Title Loans</span>
                     </label>
                 </div>
                 <div class="about-us__tab">
                     <label>
                         <input type="radio" class="account__input-hide" name="log_radio"
-                               value="history">
+                               value="collateral">
                         <span>Collateral Loans</span>
                     </label>
                 </div>
                 <div class="about-us__tab">
                     <label>
                         <input type="radio" class="account__input-hide" name="log_radio"
-                               value="card">
+                               value="motorcycle">
                         <span>Motorcycle Storage Loans</span>
                     </label>
                 </div>
                 <div class="about-us__tab">
                     <label>
                         <input type="radio" class="account__input-hide" name="log_radio"
-                               value="output">
+                               value="repair">
                         <span>Repair Loans</span>
                     </label>
                 </div>
@@ -448,8 +437,19 @@
                     </label>
                 </div>
             </div>
+<div class="about-us__select-tabs">
+            <label>
+                <select  id="tabs-select">
+                    <option value="car">Car Title Loans</option>
+                    <option value="collateral">Collateral Loans</option>
+                    <option value="motorcycle">Motorcycle Storage Loans</option>
+                    <option value="repair">Repair Loans</option>
+                    <option value="eloan">Eloan</option>
+                </select>
+            </label>
+        </div>
             <div class="about-us-tab-wrapper">
-                <div class="about-us-tab active" data-account="account"
+                <div class="about-us-tab active" data-account="car"
                      style="background: url('./build/img/carTab.jpg'); background-repeat: no-repeat; background-size: cover;">
                     <div class="about-us-tab__background">
                         <div class="about-us-tab__wrapper">
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-us-tab" data-account="history"
+                <div class="about-us-tab" data-account="collateral"
                      style="background: url('./build/img/handTab.jpg'); background-repeat: no-repeat; background-size: cover;">
                     <div class="about-us-tab__background">
                         <div class="about-us-tab__wrapper">
@@ -496,7 +496,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-us-tab" data-account="card"
+                <div class="about-us-tab" data-account="motorcycle"
                      style="background: url('./build/img/motoTab.jpg'); background-repeat: no-repeat; background-size: cover;">
                     <div class="about-us-tab__background">
                         <div class="about-us-tab__wrapper">
@@ -518,7 +518,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-us-tab" data-account="output"
+                <div class="about-us-tab" data-account="repair"
                      style="background: url('./build/img/repairTab.jpg'); background-repeat: no-repeat; background-size: cover;">
                     <div class="about-us-tab__background">
                         <div class="about-us-tab__wrapper">
