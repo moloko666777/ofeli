@@ -568,3 +568,26 @@
 }
 
 
+@media only screen and (max-width: 425px) {
+  .terms-title{
+    height: 17.6rem;
+    &__wrapper{
+      padding: 5rem 0;
+      h3 {
+        font-size: 2.8rem;
+        line-height: 1.36;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .terms{
+    &__wrapper {
+      padding: 5rem 1.6rem;
+      h2{
+        font-size: 2.1rem;
+        line-height: 1.48;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
