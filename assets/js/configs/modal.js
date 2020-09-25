@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $("#setCookie").click(function () {
+    $("#setCookie").click(function (e) {
+        e.preventDefault();
         $.cookie("pop-up", "", { expires:0, path: '/' });
         $("#pop-up__background").hide();
     });
