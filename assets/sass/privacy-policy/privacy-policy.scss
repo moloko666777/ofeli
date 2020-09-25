@@ -84,3 +84,31 @@
     text-decoration: none;
   }
 }
+
+@media only screen and (max-width: 425px){
+  .privacy-title{
+    height: 17.4rem;
+    &__wrapper{
+      h3{
+        font-size: 2.8rem;
+        line-height: 1.36;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .privacy {
+    &__wrapper{
+      padding: 5rem 1.6rem;
+      h2{
+        font-size: 2.1rem;
+        line-height: 1.48;
+        margin-bottom: 2rem;
+      }
+      h3{
+        font-size: 1.8rem;
+        line-height: 1.72;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
