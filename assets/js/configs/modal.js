@@ -27,11 +27,14 @@ openMobileMenu.addEventListener('click', function () {
 let openSubMenuLink = document.querySelector('.header__mobile-menu-loan');
 let openSubMenu = document.querySelector('.header__mobile-submenu');
 
-openSubMenuLink.addEventListener('click', function (e){
-    e.preventDefault();
-    openSubMenuLink.classList.toggle('active');
-    openSubMenu.classList.toggle('open-sub-menu');
-});
+if (openSubMenuLink){
+    openSubMenuLink.addEventListener('click', function (e){
+        e.preventDefault();
+        openSubMenuLink.classList.toggle('active');
+        openSubMenu.classList.toggle('open-sub-menu');
+    });
+}
+
 
 
 
