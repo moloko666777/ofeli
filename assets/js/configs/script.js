@@ -1,3 +1,6 @@
+
+
+//google map
 let map;
 
 function initMap() {
@@ -6,5 +9,4 @@ function initMap() {
         zoom: 15,
     });
 }
-
-
+//

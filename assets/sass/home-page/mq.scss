@@ -75,6 +75,7 @@
       left: 0;
       top: 0;
       z-index: 4;
+      overflow: auto;
     }
 
     &__mobile-menu-head {
@@ -95,19 +96,17 @@
     }
 
     &__mobile-menu-links-wrapper {
-      height: 51.2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 4rem 0;
+      padding: 3.4rem 3.7rem 4.3rem;
     }
 
     &__mobile-menu-links {
       display: flex;
-      justify-content: center;
 
       li {
-        text-align: center;
         margin-bottom: 3.2rem;
       }
 
@@ -116,6 +115,30 @@
         font-weight: 400;
         color: $black;
       }
+    }
+    &__mobile-menu-loan{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    &__mobile-menu-loan.active{
+      transition: ease .5s;
+      svg {
+        transform: rotate(-180deg);
+        transition: ease .5s;
+      }
+    }
+    &__mobile-submenu{
+      display: none;
+      li{
+        font-size: 16px;
+        color: $greyish-brown;
+        font-weight: 400;
+      }
+    }
+    &__mobile-submenu.open-sub-menu {
+      display: block;
+      padding: 2.6rem 0 0 1.6rem;
     }
 
     &__mobile-menu-phone {
@@ -272,6 +295,9 @@
     .swiper-container {
       height: 23.3rem;
     }
+    .swiper-pagination {
+      bottom: 1.4rem;
+    }
   }
 
   .foundation-date {
@@ -306,7 +332,6 @@
 
     &__wrapper {
       flex-wrap: wrap;
-      //padding: 0 2rem;
     }
 
     &__content {
@@ -316,7 +341,6 @@
 
       span {
         min-height: 6.2rem;
-        margin-bottom: 5rem;
       }
 
       p {
@@ -620,6 +644,7 @@
       left: 0;
       top: 0;
       z-index: 4;
+      overflow: auto;
     }
 
     &__mobile-menu-head {
@@ -640,19 +665,17 @@
     }
 
     &__mobile-menu-links-wrapper {
-      height: 51.2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 4rem 0;
+      padding: 3.4rem 3.7rem 4.3rem;
     }
 
     &__mobile-menu-links {
       display: flex;
-      justify-content: center;
 
       li {
-        text-align: center;
         margin-bottom: 3.2rem;
       }
 
@@ -661,6 +684,30 @@
         font-weight: 400;
         color: $black;
       }
+    }
+    &__mobile-menu-loan{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    &__mobile-menu-loan.active{
+      transition: ease .5s;
+      svg {
+        transform: rotate(-180deg);
+        transition: ease .5s;
+      }
+    }
+    &__mobile-submenu{
+      display: none;
+      li{
+        font-size: 16px;
+        color: $greyish-brown;
+        font-weight: 400;
+      }
+    }
+    &__mobile-submenu.open-sub-menu {
+      display: block;
+      padding: 2.6rem 0 0 1.6rem;
     }
 
     &__mobile-menu-phone {
@@ -857,6 +904,11 @@
 
     .swiper-container {
       height: 23.3rem;
+    }
+    .swiper-pagination {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 1.4rem;
     }
   }
 
@@ -1266,6 +1318,7 @@
       left: 0;
       top: 0;
       z-index: 4;
+      overflow: auto;
     }
 
     &__mobile-menu-head {
@@ -1286,19 +1339,17 @@
     }
 
     &__mobile-menu-links-wrapper {
-      height: 51.2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 4rem 0;
+      padding: 3.4rem 3.7rem 4.3rem;
     }
 
     &__mobile-menu-links {
       display: flex;
-      justify-content: center;
 
       li {
-        text-align: center;
         margin-bottom: 3.2rem;
       }
 
@@ -1307,6 +1358,30 @@
         font-weight: 400;
         color: $black;
       }
+    }
+    &__mobile-menu-loan{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    &__mobile-menu-loan.active{
+      transition: ease .5s;
+      svg {
+        transform: rotate(-180deg);
+        transition: ease .5s;
+      }
+    }
+    &__mobile-submenu{
+      display: none;
+      li{
+        font-size: 16px;
+        color: $greyish-brown;
+        font-weight: 400;
+      }
+    }
+    &__mobile-submenu.open-sub-menu {
+      display: block;
+      padding: 2.6rem 0 0 1.6rem;
     }
 
     &__mobile-menu-phone {
@@ -2353,6 +2428,7 @@
       left: 0;
       top: 0;
       z-index: 4;
+      overflow: auto;
     }
 
     &__mobile-menu-head {
@@ -2373,19 +2449,17 @@
     }
 
     &__mobile-menu-links-wrapper {
-      height: 51.2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 4rem 0;
+      padding: 3.4rem 3.7rem 4.3rem;
     }
 
     &__mobile-menu-links {
       display: flex;
-      justify-content: center;
 
       li {
-        text-align: center;
         margin-bottom: 3.2rem;
       }
 
@@ -2394,6 +2468,30 @@
         font-weight: 400;
         color: $black;
       }
+    }
+    &__mobile-menu-loan{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    &__mobile-menu-loan.active{
+      transition: ease .5s;
+      svg {
+        transform: rotate(-180deg);
+        transition: ease .5s;
+      }
+    }
+    &__mobile-submenu{
+      display: none;
+      li{
+        font-size: 16px;
+        color: $greyish-brown;
+        font-weight: 400;
+      }
+    }
+    &__mobile-submenu.open-sub-menu {
+      display: block;
+      padding: 2.6rem 0 0 1.6rem;
     }
 
     &__mobile-menu-phone {
@@ -2404,7 +2502,7 @@
 
     &__mobile-menu-phone-one {
       display: flex;
-      align-items: center;
+      //align-items: center;
       margin-bottom: 3.4rem;
 
       p {
@@ -2435,6 +2533,30 @@
         color: $cobalt;
         font-weight: 500;
       }
+    }
+    &__mobile-menu-loan{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    &__mobile-menu-loan.active{
+      transition: ease .5s;
+      svg {
+        transform: rotate(-180deg);
+        transition: ease .5s;
+      }
+    }
+    &__mobile-submenu{
+      display: none;
+      li{
+        font-size: 16px;
+        color: $greyish-brown;
+        font-weight: 400;
+      }
+    }
+    &__mobile-submenu.open-sub-menu {
+      display: block;
+      padding: 2.6rem 0 0 1.6rem;
     }
   }
 
