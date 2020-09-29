@@ -7,15 +7,17 @@
     p {
       width: 60%;
     }
+
     &__tabs {
       width: 90%;
     }
   }
-  .about-us-contacts{
-    &__city-wrapper{
+  .about-us-contacts {
+    &__city-wrapper {
       justify-content: unset;
     }
-    &__city{
+
+    &__city {
       width: 50%;
       //&:nth-child(odd){
       //  margin-right: 1rem;
@@ -27,28 +29,67 @@
   }
 }
 
-@media only screen and (max-width: 425px){
-  .about-us{
+@media only screen and (max-width: 767px) {
+
+
+  .about-us__tab.active span {
+    font-size: 1.2rem;
+  }
+  &__body {
+    margin-right: 0;
+  }
+  .about-us {
+    &__tabs {
+      width: 95%;
+    }
+
+    &-tab__background {
+      padding: 6rem 1.6rem;
+    }
+
+    &__tab {
+      span {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__body {
+      margin-right: 0;
+    }
+
+    &__body &__item {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-us {
     padding: 4.8rem 0;
     justify-content: flex-start;
-    h2{
+
+    h2 {
       width: 100%;
       font-size: 2.8rem;
       line-height: 1.36;
       margin-bottom: 1.6rem;
     }
-    p{
+
+    p {
       width: 100%;
       font-size: 1.6rem;
       line-height: 1.5;
     }
-    &__wrapper{
+
+    &__wrapper {
       height: 40rem;
     }
-    &__tabs{
+
+    &__tabs {
       display: none;
     }
-    &__select-tabs{
+
+    &__select-tabs {
       display: block;
       width: calc(100% - 3.2rem);
       position: absolute;
@@ -56,7 +97,8 @@
       left: 50%;
       transform: translateX(-50%);
       margin: 0 auto 3rem auto;
-      select{
+
+      select {
         width: 100%;
         border-radius: 2px;
         border: .1rem solid $white;
@@ -68,7 +110,8 @@
         font-weight: 400;
         text-transform: uppercase;
       }
-      option{
+
+      option {
         height: 4rem;
         padding: 0 .9rem;
         font-size: 1.4rem;
@@ -76,26 +119,31 @@
         box-shadow: none;
         background-color: $cobalt;
       }
-      label{
+
+      label {
         position: relative;
-       &:before {
+
+        &:before {
           content: '';
           position: absolute;
           right: 0;
           top: 50%;
           transform: translateY(-50%);
-          background: url(../../build/img/dropdown.svg) right no-repeat;
+          //background: url(../../build/img/dropdown.svg) right no-repeat;
           width: 2rem;
           height: .5rem;
         }
       }
     }
+
     &-tab__wrapper {
       margin: 0 auto 6rem;
     }
+
     &__body {
       margin-right: 0;
     }
+
     &-tab__background {
       padding: 11rem 1.6rem 0;
       height: 100%;
@@ -104,48 +152,57 @@
   .about-us__body .about-us__item {
     width: 100%;
     margin-top: 0;
-    a{
+
+    a {
       width: 100%;
     }
   }
-  .loans__list.about-us__list{
+  .loans__list.about-us__list {
     h2 {
       margin-bottom: 2rem;
     }
   }
   .about-us-contacts {
     padding: 6rem 0 8rem 0;
-    h3{
+
+    h3 {
       font-size: 2.1rem;
       line-height: 1.48;
       margin-bottom: 3rem;
     }
+
     &__city-address-wrapper {
       width: 100%;
       padding: 2rem 2.1rem 3rem 2rem;
       height: 17.9rem;
-      h4{
+
+      h4 {
         font-size: 1.8rem;
         line-height: 1.72;
         color: #000000;
         margin-bottom: 1.9rem;
       }
     }
-    &__city-address{
+
+    &__city-address {
       margin-bottom: 2.4rem;
-      a{
+
+      a {
         font-weight: 400;
       }
     }
+
     &__city:nth-child(n+3) {
       width: 100%;
       margin-bottom: 1rem;
     }
+
     &__city {
       width: 100%;
       margin-bottom: 1rem;
     }
-    &__city-phone{
+
+    &__city-phone {
       margin-bottom: 0;
     }
   }
