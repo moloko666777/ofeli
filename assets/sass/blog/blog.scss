@@ -51,8 +51,10 @@
         border: solid 1px $cloudy-blue;
         background-color: $white;
         padding: 0 .8rem 0 1.6rem;
-        min-height: 4rem;
+        height: 4rem;
         line-height: 4rem;
+        display: flex;
+        align-items: center;
 
         &::-webkit-input-placeholder {
           font-size: 1.4rem;
