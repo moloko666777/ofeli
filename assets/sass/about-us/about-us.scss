@@ -58,8 +58,8 @@
     }
 
     &__city-address-wrapper {
-      width: 36rem;
-      height: 19rem;
+      //width: 36rem;
+      //height: 19rem;
       background-color: $white;
       border-radius: .2rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
@@ -111,13 +111,15 @@
 
     &__city-wrapper {
       display: flex;
-      justify-content: space-between;
+      //justify-content: space-between;
       flex-wrap: wrap;
+      margin: 0 -1.5rem;
     }
 
     &__city {
       margin-bottom: 3rem;
-
+      width: 33.3%;
+      padding: 0 1.5rem;
       &:nth-child(n+3) {
         margin-bottom: 0;
       }

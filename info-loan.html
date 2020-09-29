@@ -6,6 +6,7 @@
     <title>Loans Info</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./build/css/app.css">
+    <link rel="shortcut icon" href="./build/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
@@ -189,6 +190,7 @@
                         </g>
                     </svg>
                 </a>
+                <span class="header__mobile-text">Menu</span>
             </div>
             <div class="header__mobile-menu-wrapper">
                 <div class="header__mobile-menu-icon">
@@ -206,11 +208,6 @@
                     </svg>
                 </div>
                 <div class="header__mobile-menu">
-                    <div class="header__mobile-menu-head ">
-                        <div class="header__mobile-menu-logo">
-                            Menu
-                        </div>
-                    </div>
                     <div class="header__mobile-menu-links-wrapper">
                         <div class="header__mobile-menu-links">
                             <ul>
@@ -218,7 +215,20 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Loans</a>
+                                    <a class="header__mobile-menu-loan" href="#">Loans
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.41005 9.00002C6.80005 8.61002 7.43005 8.61002 7.82005 9.00002L11.7051 12.875L15.5891 8.99902C15.9791 8.61002 16.6111 8.61102 17.0001 9.00002C17.3901 9.39002 17.3901 10.02 17.0001 10.41L11.7051 15.705L6.41005 10.41C6.02005 10.02 6.02005 9.39002 6.41005 9.00002Z"
+                                                  fill="#C2D1D9"/>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__mobile-submenu">
+                                        <li><a href="info-loan.html">e-Loan</a></li>
+                                        <li><a href="info-loan-car.html">Car Title Loan</a></li>
+                                        <li><a href="info-loan-collateral.html">Collateral Loan</a></li>
+                                        <li><a href="info-loan-repair.html">Repair Loan</a></li>
+                                        <li><a href="info-loan-motorcycle.html">Motorcycle & Other Storage Loan</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="about-us.html">About us</a>
@@ -292,7 +302,7 @@
                 <nav class="header__links-nav">
                     <ul class="header__links-top-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="info.html">Loans</a>
+                        <li class="active">Loans
                             <ul class="header__links-submenu">
                                 <li><a class="header__links-drop-down" href="info-loan.html">e-Loan</a></li>
                                 <li><a class="header__links-drop-down" href="info-loan-car.html">Car Title Loan</a></li>
@@ -498,15 +508,33 @@
         </div>
     </section>
     <section>
-        <div class="loans__photo container">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
-            <img src="./build/img/loanCar.jpg" alt="loan">
+        <div class="loans__images container">
+        <div class="loans__photos">
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+            <div class="loans__photo">
+                <img src="./build/img/loanCar.jpg" alt="loan">
+            </div>
+        </div>
         </div>
     </section>
     <section>

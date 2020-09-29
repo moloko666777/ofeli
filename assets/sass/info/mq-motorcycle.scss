@@ -1,3 +1,69 @@
+@media only screen and (max-width: 1023px){
+
+  .loan{
+    &__question{
+      height: 100%;
+
+    }
+    &__question-wrapper{
+      padding: 5rem 0;
+      justify-content: center;
+    }
+    &__question-image-left{
+      display: none;
+    }
+    &__question-text{
+      justify-content: unset;
+      h3{
+        font-size: 28px;
+        line-height: 1.36;
+        margin-bottom: 2rem;
+      }
+      p{
+        margin-bottom: 4rem;
+      }
+      a{
+        width: calc(100% - 3.2rem);
+        margin: 0 auto;
+      }
+    }
+    &__question-image-right{
+      display: none;
+    }
+  }
+
+  .loans-motorcycle {
+    h2{
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+    &__links {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .loans-icon {
+    ul {
+
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 33.3%;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.75;
+      justify-content: center;
+    }
+  }
+
+}
+
 @media only screen and (max-width: 425px){
   .loans-motorcycle {
     padding: 4.8rem 0 7.8rem 0;
@@ -67,35 +133,6 @@
       }
     }
   }
-  .loan{
-    &__question{
-      height: 100%;
 
-    }
-    &__question-wrapper{
-      padding: 5rem 0;
-    }
-    &__question-image-left{
-      display: none;
-    }
-    &__question-text{
-      justify-content: unset;
-      h3{
-        font-size: 28px;
-        line-height: 1.36;
-        margin-bottom: 2rem;
-      }
-      p{
-        margin-bottom: 4rem;
-      }
-      a{
-        width: calc(100% - 3.2rem);
-        margin: 0 auto;
-      }
-    }
-    &__question-image-right{
-      display: none;
-    }
-  }
 
 }

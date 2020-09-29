@@ -19,9 +19,15 @@ $(document).ready(function(){
 
 let openMobileMenu = document.querySelector('.header__mobile-menu-icon');
 let menu = document.querySelector('.header__mobile-menu');
+let header = document.querySelector('header');
+let headerLogo = document.querySelector('.header__logo > a');
+let headerText = document.querySelector('.header__mobile-text');
 
 openMobileMenu.addEventListener('click', function () {
     menu.classList.toggle('open-menu');
+    header.classList.toggle('active');
+    headerLogo.classList.toggle('active');
+    headerText.classList.toggle('active');
 });
 
 let openSubMenuLink = document.querySelector('.header__mobile-menu-loan');
