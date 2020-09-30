@@ -10,3 +10,9 @@ function initMap() {
     });
 }
 //
+
+
+
+$(document).ready(function(){
+    $('.phone').mask('000-000-000');
+});
