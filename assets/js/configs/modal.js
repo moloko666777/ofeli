@@ -29,6 +29,12 @@ if (closeModal){
         modal.style.display = 'none';
     });
 }
+// if (modalBackground){
+//     modalBackground.addEventListener('click', function (e) {
+//         modal.style.display = 'none';
+//         modalBackground.style.display = 'none';
+//     });
+// }
 
 
 
