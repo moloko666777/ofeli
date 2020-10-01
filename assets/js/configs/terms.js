@@ -1,23 +1,3 @@
-let openModal = document.querySelector('.terms-link');
-let modal = document.querySelector('.terms-pop-up__background');
-let closeModal = document.querySelector('.terms-pop-up__close');
-if (openModal){
-    openModal.addEventListener('click', function (e) {
-        e.preventDefault();
-        modal.style.display = 'block';
-    });
-}
-if (closeModal){
-    closeModal.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
-}
-
-
-
-
-
-
 $('body').on('change', '.terms__tab input', function () {
 
     let terms__value = $(this).val();

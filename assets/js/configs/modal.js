@@ -15,6 +15,22 @@ $(document).ready(function(){
     }
 });
 
+let openModal = document.querySelectorAll('.terms-link');
+let modal = document.querySelector('.terms-pop-up__background');
+let closeModal = document.querySelector('.terms-pop-up__close');
+if (openModal){
+    openModal.forEach(button => button.addEventListener('click', function (e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+    }))
+}
+if (closeModal){
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+}
+
+
 
 
 let openMobileMenu = document.querySelector('.header__mobile-menu-icon');

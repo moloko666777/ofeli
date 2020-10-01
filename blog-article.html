@@ -1067,7 +1067,7 @@
         <div class="footer__copyrighting">
             <div class="footer__privacy">
                 <a href="terms.html">Terms and conditions</a>
-                <a href="#">Privacy Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
             </div>
             <div class="footer__copyrighting-text">
                 Fast Action Finance &#169 2000-2020. All Rights reserved.
@@ -1077,8 +1077,7 @@
 
     <div id="pop-up__background">
         <div id="pop-up" class="pop-up-wrapper">
-            <a id="setCookie" class="close" href="#" title="Закрыть"
-               onclick="document.getElementById('bg_popup').style.display='none'; return false;">
+            <a id="setCookie" class="close" href="#" title="Закрыть">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
                      height="24" viewBox="0 0 24 24">
                     <defs>
@@ -1104,6 +1103,229 @@
             <p>We are here to help you. We are offering <span>  3 MONTHS PAYMENT RELIEF</span> on all new loans.
                 Process loan online right now!</p>
             <button>Apply now</button>
+        </div>
+    </div>
+
+    <div class="terms-pop-up__background" id="hideMe">
+        <div class="terms-pop-up">
+            <div class="terms-pop-up__close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                     height="24" viewBox="0 0 24 24">
+                    <defs>
+                        <path id="close-modal1"
+                              d="M18.295 5.705c-.39-.39-1.02-.39-1.41 0L12 10.59 7.115 5.705c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12l-4.885 4.885c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.885 4.885c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.885-4.885c.39-.39.39-1.02 0-1.41z"/>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <g>
+                            <mask id="close-modal2" fill="#fff">
+                                <use xlink:href="#close-modal1"/>
+                            </mask>
+                            <use fill="#C2D1D9" xlink:href="#close-modal1"/>
+                            <g fill="#C2D1D9" mask="url(#close-modal2)">
+                                <g>
+                                    <path d="M0 0H24V24H0z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="terms-pop-up__title">
+                Apply now. Same day approval
+            </div>
+            <div class="terms-body">
+                <div class="terms">
+                    <div class="terms__tabs">
+                        <div class="terms__tab active">
+                            <label>
+                                <input type="radio" class="terms__input-hide" checked name="log_radio"
+                                       value="account">
+                                <span>Title Loan</span>
+                            </label>
+                        </div>
+                        <div class="terms__tab">
+                            <label>
+                                <input type="radio" class="terms__input-hide" name="log_radio"
+                                       value="history">
+                                <span>Other Collateral</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="terms__body">
+                        <div class="terms__item active" data-account="account">
+                            <span class="terms__require">* Required fields</span>
+                            <form>
+                                <div class="terms__form-left">
+                                    <div class="terms__input-wrapper">
+                                        <label>
+                                            <input class="terms__input-style-general" type="text"
+                                                   placeholder="First Name*">
+                                        </label>
+                                        <label>
+                                            <input class="terms__input-style-general" type="text"
+                                                   placeholder="Last Name*">
+                                        </label>
+                                    </div>
+                                    <label>
+                                        <input class="terms__input-style-general"
+                                               type="email"
+                                               placeholder="Email*">
+                                    </label>
+                                    <label>
+                                        <input class="terms__input-style-general"
+                                               type="email"
+                                               placeholder="Phone**">
+                                    </label>
+                                    <label class="terms__label-city">
+                                        <select class="terms__select-city" id="city-modal">
+                                            <option value="hide">City*</option>
+                                            <option value="2010">Ottawa</option>
+                                            <option value="2011">Edmonton</option>
+                                            <option value="2012">Victoria</option>
+                                            <option value="2013">Winnipeg</option>
+                                            <option value="2014">Fredericton</option>
+                                            <option value="2015">Toronto</option>
+                                        </select>
+                                    </label>
+                                    <label class="terms__label-amount">
+                                        <select class="terms__select-amount" id="amount-modal">
+                                            <option value="hide">Requested Amount*</option>
+                                            <option value="2010">1</option>
+                                            <option value="2011">2</option>
+                                            <option value="2012">3</option>
+                                            <option value="2013">4</option>
+                                            <option value="2014">5</option>
+                                            <option value="2015">6</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="terms__form-right">
+                                    <label>
+                                        <input class="terms__input-style-general" type="text"
+                                               placeholder="Make & Model of Vehicle">
+                                    </label>
+                                    <div class="terms__select-wrapper">
+                                        <label class="terms__label-year">
+                                            <select class="terms__select-year" id="year-modal">
+                                                <option value="hide">Year*</option>
+                                                <option value="2010">1</option>
+                                                <option value="2011">2</option>
+                                                <option value="2012">3</option>
+                                                <option value="2013">4</option>
+                                                <option value="2014">5</option>
+                                                <option value="2015">6</option>
+                                            </select>
+                                        </label>
+                                        <label class="main-page__label-vehicle">
+                                            <select class="main-page__select-vehicle" id="vehicle-modal">
+                                                <option value="hide">Vehicle KMS*</option>
+                                                <option value="2010">1</option>
+                                                <option value="2011">2</option>
+                                                <option value="2012">3</option>
+                                                <option value="2013">4</option>
+                                                <option value="2014">5</option>
+                                                <option value="2015">6</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <label class="terms__label-referred">
+                                        <select class="terms__select-referred" id="referred-modal">
+                                            <option value="hide">Vehicle KMS*</option>
+                                            <option value="2010">1</option>
+                                            <option value="2011">2</option>
+                                            <option value="2012">3</option>
+                                            <option value="2013">4</option>
+                                            <option value="2014">5</option>
+                                            <option value="2015">6</option>
+                                        </select>
+                                    </label>
+                                    <div class="terms__checkbox">
+                                        <p class="terms__text">Is this a leased or financed vehicle with a
+                                            balance owing on it?
+                                            *</p>
+                                        <div class="terms__checkbox-wrapper">
+                                            <label>
+                                                <input type="radio" name="radio_btn">
+                                                <span></span>
+                                                <p class="terms__checkbox-text">Yes</p>
+                                            </label>
+                                            <label>
+                                                <input type="radio" checked name="radio_btn">
+                                                <span></span>
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="terms__button">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="terms__item" data-account="history">
+                            <span class="terms__require">* Required fields</span>
+                            <form>
+                                <div class="terms__form-left">
+                                    <div class="terms__input-wrapper">
+                                        <label>
+                                            <input class="terms__input-style-general" type="text"
+                                                   placeholder="First Name*">
+                                        </label>
+                                        <label>
+                                            <input class="terms__input-style-general" type="text"
+                                                   placeholder="Last Name*">
+                                        </label>
+                                    </div>
+                                    <label>
+                                        <input class="terms__input-style-general" type="email"
+                                               placeholder="Email*">
+                                    </label>
+                                    <label>
+                                        <input class="terms__input-style-general" type="email"
+                                               placeholder="Phone**">
+                                    </label>
+                                    <label class="terms__label-city">
+                                        <select class="terms__select-city">
+                                            <option value="hide">City*</option>
+                                            <option value="2010">Ottawa</option>
+                                            <option value="2011">Edmonton</option>
+                                            <option value="2012">Victoria</option>
+                                            <option value="2013">Winnipeg</option>
+                                            <option value="2014">Fredericton</option>
+                                            <option value="2015">Toronto</option>
+                                        </select>
+                                    </label>
+                                    <label class="terms__label-amount">
+                                        <select class="terms__select-amount">
+                                            <option value="hide">Requested Amount*</option>
+                                            <option value="2010">1</option>
+                                            <option value="2011">2</option>
+                                            <option value="2012">3</option>
+                                            <option value="2013">4</option>
+                                            <option value="2014">5</option>
+                                            <option value="2015">6</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="terms__form-right">
+                                    <label class="terms__label-amount">
+                                        <select class="terms__select-amount">
+                                            <option value="hide">Referred by*</option>
+                                            <option value="2010">1</option>
+                                            <option value="2011">2</option>
+                                            <option value="2012">3</option>
+                                            <option value="2013">4</option>
+                                            <option value="2014">5</option>
+                                            <option value="2015">6</option>
+                                        </select>
+                                    </label>
+                                    <textarea class="terms__textarea"
+                                              placeholder="Please tell us what collateral you have, such as motorcycle, snowmobile, watercraft, construction equipment, classic car etc."></textarea>
+                                    <button class="terms__button">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
