@@ -123,15 +123,11 @@
       label {
         position: relative;
 
-        &:before {
-          content: '';
+        svg {
           position: absolute;
           right: 0;
           top: 50%;
           transform: translateY(-50%);
-          //background: url(../../build/img/dropdown.svg) right no-repeat;
-          width: 2rem;
-          height: .5rem;
         }
       }
     }
