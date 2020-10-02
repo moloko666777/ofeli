@@ -615,7 +615,7 @@
                                    placeholder="Email*">
                         </label>
                         <label>
-                            <input class="main-page__input-style-general main-page__input-style phone" type="email"
+                            <input class="main-page__input-style-general main-page__input-style phone" type="phone"
                                    placeholder="Phone**">
                         </label>
                         <label class="main-page__label-city">
@@ -699,22 +699,22 @@
                     <form>
                         <div class="main-page-mobile__input-wrapper">
                             <label>
-                                <input class="main-page-mobile__input-style-general" type="text"
+                                <input maxlength="100" class="main-page-mobile__input-style-general" type="text"
                                        placeholder="First Name*">
                             </label>
                             <label>
-                                <input class="main-page-mobile__input-style-general" type="text"
+                                <input maxlength="100" class="main-page-mobile__input-style-general" type="text"
                                        placeholder="Last Name*">
                             </label>
                         </div>
                         <label>
-                            <input class="main-page-mobile__input-style-general main-page-mobile__input-style"
+                            <input maxlength="100" class="main-page-mobile__input-style-general main-page-mobile__input-style"
                                    type="email"
                                    placeholder="Email*">
                         </label>
                         <label>
-                            <input class="main-page-mobile__input-style-general main-page-mobile__input-style"
-                                   type="email"
+                            <input maxlength="100" class="main-page-mobile__input-style-general main-page-mobile__input-style phone"
+                                   type="text"
                                    placeholder="Phone**">
                         </label>
                         <label class="main-page-mobile__label-city">
@@ -1582,16 +1582,16 @@
                             <a href="info-loan.html">eLoan</a>
                         </li>
                         <li>
-                            <a href="#">Car Loan</a>
+                            <a href="info-loan-car.html">Car Loan</a>
                         </li>
                         <li>
-                            <a href="#">Collateral Loan</a>
+                            <a href="info-loan-collateral.html">Collateral Loan</a>
                         </li>
                         <li>
-                            <a href="#">Repair Loan</a>
+                            <a href="info-loan-repair.html">Repair Loan</a>
                         </li>
                         <li>
-                            <a href="#">Motorcycle & Other Storage Loan</a>
+                            <a href=info-loan-motorcycle.html>Motorcycle & Other Storage Loan</a>
                         </li>
                     </ul>
                 </div>
@@ -1715,22 +1715,22 @@
                                 <div class="terms__form-left">
                                     <div class="terms__input-wrapper">
                                         <label>
-                                            <input class="terms__input-style-general" type="text"
+                                            <input maxlength="100" class="terms__input-style-general" type="text"
                                                    placeholder="First Name*">
                                         </label>
                                         <label>
-                                            <input class="terms__input-style-general" type="text"
+                                            <input maxlength="100" class="terms__input-style-general" type="text"
                                                    placeholder="Last Name*">
                                         </label>
                                     </div>
                                     <label>
-                                        <input class="terms__input-style-general"
+                                        <input maxlength="100" class="terms__input-style-general"
                                                type="email"
                                                placeholder="Email*">
                                     </label>
                                     <label>
-                                        <input class="terms__input-style-general"
-                                               type="email"
+                                        <input maxlength="100" class="terms__input-style-general phone"
+                                               type="text"
                                                placeholder="Phone**">
                                     </label>
                                     <label class="terms__label-city">
@@ -1758,7 +1758,7 @@
                                 </div>
                                 <div class="terms__form-right">
                                     <label>
-                                        <input class="terms__input-style-general" type="text"
+                                        <input maxlength="100" class="terms__input-style-general" type="text"
                                                placeholder="Make & Model of Vehicle">
                                     </label>
                                     <div class="terms__select-wrapper">
@@ -1823,20 +1823,20 @@
                                 <div class="terms__form-left">
                                     <div class="terms__input-wrapper">
                                         <label>
-                                            <input class="terms__input-style-general" type="text"
+                                            <input maxlength="100" class="terms__input-style-general" type="text"
                                                    placeholder="First Name*">
                                         </label>
                                         <label>
-                                            <input class="terms__input-style-general" type="text"
+                                            <input maxlength="100" class="terms__input-style-general" type="text"
                                                    placeholder="Last Name*">
                                         </label>
                                     </div>
                                     <label>
-                                        <input class="terms__input-style-general" type="email"
+                                        <input maxlength="100" class="terms__input-style-general" type="email"
                                                placeholder="Email*">
                                     </label>
                                     <label>
-                                        <input class="terms__input-style-general" type="email"
+                                        <input maxlength="100" class="terms__input-style-general phone" type="text"
                                                placeholder="Phone**">
                                     </label>
                                     <label class="terms__label-city">
@@ -1874,7 +1874,7 @@
                                             <option value="2015">6</option>
                                         </select>
                                     </label>
-                                    <textarea class="terms__textarea"
+                                    <textarea maxlength="400" class="terms__textarea"
                                               placeholder="Please tell us what collateral you have, such as motorcycle, snowmobile, watercraft, construction equipment, classic car etc."></textarea>
                                     <button class="terms__button">Apply</button>
                                 </div>
@@ -1885,6 +1885,25 @@
             </div>
         </div>
     </div>
+
+    <div class="success__wrapper">
+        <div class="success__backdrop"></div>
+        <div class="success__modal-wrapper">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#check)">
+                    <path d="M36 72C55.8494 72 72 55.8508 72 36C72 32.5737 71.5217 29.1973 70.5747 25.9636C70.1082 24.3735 68.4478 23.4602 66.8533 23.9268C65.2617 24.3918 64.3513 26.0581 64.8164 27.6482C65.6008 30.3347 66 33.1458 66 36C66 52.5417 52.5417 66 36 66C19.4583 66 6 52.5417 6 36C6 19.4583 19.4583 6 36 6C42.0117 6 47.7957 7.75781 52.7263 11.0823C54.0989 12.0088 55.9651 11.6448 56.8901 10.2722C57.8159 8.89819 57.4548 7.03345 56.0808 6.10767C50.1555 2.1123 43.2122 0 36 0C16.1506 0 0 16.1492 0 36C0 55.8508 16.1506 72 36 72Z" fill="#5BAF5C"/>
+                    <path d="M66.8788 6.87836L35.9999 37.7558L26.121 27.8784C24.9492 26.7072 23.0507 26.7072 21.8788 27.8784C20.7077 29.0502 20.7077 30.9487 21.8788 32.1205L33.8788 44.1206C34.4655 44.7072 35.2316 44.9995 35.9999 44.9995C36.7682 44.9995 37.5344 44.7072 38.121 44.1206L71.121 11.1205C72.2922 9.94867 72.2922 8.05023 71.121 6.87836C69.9492 5.70721 68.0507 5.70721 66.8788 6.87836Z" fill="#5BAF5C"/>
+                </g>
+                <defs>
+                    <clipPath id="check">
+                        <rect width="72" height="72" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <p>Saved successfully!</p>
+        </div>
+    </div>
+
 </footer>
 </body>
 <script

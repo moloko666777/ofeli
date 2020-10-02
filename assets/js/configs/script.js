@@ -16,3 +16,18 @@ function initMap() {
 $(document).ready(function(){
     $('.phone').mask('000-000-000');
 });
+
+
+// setTimeout(function (){
+//     document.querySelector('.success__wrapper').style.display = 'none';
+// }, 10000)
+
+let successModal = document.querySelector('.success__wrapper');
+let successBackdrop = document.querySelector('.success__backdrop')
+
+successBackdrop.addEventListener( 'click', function (){
+    successModal.style.display = 'none';
+})
+setTimeout(function (){
+    successModal.style.display = 'none';
+},5000);
