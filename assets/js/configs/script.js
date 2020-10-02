@@ -24,10 +24,14 @@ $(document).ready(function(){
 
 let successModal = document.querySelector('.success__wrapper');
 let successBackdrop = document.querySelector('.success__backdrop')
+if (successBackdrop){
+    successBackdrop.addEventListener( 'click', function (){
+        successModal.style.display = 'none';
+    });
+}
+if(successModal){
+    setTimeout(function (){
+        successModal.style.display = 'none';
+    },5000);
+};
 
-successBackdrop.addEventListener( 'click', function (){
-    successModal.style.display = 'none';
-})
-setTimeout(function (){
-    successModal.style.display = 'none';
-},5000);
