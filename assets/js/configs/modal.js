@@ -18,15 +18,19 @@ $(document).ready(function(){
 let openModal = document.querySelectorAll('.terms-link');
 let modal = document.querySelector('.terms-pop-up__background');
 let closeModal = document.querySelector('.terms-pop-up__close');
+let bodyElement = document.querySelector('body');
+
 if (openModal){
     openModal.forEach(button => button.addEventListener('click', function (e) {
         e.preventDefault();
         modal.style.display = 'block';
+        bodyElement.style.overflow = 'hidden';
     }))
 }
 if (closeModal){
     closeModal.addEventListener('click', function () {
         modal.style.display = 'none';
+        bodyElement.style.overflow = 'unset';
     });
 }
 // if (modalBackground){
@@ -50,6 +54,11 @@ openMobileMenu.addEventListener('click', function () {
     header.classList.toggle('active');
     headerLogo.classList.toggle('active');
     headerText.classList.toggle('active');
+    if (header.classList.contains('active')){
+        bodyElement.style.overflow = 'hidden';
+    } else {
+        bodyElement.style.overflow = 'unset';
+    }
 });
 
 let openSubMenuLink = document.querySelector('.header__mobile-menu-loan');

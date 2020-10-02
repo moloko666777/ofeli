@@ -146,4 +146,12 @@
     margin-bottom: 1rem;
     padding: 0 1.6rem;
   }
+  .loans{
+    &__photos{
+      margin: 0;
+    }
+    &__photo{
+      padding: 0;
+    }
+  }
 }

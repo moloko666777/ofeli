@@ -568,7 +568,17 @@
 }
 
 @media only screen and (max-width: 767px){
-
+  .terms-pop-up {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1.6rem 4rem 1.6rem;
+    overflow-y: auto;
+  }
+  .terms__item form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 425px) {
   .terms-title{
