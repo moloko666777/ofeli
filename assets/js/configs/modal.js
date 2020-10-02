@@ -1,18 +1,26 @@
 $(document).ready(function(){
-    $("#setCookie").click(function (e) {
-        e.preventDefault();
-        $.cookie("pop-up", "", { expires:0, path: '/' });
-        $("#pop-up__background").hide();
-    });
+    // $("#setCookie").click(function (e) {
+    //     e.preventDefault();
+    //     $.cookie("pop-up", "", { expires:0, path: '/' });
+    //     $("#pop-up__background").hide();
+    // });
 
-    if ( $.cookie("pop-up") == null )
-    {
-        setTimeout(function(){
-            $("#pop-up__background").show();
-        }, 4000)
-    }
-    else { $("#pop-up__background").hide();
-    }
+    // if ( $.cookie("pop-up") == null )
+    // {
+    //     setTimeout(function(){
+    //         $("#pop-up__background").show();
+    //     }, 4000)
+    // }
+    // else { $("#pop-up__background").hide();
+    // }
+});
+
+let closePopup = document.querySelector('.close');
+let popUp = document.querySelector('.pop-up-wrapper')
+
+closePopup.addEventListener('click', function (e){
+    e.preventDefault();
+    popUp.style.display = 'none';
 });
 
 let openModal = document.querySelectorAll('.terms-link');

@@ -122,6 +122,9 @@ $rouge: #c61519;
 
 
 .success {
+  &__wrapper{
+    display: none;
+  }
   &__backdrop{
     width: 100%;
     height: 100%;
