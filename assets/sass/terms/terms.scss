@@ -212,7 +212,7 @@
     color: $cool-grey;
     margin-bottom: 1.6rem;
     font-size: 1.4rem;
-    line-height: 4rem;
+    line-height: 1.29;
 
     option {
       height: 4rem;
@@ -225,19 +225,19 @@
 
   &__label-city {
     position: relative;
+    display: block;
 
     &:before {
       content: '';
       position: absolute;
       right: 0;
-      top: 50%;
+      top: 39%;
       transform: translateY(-50%);
       background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
       background-position: right;
       width: 2rem;
       height: .5rem;
-      line-height: 4rem;
     }
 
     &:focus {
@@ -259,6 +259,7 @@
     font-size: 1.4rem;
     line-height: 1.29;
 
+
     option {
       height: 4rem;
       padding: 0 .9rem;
@@ -269,13 +270,14 @@
   }
 
   &__label-amount {
+    display: block;
     position: relative;
 
     &:before {
       content: '';
       position: absolute;
       right: 0;
-      top: 50%;
+      top: 39%;
       transform: translateY(-50%);
       background: url("../../build/img/dropdown.svg");
       background-repeat: no-repeat;
