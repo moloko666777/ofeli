@@ -11,8 +11,8 @@
   &:before {
     position: absolute;
     content: '';
-    background: rgb(10,37,115);
-    background: linear-gradient(90deg, rgba(10,37,115,0.85) 25%, rgba(69,116,201,0.78) 100%);
+    background: rgb(10, 37, 115);
+    background: linear-gradient(90deg, rgba(10, 37, 115, 0.85) 25%, rgba(69, 116, 201, 0.78) 100%);
     width: 100%;
     height: 100%;
   }
@@ -141,12 +141,14 @@
     font-size: 1.4rem;
     line-height: 1.29;
   }
-  &__input-wrapper  {
+
+  &__input-wrapper {
     input {
       max-width: 14rem;
     }
   }
-  &__input-style-general{
+
+  &__input-style-general {
     width: 100%;
     border-radius: 2px;
     border: 0.1rem solid #c8c9cd;
@@ -157,12 +159,15 @@
     font-size: 1.4rem;
     line-height: 1.29;
   }
-  &__form-left{
+
+  &__form-left {
     width: 29.2rem;
   }
-  &__form-right{
+
+  &__form-right {
     width: 29.2rem;
   }
+
   &__require {
     display: block;
     font-size: 1.4rem;
@@ -171,6 +176,7 @@
     font-weight: 400;
     margin-bottom: 2.3rem;
   }
+
   &__input-wrapper {
     display: flex;
     justify-content: space-between;
@@ -433,6 +439,7 @@
       }
     }
   }
+
   //checkbox
   &__checkbox-wrapper {
     display: flex;
@@ -567,24 +574,53 @@
   display: none;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .terms-pop-up {
     width: 100%;
     height: 100%;
     padding: 3rem 1.6rem 4rem 1.6rem;
     overflow-y: auto;
+
+    &__title {
+      width: 80%;
+      margin: 0 auto .8rem;
+    }
+
+    &__close svg {
+      right: 2.5rem;
+      top: 1.4rem;
+    }
   }
+  .terms {
+    &__tabs {
+      width: 26rem;
+      margin: 0 auto 1.6rem;
+    }
+
+    &__form-left {
+      width: 100%;
+    }
+
+    &__form-right {
+      width: 100%;
+    }
+  }
+
   .terms__item form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
 }
+
 @media only screen and (max-width: 425px) {
-  .terms-title{
+  .terms-title {
     height: 17.6rem;
-    &__wrapper{
+
+    &__wrapper {
       padding: 5rem 0;
+
       h3 {
         font-size: 2.8rem;
         line-height: 1.36;
@@ -592,10 +628,11 @@
       }
     }
   }
-  .terms{
+  .terms {
     &__wrapper {
       padding: 5rem 1.6rem;
-      h2{
+
+      h2 {
         font-size: 2.1rem;
         line-height: 1.48;
         margin-bottom: 2rem;

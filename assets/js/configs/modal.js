@@ -56,10 +56,8 @@ openMobileMenu.addEventListener('click', function () {
     headerText.classList.toggle('active');
     if (header.classList.contains('active')){
         bodyElement.style.overflow = 'hidden';
-        bodyElement.style.height = '100%'
     } else {
         bodyElement.style.overflow = 'unset';
-        bodyElement.style.height = 'unset';
     }
 });
 
