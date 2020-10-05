@@ -10,6 +10,9 @@
       &__links {
         width: 100%;
       }
+    &__text-wrapper {
+      max-width: 73rem;
+    }
     }
 }
 @media only screen and (max-width: 767px) {

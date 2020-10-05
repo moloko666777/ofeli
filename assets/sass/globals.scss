@@ -176,6 +176,10 @@ input:-moz-placeholder { /* Firefox 18- */
   color: $cool-grey;
 }
 
+option {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1366px) {
   .container {
     max-width: 98rem;
