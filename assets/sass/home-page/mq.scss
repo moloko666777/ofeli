@@ -406,17 +406,20 @@
     }
 
     &__video {
-      margin: 0 2rem 0 0;
-      width: 45%;
+      margin: 0 0 2rem 0;
+      width: 100%;
 
       iframe {
         width: 100%;
-        height: 30rem;
+        height: 36rem;
       }
+    }
+    &__content{
+      flex-wrap: wrap;
     }
 
     &__description {
-      width: 45%;
+      width: 100%;
 
       p {
         margin-bottom: 1.6rem;
