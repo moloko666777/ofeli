@@ -546,6 +546,10 @@
       font-size: 1.6rem;
       line-height: 1.31;
     }
+    svg {
+      margin-right: 0;
+      margin-bottom: .8rem;
+    }
 
     &__icon {
       width: 100%;
@@ -1181,13 +1185,6 @@
     p {
       font-size: 1.6rem;
       line-height: 1.31;
-    }
-
-    &__icon {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 1.6rem;
     }
   }
   .footer {
@@ -2290,13 +2287,6 @@
     p {
       font-size: 1.6rem;
       line-height: 1.31;
-    }
-
-    &__icon {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 1.6rem;
     }
   }
   .footer {
@@ -3424,13 +3414,6 @@
     p {
       font-size: 1.6rem;
       line-height: 1.31;
-    }
-
-    &__icon {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 1.6rem;
     }
   }
   .footer {
