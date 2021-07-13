@@ -1,0 +1,122 @@
+.contact {
+  background-color: #F7F2F5;
+
+  &__wrapper {
+    padding-top: 22.2rem;
+    position: relative;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__border {
+    position: relative;
+    &-top-left {
+      &:after {
+        position: absolute;
+        content: '';
+        top: -3.2rem;
+        left: 4.9rem;
+        //background-color: red;
+        width: 2px;
+        height: 43.6rem;
+        background: linear-gradient(270deg, #ffffff00 14%, #97d6cb 100%);
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: -3.2rem;
+        left: 4.9rem;
+        //background-color: red;
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(270deg, #ffffff00 14%, #97d6cb 100%);
+
+      }
+    }
+
+    &-bottom-right {
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: -40.4rem;
+        left: 4.9rem;
+        //background-color: red;
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(270deg, #ffffff00 14%, #97d6cb 100%);
+      }
+    }
+  }
+
+  &__title {
+    background-color: #FFFDFE;
+    max-width: 123.6rem;
+    margin: 0 auto;
+    padding: 5.9rem 10.6rem 0 11.6rem;
+    min-height: 52.4rem;
+
+    h2 {
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 2rem;
+      color: #4B9285;
+      text-align: center;
+      margin-bottom: 7.7rem;
+    }
+  }
+
+  &__address {
+
+    p {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #40362E;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #40362E;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #40362E;
+      transition: .25s;
+      &:hover {
+        color: #4B9285;
+        transition: .25s;
+      }
+    }
+  }
+
+  &__time {
+    p {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: #40362E;
+
+      span {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #40362E;
+      }
+    }
+
+  }
+}
