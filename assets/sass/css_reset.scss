@@ -3,6 +3,8 @@ body {
   /*overflow: hidden;*/
   position: relative;
   height: 100%;
+
+  background-color: #F7F2F5;
 }
 html {
   font-size: 62.5%;
@@ -10,7 +12,8 @@ html {
 /*ШРИФТ */
 
 * {
-  font-family: 'Lora', serif;
+  //font-family: 'Lora', serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Указываем box sizing */
@@ -29,6 +32,7 @@ ol[class] {
 body {
   background-color: #fff;
 }
+
 /* Убираем внешние отступы */
 body,
 h1,
@@ -70,6 +74,7 @@ ul{
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration: none;
+  color: inherit;
 }
 a{}
 /* Упрощаем работу с изображениями */
@@ -127,3 +132,5 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
+
+

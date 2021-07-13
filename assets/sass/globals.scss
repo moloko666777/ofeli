@@ -4,6 +4,16 @@
   //padding: 0 2rem;
 }
 
+.container-xxl {
+  max-width: 1440px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .test{
   width: 100%;
   height: 30rem;
