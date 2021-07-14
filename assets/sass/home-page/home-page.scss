@@ -1031,6 +1031,7 @@ footer {
 @media (hover: hover) {
   .services {
     &__holder:hover &__block {
+      background-color: #b73fe56b;
       opacity: 1;
       transition: .25s;
     }
