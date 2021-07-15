@@ -13,10 +13,10 @@
       width: 34%;
 
       h3 {
-        left: 1rem;
-        top: .8rem;
-        font-size: 2.8rem;
-        line-height: 3rem;
+        //left: 1rem;
+        //top: .8rem;
+        //font-size: 2.8rem;
+        //line-height: 3rem;
       }
       p {
         display: none;
@@ -91,10 +91,15 @@
 
       h3 {
         left: 1.6rem;
-        top: .9rem;
-        font-size: 2.5rem;
-        line-height: 2.9rem;
-        letter-spacing: 0.07em;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 16.6rem;
+          height: 1px;
+          background-color: #4B9285;
+          bottom: 20px;
+          right: -16px;
+        }
       }
       p {
         display: none;
