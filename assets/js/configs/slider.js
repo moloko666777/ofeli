@@ -150,7 +150,10 @@ new Swiper('#visage-slider',{
         type: 'bullets',
     },
     breakpoints: {
-
+        375: {
+            spaceBetween: 9,
+            slidesPerView: 2,
+        },
         430: {
             spaceBetween: 9,
             slidesPerView: 2,
