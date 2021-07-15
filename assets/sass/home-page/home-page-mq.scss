@@ -341,12 +341,14 @@
   div.header {
     height: 4.7rem;
     padding: 0 1.7rem;
+
     &__logo {
-     svg{
-       width: 7.7rem;
-       height: 3.4rem;
-     }
+      svg {
+        width: 7.7rem;
+        height: 3.4rem;
+      }
     }
+
     &__menu-right {
       width: 90%;
       padding: 1.4rem 3.1rem;
@@ -803,13 +805,19 @@
     padding: 2.5rem 3.2rem 4.5rem 4rem;
 
     &-logo {
-      margin-bottom: 1.2rem;
+      margin-bottom: 2.8rem;
+      align-items: center;
 
       &__logo {
+        margin-bottom: 0;
         svg {
-          width: 21.5rem;
-          height: 9.4rem;
+          width: 136px;
+          height: 60px;
         }
+      }
+
+      &__company {
+        display: none;
       }
 
       &__title {
@@ -827,11 +835,22 @@
       &__address {
         font-size: 1.4rem;
         line-height: 2rem;
+        width: 50%;
+        margin: 0 auto 2.8rem;
+        text-align: center;
       }
+    }
+    &__contact {
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &-social {
       &__instagram {
+        justify-content: center;
         p {
           display: none;
         }
@@ -845,18 +864,38 @@
     }
 
     &__links {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 1.6rem;
       p {
         line-height: 2rem;
         margin-bottom: 1.6rem;
       }
     }
 
-    .footer__contact {
+    &__contact {
       p {
         line-height: 2rem;
-        margin-bottom: 1.3rem;
+        margin-bottom: 1.6rem;
+        &:last-child {
+          margin-bottom: 2.8rem;
+        }
       }
     }
+    &-social {
+      display: flex;
+      flex-direction: column;
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+    }
+    &-logo {
+      &__hours {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto 1.6rem;
+      }
+    }
+
   }
 }
 

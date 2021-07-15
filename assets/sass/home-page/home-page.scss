@@ -9,6 +9,7 @@
   padding: 0 4.2rem;
   z-index: 1;
   height: 7.2rem;
+
   &__menu-shows li {
     //display: none;
   }
@@ -19,16 +20,19 @@
 
   &.header-color {
     background-color: #fff;
+
     .header__menu {
-      span{
+      span {
         color: #40362E;
       }
+
       button {
         svg {
           fill: #40362E;
         }
       }
     }
+
     .header__logo {
       a {
         svg {
@@ -45,13 +49,15 @@
   }
 
   &__menu {
-    span{
+    span {
       color: #fff;
     }
+
     button {
       svg {
         fill: #fff;
         transition: .25s;
+
         &:hover {
           fill: #4B9285;
           transition: .25s;
@@ -61,6 +67,7 @@
       }
     }
   }
+
   &__logo {
     a {
       svg {
@@ -74,6 +81,10 @@
     align-items: center;
     margin-bottom: 5rem;
 
+    .active {
+      font-weight: 700;
+    }
+
     button {
       font-style: normal;
       font-weight: 400;
@@ -82,13 +93,17 @@
       color: #FFFFFF;
       margin-right: 5px;
       margin-left: 5px;
+      text-transform: uppercase;
+
 
       &:first-child {
         margin-left: 0;
       }
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
+
       &:active {
         font-weight: 800;
       }
@@ -98,7 +113,8 @@
     span {
 
       position: relative;
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         background-color: #fff;
@@ -135,12 +151,13 @@
 
     &-left {
       width: 50%;
-      background: rgba(18, 18, 18, 0.76);
+      background: rgba(0, 0, 0, 0.5);
     }
 
     &-right {
       width: 50%;
-      background: #DCB2EC;
+      background: rgba(220, 178, 236, 0.7);
+      backdrop-filter: blur(15px);
       padding: 3.6rem 5.4rem 10.4rem 10.4rem;
       display: flex;
       flex-direction: column;
@@ -167,10 +184,12 @@
         display: flex;
       }
     }
+
     &-title {
       ul {
         li {
           margin-bottom: 4.2rem;
+
           a {
             font-size: 4rem;
             line-height: 4.6rem;
@@ -182,6 +201,7 @@
             background-size: 0 2px;
             transition: background-size .3s;
           }
+
           a:hover, a:focus {
             background-size: 100% 2px;
           }
@@ -258,6 +278,18 @@
   height: 100vh;
 
   &__image {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    }
+
     img {
       width: 100%;
       height: 100vh;
@@ -298,7 +330,7 @@
       line-height: 22px;
       text-align: center;
       color: $white;
-      opacity: 70%;
+      //opacity: 70%;
       //margin-bottom: 4.9rem;
       margin: 0 auto 4.9rem auto;
     }
@@ -317,6 +349,7 @@
       transition: .25s;
       text-decoration: unset;
       position: relative;
+
       &:hover {
         box-shadow: inset 220px 0 0 0 #4B9285;
         color: #fff;
@@ -384,10 +417,10 @@
 
     h2 {
       font-weight: 400;
-      font-size: 2rem;
-      line-height: 2.4rem;
+      font-size: 2.6rem;
+      line-height: 3rem;
       color: #4B9285;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       text-align: left;
       font-family: 'Lora', serif;
     }
@@ -404,8 +437,8 @@
 
     svg {
       display: block;
-      width: 10.2rem;
-      height: 3rem;
+      width: 13.2rem;
+      height: 4rem;
       margin: auto 0 0 auto;
     }
   }
@@ -642,7 +675,6 @@
 }
 
 
-
 .booking {
   display: flex;
   padding: 23.8rem 0 0 0;
@@ -652,6 +684,7 @@
   &__border {
     position: absolute;
     width: 100%;
+
     &-top-left {
       &:after {
         position: absolute;
@@ -677,6 +710,7 @@
 
       }
     }
+
     &-bottom-right {
       &:before {
         position: absolute;
@@ -690,6 +724,7 @@
       }
     }
   }
+
   &__wrapper {
     background: #F7F2F5;
   }
@@ -742,8 +777,6 @@
     }
 
 
-
-
     svg {
       path {
       }
@@ -773,6 +806,7 @@
 .social-slider {
   display: none;
 }
+
 .social {
 
   &__wrapper {
@@ -828,14 +862,17 @@
       height: 100%;
       object-fit: cover;
     }
+
     &.scale {
       display: inline-block;
       overflow: hidden;
     }
+
     &.scale img {
       transition: 1s;
       display: block;
     }
+
     &.scale img:hover {
       transform: scale(1.2);
     }
@@ -875,11 +912,31 @@ footer {
 }
 
 .footer {
-  padding: 3.6rem 7.3rem 5.8rem 7.1rem;
+  padding: 7rem;
 
   &-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
     &__logo {
       margin-bottom: 2.5rem;
+    }
+
+    &__company {
+      color: #fff;
+      opacity: .5;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      a {
+        transition: .25s;
+        &:hover {
+          color: #4B9285;
+          transition: .25s;
+        }
+      }
     }
 
     &__title {
@@ -912,32 +969,32 @@ footer {
       line-height: 2rem;
       color: #fff;
       opacity: .5;
+      margin-bottom: 45px;
     }
   }
 
   &__links {
     p {
       font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 1.8rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
       color: #FFFFFF;
       margin-bottom: 2.7rem;
     }
 
     ul {
       li {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.6rem;
 
         &:last-child {
           margin-bottom: 0;
         }
 
         a {
-          font-weight: 400;
-          font-size: 1.2rem;
-          line-height: 1.4rem;
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
           color: #fff;
-          opacity: .5;
           transition: .25s;
 
           &:hover {
@@ -950,19 +1007,21 @@ footer {
   }
 
   &__contact {
+    padding-left: 4rem;
+
     p {
       font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 1.8rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
       color: #FFFFFF;
-      margin-bottom: 1.3rem;
+      margin-bottom: 1.6rem;
     }
   }
 
   &-social {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    padding-left: 10rem;
 
     &__instagram {
       display: flex;
@@ -988,7 +1047,6 @@ footer {
       }
 
       svg {
-        margin-left: 1.4rem;
         fill: #fff;
       }
     }
@@ -1031,7 +1089,6 @@ footer {
 @media (hover: hover) {
   .services {
     &__holder:hover &__block {
-      background-color: #b73fe56b;
       opacity: 1;
       transition: .25s;
     }
