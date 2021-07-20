@@ -157,8 +157,11 @@
     }
 
     &-left {
-      width: 50%;
+      width: 100%;
       background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: -10rem;
+      height: 100%;
     }
 
     &-right {
@@ -169,6 +172,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: absolute;
+      right: 0;
+      height: 100%;
     }
 
     &-close {
@@ -225,8 +231,8 @@
   }
 
   &__menu-left {
-    -webkit-animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    //-webkit-animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    //animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
 
@@ -672,6 +678,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     .slider-button-prev {
       position: unset;
       margin-right: 1.4rem;
@@ -679,23 +686,28 @@
 
       svg {
         stroke: #C4C4C4;
+
         path {
           fill: #C4C4C4;
         }
       }
+
       &:hover {
         svg {
           fill: #F7F2F5;
         }
       }
     }
+
     .slider-button-next {
       position: unset;
       margin-right: 1.4rem;
       border-radius: 50%;
       transform: rotate(180deg);
+
       svg {
         stroke: #C4C4C4;
+
         path {
           fill: #C4C4C4;
         }
@@ -979,11 +991,26 @@ footer {
       a {
         transition: .25s;
 
+        svg {
+          margin-left: 1rem;
+          fill: #fff;
+          transition: .25s;
+        }
+
         &:hover {
+          svg {
+            fill: #4B9285;
+            transition: .25s;
+          }
+
           color: #4B9285;
           transition: .25s;
         }
       }
+    }
+
+    &__company-mobile {
+      display: none;
     }
 
     &__title {
@@ -1017,9 +1044,11 @@ footer {
       color: #fff;
       opacity: .5;
       margin-bottom: 45px;
+
       p {
         a {
           transition: .25s;
+
           &:hover {
             color: #4B9285;
             transition: .25s;
@@ -1075,6 +1104,7 @@ footer {
       color: #FFFFFF;
       margin-bottom: 1.6rem;
       transition: .25s;
+
       &:hover {
         color: #4B9285;
         transition: .25s;

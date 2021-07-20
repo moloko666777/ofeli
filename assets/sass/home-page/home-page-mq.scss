@@ -334,7 +334,28 @@
         margin-bottom: 1.3rem;
       }
     }
+    &-logo__company-mobile {
+      display: block;
+      color: #fff;
+      opacity: .5;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+
+      a {
+        transition: .25s;
+
+        svg {
+          margin-left: 1rem;
+          fill: #fff;
+          transition: .25s;
+        }
+      }
+    }
   }
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -356,7 +377,7 @@
     }
 
     &__menu-left {
-      width: 10%;
+      //width: 10%;
     }
 
     &__logo {
