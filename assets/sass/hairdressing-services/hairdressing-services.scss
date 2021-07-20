@@ -125,7 +125,18 @@
     }
   }
 
+  &__button-wrapper {
+    margin-right: 7.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: unset;
     width: 21.4rem;
     height: 6.5rem;
     border: 1px solid #4B9285;
@@ -159,6 +170,7 @@
   }
   .accordion-button::after {
     background-image: url("../../assets/images/Vectorarr.svg");
+    background-position-y: 5px;
   }
   .accordion-button:not(.collapsed) {
     background-color: transparent;
@@ -183,6 +195,7 @@
     line-height: 2.1rem;
     color: #40362E;
     margin-bottom: .6rem;
+    z-index: 9999;
     span {
       font-weight: 500;
     }

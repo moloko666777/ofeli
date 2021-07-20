@@ -58,11 +58,11 @@
         fill: #fff;
         transition: .25s;
 
-        &:hover {
-          fill: #4B9285;
-          transition: .25s;
-          transform: scale(1.1, 1.1);
-        }
+        //&:hover {
+        //  fill: #4B9285;
+        //  transition: .25s;
+        //  transform: scale(1.1, 1.1);
+        //}
 
       }
     }
@@ -202,9 +202,9 @@
             transition: background-size .3s;
           }
 
-          a:hover, a:focus {
-            background-size: 100% 2px;
-          }
+          //a:hover, a:focus {
+          //  background-size: 100% 2px;
+          //}
         }
       }
     }
@@ -364,6 +364,7 @@
   }
 
   display: flex;
+  align-items: center;
   position: relative;
   padding: 23.7rem 14.9rem 0 0;
   z-index: 0;
@@ -447,8 +448,7 @@
 .advantages {
   position: relative;
   background: #F7F2F5;
-  padding: 14.6rem 0 43.5rem 0;
-  margin-bottom: 94.4em;
+  padding: 14.6rem 0 0;
 
   &__list {
     display: flex;
@@ -475,6 +475,7 @@
   }
 
   h2 {
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 3.6rem;
@@ -521,8 +522,8 @@
 
 .services {
   display: block;
-  position: absolute;
-  right: 0;
+  //position: absolute;
+  //right: 0;
   background-color: #FFFDFE;
   width: 1322px;
   margin: auto 0 0 auto;
@@ -577,7 +578,7 @@
 
   &__horizontal {
     width: 51.6rem;
-    height: 39.7rem;
+    //height: 39.7rem;
 
     img {
       width: 100%;
@@ -588,7 +589,7 @@
 
   &__vertical {
     width: 39.2rem;
-    height: 50.5rem;
+    //height: 50.5rem;
 
     img {
       width: 100%;
@@ -604,12 +605,18 @@
     right: 0;
     top: 0;
     opacity: 0;
-    transition: .25s;
+    //transition: .25s;
+
+    &-arrow {
+      transform: translateX(-100px);
+      opacity: 0;
+      animation: arrow-animated .5s forwards;
+    }
 
     svg {
-      position: absolute;
-      bottom: 9.8rem;
-      left: 8.3rem;
+      //position: absolute;
+      //bottom: 9.8rem;
+      //left: 8.3rem;
     }
   }
 
@@ -658,10 +665,40 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    .slider-button-next, .slider-button-prev {
+    .slider-button-prev {
       position: unset;
       margin-right: 1.4rem;
+      border-radius: 50%;
+
+      svg {
+        stroke: #C4C4C4;
+        path {
+          fill: #C4C4C4;
+        }
+      }
+      &:hover {
+        svg {
+          fill: #F7F2F5;
+        }
+      }
+    }
+    .slider-button-next {
+      position: unset;
+      margin-right: 1.4rem;
+      border-radius: 50%;
+      transform: rotate(180deg);
+      svg {
+        stroke: #C4C4C4;
+        path {
+          fill: #C4C4C4;
+        }
+      }
+
+      &:hover {
+        svg {
+          fill: #F7F2F5;
+        }
+      }
 
       &:last-child {
         margin-right: 0;
@@ -745,7 +782,8 @@
       font-size: 4rem;
       line-height: 4.5rem;
       color: #2E2621;
-      margin-bottom: .7rem;
+      margin-bottom: 1.2rem;
+      font-family: 'Lora', serif;
     }
 
     p {
@@ -930,8 +968,10 @@ footer {
       font-weight: normal;
       font-size: 12px;
       line-height: 14px;
+
       a {
         transition: .25s;
+
         &:hover {
           color: #4B9285;
           transition: .25s;
@@ -970,6 +1010,16 @@ footer {
       color: #fff;
       opacity: .5;
       margin-bottom: 45px;
+      p {
+        a {
+          transition: .25s;
+          &:hover {
+            color: #4B9285;
+            transition: .25s;
+          }
+
+        }
+      }
     }
   }
 
@@ -1007,14 +1057,21 @@ footer {
   }
 
   &__contact {
+    display: flex;
+    flex-direction: column;
     padding-left: 4rem;
 
-    p {
+    a {
       font-weight: 500;
       font-size: 1.4rem;
       line-height: 1.6rem;
       color: #FFFFFF;
       margin-bottom: 1.6rem;
+      transition: .25s;
+      &:hover {
+        color: #4B9285;
+        transition: .25s;
+      }
     }
   }
 
@@ -1087,11 +1144,46 @@ footer {
 }
 
 @media (hover: hover) {
+
+  .header {
+    &__menu-title ul li a:hover, .header__menu-title ul li a:focus {
+      background-size: 100% 2px;
+    }
+
+    &__menu {
+      button {
+        svg {
+          fill: #fff;
+          transition: .25s;
+
+          &:hover {
+            fill: #4B9285;
+            transition: .25s;
+            transform: scale(1.1, 1.1);
+          }
+
+        }
+      }
+    }
+  }
+
   .services {
     &__holder:hover &__block {
-      opacity: 1;
-      transition: .25s;
+      //opacity: 1;
+      //transition: .25s;
+      //background-color: red;
     }
   }
 }
 
+
+@keyframes arrow-animated {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

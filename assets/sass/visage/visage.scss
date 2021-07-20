@@ -68,26 +68,46 @@
       object-fit: cover;
     }
   }
+  &__title-wrapper {
+    margin-bottom: 3.7rem;
+  }
+  &-children__text {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #40362E;
+    opacity: .4;
+  }
   &__right {
     &-price {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       position: relative;
       width: 62.6rem;
-      height: 70.7rem;
+      min-height: 70.7rem;
       background-color: #F7F2F5;
-      padding: 7.6rem 8.9rem 5.1rem 7.8rem;
+      padding: 6.5rem 8.9rem 5.1rem 6.5rem;
       h4 {
         font-weight: 500;
         font-size: 4rem;
         line-height: 4.6rem;
         letter-spacing: 0.07em;
         color: #40362E;
-        margin-bottom: 3.7rem;
+
       }
       ul {
         li {
-          margin-bottom: 4.4rem;
+          padding: 2.2rem 1rem;
+          cursor: pointer;
+          display: block;
+          transition: .25s;
+          border-bottom: 1px solid rgba(156,135,118,.15);
+          &:hover {
+            transition: .25s;
+            box-shadow: inset 472px 0 0 0 #bcaa9c1f;
+            z-index: 0;
+          }
           &:last-child {
-            margin-bottom: 0;
           }
           p {
             display: flex;
@@ -96,22 +116,49 @@
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.1rem;
-            color: #40362E;
+            //color: #40362E;
             span {
               font-weight: 500;
               font-size: 1.8rem;
               line-height: 2.1rem;
-              color: #40362E;
+              //color: #40362E;
             }
           }
         }
       }
-      a {
-        position: absolute;
-        bottom: 5.1rem;
-        left: 50%;
-        transform: translateX(-50%);
 
+      &__list {
+          padding: 2.2rem 1rem;
+          cursor: pointer;
+          display: block;
+          transition: .25s;
+          border-bottom: 1px solid rgba(156,135,118,.15);
+          &:hover {
+            transition: .25s;
+            box-shadow: inset 472px 0 0 0 #bcaa9c1f;
+            z-index: 0;
+          }
+          &:last-child {
+          }
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            //color: #40362E;
+            span {
+              font-weight: 500;
+              font-size: 1.8rem;
+              line-height: 2.1rem;
+              //color: #40362E;
+            }
+          }
+
+      }
+
+      a {
         display: block;
         text-align: center;
         width: max-content;
