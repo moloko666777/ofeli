@@ -417,6 +417,20 @@
 
     &__language {
       margin-bottom: 8.2rem;
+      button {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+      span:before {
+        height: 15px;
+      }
+      a{
+        margin-left: 6.5rem;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
     }
 
   }

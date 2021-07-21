@@ -171,6 +171,7 @@
   .accordion-button::after {
     background-image: url("../../../assets/images/Vectorarr.svg");
     background-position-y: 5px;
+    background-repeat: no-repeat;
   }
   .accordion-button:not(.collapsed) {
     background-color: transparent;
