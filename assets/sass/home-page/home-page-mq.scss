@@ -63,10 +63,10 @@
   }
   div.about {
     display: block;
-    padding: 7.6rem 0 12.8rem 0;
+    padding: 7.6rem 0 15.4rem 0;
 
     &__image-wrapper .border-wrapper {
-      width: 66.5rem;
+      width: 68.5rem;
       height: 56.4rem;
       top: 3.6rem;
       z-index: -1;
@@ -75,35 +75,48 @@
 
     &__image-wrapper {
       margin-right: 0;
-      margin-bottom: 9.2rem;
+      margin-bottom: 5.6rem;
+      margin-left: 4rem;
+
+      width: 43.8rem;
+      height: 50.4rem;
     }
 
     &__description {
       width: 67%;
       margin: 0 auto;
+      svg {
+        margin: 0 auto auto 0;
+      }
 
       h1 {
         font-size: 3rem;
         line-height: 4rem;
-        margin-bottom: 4.2rem;
+        margin-bottom: 1.6rem;
       }
 
       h2 {
         width: 50%;
-        margin-bottom: 1.5rem;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.6rem;
       }
 
       p {
-        margin-bottom: 4.7rem;
+        width: 76%;
+        margin-bottom: 2.4rem;
       }
     }
   }
   div.advantages {
-    padding: 11.3rem 5.8rem 10.4rem 4rem;
-    margin-bottom: 70.7em;
+    padding: 11.3rem 4rem 14.5rem 4rem;
 
     h2 {
+      font-size: 3rem;
+      line-height: 4rem;
       margin-bottom: 7.9rem;
+      color: #40362E;
+      opacity: .75;
     }
 
     &__wrapper {
@@ -112,17 +125,19 @@
     }
   }
   div.services {
-    width: 66.2rem;
+    //width: 66.2rem;
+    width: 100%;
     padding: 7.1rem 4.6rem 5.6rem 8.6rem;
 
     h3 {
+      text-transform: uppercase;
       font-size: 3rem;
       top: 0;
     }
 
     &__horizontal {
-      width: 26.7rem;
-      height: 20.5rem;
+      width: 28.7rem;
+      height: 100%;
 
       img {
         width: 100%;
@@ -132,8 +147,8 @@
     }
 
     &__vertical {
-      width: 19.6rem;
-      height: 24.6rem;
+      width: 23.6rem;
+      height: 100%;
 
       img {
         width: 100%;
@@ -141,7 +156,9 @@
         object-fit: cover;
       }
     }
-
+    &__holder {
+      margin-bottom: 2rem;
+    }
     &__image {
       margin-bottom: 0;
     }
@@ -152,7 +169,8 @@
     }
   }
   div.booking {
-    padding: 14.5rem 0 0 0;
+    //padding: 14.5rem 0 0 0;
+    padding: 0;
 
     &__description {
       width: 100%;
@@ -169,7 +187,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 30.7rem;
+      width: 33.7rem;
       height: 53.2rem;
     }
 
@@ -183,9 +201,22 @@
 
       p {
         font-size: 1.6rem;
-        line-height: 2.4rem;
-        margin-bottom: 4.6rem;
+        line-height: 1.8rem;
+        margin-bottom: 5.3rem;
       }
+    }
+    &__border-top-left:before {
+      top: 4.5rem;
+      left: 4rem;
+    }
+    &__border-top-left:after {
+      top: 4.5rem;
+      left: 4rem;
+      height: 40rem;
+    }
+    &__border-bottom-right:before {
+      bottom: -44.5rem;
+      left: 4rem;
     }
   }
   div.social {
@@ -277,7 +308,7 @@
     }
   }
   div.footer {
-    padding: 2.5rem 3.2rem 4.5rem 4rem;
+    padding: 5.5rem 4.3rem 5.6rem 4rem;
 
     &-logo {
       margin-bottom: 1.2rem;
@@ -290,7 +321,7 @@
       }
 
       &__title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 2rem;
       }
 
@@ -302,13 +333,24 @@
       }
 
       &__address {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         font-size: 1.4rem;
         line-height: 2rem;
+        margin-bottom: 0;
+      }
+      &__company a svg {
+        margin-top: 1rem;
+        margin-left: 0;
       }
     }
 
     &-social {
+      display: none;
       &__instagram {
+        margin-bottom: 0;
+
         p {
           display: none;
         }
@@ -416,7 +458,7 @@
     }
 
     &__language {
-      margin-bottom: 8.2rem;
+      margin-bottom: 5.6rem;
       button {
         font-size: 1.6rem;
         line-height: 2.4rem;
@@ -435,9 +477,8 @@
 
   }
   button.header__menu-close {
-    right: unset;
-    top: 1.3rem;
-    left: -25px;
+    right: 1.8rem;
+    top: 2rem;
 
     svg {
       width: 15px;
@@ -538,6 +579,7 @@
 
       p {
         margin-bottom: 2.4rem;
+        line-height: 22px;
         font-size: 1.5rem;
         color: #40362E;
       }
@@ -547,7 +589,7 @@
     }
   }
   div.advantages {
-    padding: 4rem 2rem 7.1rem 2rem;
+    padding: 4rem 1.6rem 11.5rem 1.6rem;
     margin-bottom: 0;
 
     h2 {
@@ -592,11 +634,12 @@
   }
   div.services-mobile {
     background-color: #FFFDFE;
-    padding: 3.2rem 2rem 5.6rem;
+    padding: 3.2rem  1.6rem 11.1rem;
     position: relative;
     display: block;
 
     h3 {
+      font-family: 'Lora', serif;
       width: 80%;
       background-color: #FFFDFE;
       height: 6.4rem;
@@ -627,12 +670,12 @@
       line-height: 2.2rem;
       color: #40362E;
       opacity: .75;
-      margin-bottom: .6rem;
     }
 
     &__image {
       width: 100%;
       height: 33rem;
+      margin-bottom: 6px;
 
       img {
         width: 100%;
@@ -723,7 +766,7 @@
       height: 24.1rem;
 
       &-wrapper {
-        background: rgba(255, 255, 255, 0.19);
+        background: rgba(255, 255, 255, 0.75);
         padding: 33px 43px 39px 36px;
 
         h2 {
@@ -731,14 +774,14 @@
           font-size: 1.9rem;
           line-height: 2.2rem;
           color: #40362E;
-          margin-bottom: 4px;
+          margin-bottom: 12px;
         }
 
         p {
           font-weight: 400;
           font-size: 1.5rem;
-          line-height: 2.2rem;
-          margin-bottom: 42px;
+          line-height: 1.7rem;
+          margin-bottom: 46px;
           opacity: .50;
         }
 
@@ -746,7 +789,7 @@
           display: block;
           text-align: center;
           width: max-content;
-          min-width: 22rem;
+          min-width: 24rem;
           padding: 1.4rem;
           font-size: 1.5rem;
           line-height: 2.2rem;
@@ -847,7 +890,9 @@
   }
   div.footer {
     padding: 2.5rem 3.2rem 4.5rem 4rem;
-
+    &-social-tablet {
+      display: none;
+    }
     &-logo {
       margin-bottom: 2.8rem;
       align-items: center;
@@ -877,6 +922,7 @@
       }
 
       &__address {
+        display: block;
         font-size: 1.4rem;
         line-height: 2rem;
         width: 50%;
@@ -895,6 +941,7 @@
     &-social {
       &__instagram {
         justify-content: center;
+        margin-bottom: 2.4rem;
         p {
           display: none;
         }

@@ -17,6 +17,9 @@
 
     button.hairdressing-services__modal-button {
       top: 1.3rem;
+      span{
+        display: none;
+      }
     }
 
     &__right-price {
@@ -55,6 +58,38 @@
 
 @media only screen and (max-width: 767px) {
   div.hairdressing-services {
+    &__button-wrapper {
+      a {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    &__title {
+      p {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      span{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__body {
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      span{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .accordion-button {
+      width: 70%;
+      &:after {
+        display: none;
+      }
+    }
     button.hairdressing-services__modal-button-close {
       svg {
         width: 2.3rem;
@@ -80,7 +115,18 @@
     }
 
     button.hairdressing-services__modal-button {
-      top: 1.3rem;
+      top: 1rem;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      span{
+        display: block;
+        position: absolute;
+        bottom: -9px;
+        width: 100%;
+      }
     }
 
     &__right-price {
@@ -96,12 +142,6 @@
       line-height: 1.8rem;
     }
 
-    &__body {
-      span {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-      }
-    }
 
     &__right-price {
       a {
