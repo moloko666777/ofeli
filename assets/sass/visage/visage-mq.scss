@@ -1,7 +1,7 @@
 @media only screen and (max-width: 900px) {
   div.visage {
-    padding: 11.6rem 5.2rem 0 4rem;
-    margin-bottom: 5.2rem;
+    padding: 6.8rem 5.2rem 0 4.1rem;
+    margin-bottom: 5.6rem;
 
     &__image {
       width: 33.4rem;
@@ -10,13 +10,21 @@
     }
 
     &__left {
-      width: 34%;
+      width: 37.5%;
 
       h3 {
-        //left: 1rem;
+        width: 70% ;
+        left: 1.6rem;
+        bottom: 2.4rem;
         //top: .8rem;
-        //font-size: 2.8rem;
-        //line-height: 3rem;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+
+        &:before {
+          width: 10rem;
+          bottom: 14px;
+          right: 30px;
+        }
       }
       p {
         display: none;
@@ -25,16 +33,17 @@
     &__right-price {
       position: relative;
       width: 47.4rem;
-      height: 45.7rem;
+      min-height: 45.7rem;
       background-color: #F7F2F5;
-      padding: 4.3rem 5.7rem 3rem 4.5rem;
+      padding: 4.2rem 4rem 3.4rem 3.8rem;
       h4 {
         font-size: 3rem;
         line-height: 3.4rem;
         letter-spacing: 0.07em;
-        margin-bottom: 3.1rem;
+        margin-bottom: 2rem;
       }
       ul{
+        margin-bottom: 5rem;
         li{
           p{
             font-size: 1.6rem;
@@ -47,13 +56,24 @@
         line-height: 18px;
       }
     }
+    &__accordion {
+      height: 25rem;
+      overflow-y: auto;
+    }
     &__right-tabs {
-      height: 10.5rem;
+      height: 10.1rem;
+      margin: auto 4rem 0 auto;
       //margin-right: 4rem;
     }
     .hairdressing-services__button{
       width: 15.7rem;
       height: 5.3rem;
+      &-wrapper {
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
     &__text-bottom {
       display: block;

@@ -363,10 +363,10 @@
       text-decoration: unset;
       position: relative;
 
-      &:hover {
-        box-shadow: inset 220px 0 0 0 #4B9285;
-        color: #fff;
-      }
+      //&:hover {
+      //  box-shadow: inset 220px 0 0 0 #4B9285;
+      //  color: #fff;
+      //}
     }
   }
 }
@@ -828,10 +828,10 @@
       min-height: 5rem;
       transition: .25s;
 
-      &:hover {
-        box-shadow: inset 220px 0 0 0 #4B9285;
-        color: #fff;
-      }
+      //&:hover {
+      //  box-shadow: inset 220px 0 0 0 #4B9285;
+      //  color: #fff;
+      //}
     }
 
 
@@ -1117,7 +1117,9 @@ footer {
     display: flex;
     flex-direction: column;
     padding-left: 10rem;
-
+    &-tablet {
+      display: none;
+    }
     &__instagram {
       display: flex;
       align-items: center;
@@ -1209,9 +1211,25 @@ footer {
     &__holder:hover &__block {
       //opacity: 1;
       //transition: .25s;
-      //background-color: red;
     }
   }
+  .home-banner__description a:hover {
+    box-shadow: inset 220px 0 0 0 #4b9285;
+    color: #fff;
+  }
+  .booking__description button:hover {
+    box-shadow: inset 220px 0 0 0 #4b9285;
+    color: #fff;
+  }
+  .hairdressing-services__button:hover {
+    box-shadow: inset 220px 0 0 0 #4b9285;
+    color: #fff;
+  }
+  .visage__right-price a:hover {
+    box-shadow: inset 220px 0 0 0 #4b9285;
+    color: #fff;
+  }
+
 }
 
 

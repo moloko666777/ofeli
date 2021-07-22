@@ -1,10 +1,11 @@
-@media only screen and (max-width: 599px) {
-
+@media only screen and (max-width: 1300px) {
+  div.services {
+    width: 100%;
+  }
 }
-
 @media only screen and (max-width: 900px) {
   div.header {
-    height: 11.6rem;
+    height: 6.8rem;
     padding: 0 4rem;
 
     &__menu-right {
@@ -23,11 +24,6 @@
             }
           }
         }
-      }
-
-
-      &-close {
-
       }
     }
 
@@ -344,6 +340,10 @@
         margin-top: 1rem;
         margin-left: 0;
       }
+    }
+
+    &-social-tablet {
+     display: block;
     }
 
     &-social {
@@ -996,9 +996,7 @@
 }
 
 
-@media only screen and (min-width: 1200px) {
 
-}
 
 
 @media only screen and (min-width: 1800px) {

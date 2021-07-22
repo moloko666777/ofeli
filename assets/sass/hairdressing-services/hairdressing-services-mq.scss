@@ -1,5 +1,22 @@
 @media only screen and (max-width: 900px) {
   div.hairdressing-services {
+    .accordion-button {
+      opacity: .75;
+      width: 72%;
+      &:not(.collapsed) {
+        //opacity: .75;
+      }
+    }
+    &-wrapper {
+      &__body {
+        p{
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+        }
+
+      }
+    }
+
     button.hairdressing-services__button {
       width: 15.7rem;
       height: 5.3rem;
@@ -33,6 +50,12 @@
     &__title {
       font-size: 1.6rem;
       line-height: 1.8rem;
+      //opacity: .75;
+      p{
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        opacity: .75;
+      }
     }
 
     &__body {
@@ -196,8 +219,11 @@
     &__button-wrapper {
       margin-right: 1rem;
     }
-    &__tabs {
-      margin: 2rem 1.7rem;
+    &__tabs .visage__right-tabs {
+
     }
+  }
+  .visage__right-tabs.hairdressing-services__tabs {
+    margin: 2rem 1.7rem;
   }
 }
