@@ -15,7 +15,13 @@ closeMenu.addEventListener('click', function (){
 })
 
 let openModal = document.querySelector('.hairdressing-services__modal-button');
+let removeScrollModal = document.querySelector("html");
 
 openModal.addEventListener('click', function (){
-    removeScroll.style.overflow = 'hidden';
+    removeScrollModal.style.overflow = 'hidden'
 })
+
+
+// openModal.addEventListener('click', function (){
+//     removeScroll.style.overflow = 'hidden';
+// })
