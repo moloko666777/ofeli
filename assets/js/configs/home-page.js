@@ -13,39 +13,9 @@ closeMenu.addEventListener('click', function (){
     menu.classList.remove('show');
     removeScroll.removeAttribute('style');
 })
-// $( document ).ready(function() {
-//     $('.header__menu').click(function () {
-//         const array = $(".header__menu-shows li");
-//         let delay = 0;
-//         cicle();
-//
-//         function cicle() {
-//             for (let i = 0; i < array.length; i++) {
-//                 checker(array[i], delay);
-//                 delay += 500;
-//
-//                 if (array.length - i === 1) cicle();
-//             }
-//         }
-//
-//         function checker(elem, delay) {
-//             setTimeout(function () {
-//                 $(elem).addClass('active').siblings();
-//             }, delay);
-//
-//         }
-//     });
-// });
 
+let openModal = document.querySelector('.hairdressing-services__modal-button');
 
-// $( document ).ready(function() {
-//
-//     $('.header__menu').click(function () {
-//         $('.header__menu-shows li:eq(0)').animate({width: "toggle"}, 300, function(){
-//             $(this).next().animate({width: "toggle"}, 300, arguments.callee);
-//         });
-//     })
-//     $('.header__menu-close').click(function () {
-//         $('.header__menu-shows li').removeAttr('style');
-//     })
-// });
+openModal.addEventListener('click', function (){
+    removeScroll.style.overflow = 'hidden';
+})
