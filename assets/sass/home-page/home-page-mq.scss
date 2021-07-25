@@ -3,6 +3,75 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  div.header {
+    &__language {
+      margin-bottom: 3rem;
+    }
+    &__menu-title {
+      ul {
+        li{
+          margin-bottom: 3rem;
+          a{
+            font-size: 3.3rem;
+          }
+        }
+      }
+    }
+    &__menu-right {
+      padding: 3.6rem 5.4rem 4rem 6rem;
+    }
+  }
+
+  div.home-banner {
+    &__description {
+      width: 80%;
+    }
+  }
+  .advantages {
+    &__wrapper {
+      padding: 0 12rem;
+      margin-bottom: 21.7rem;
+    }
+  }
+  div.services {
+    padding: 5.8rem 8.4rem 4.6rem 8.3rem;
+    &__horizontal {
+      width: 42.6rem;
+    }
+    &__vertical {
+      width: 35.2rem;
+    }
+  }
+  div.booking {
+    &__description {
+      padding: 8.9rem 13.7rem 6.8rem 7.1rem;
+    }
+    &__image-wrapper {
+      width: 42.7rem;
+    }
+  }
+  div.footer {
+    &-social {
+      padding-left: 0;
+    }
+  }
+
+
+  div.visage {
+    padding: 7.2rem 13.2rem 11rem 5.4rem;
+    &__left {
+      width: 49%;
+    }
+    &__right-price {
+      width: 55.6rem;
+      min-height: 59.7rem;
+    }
+  }
+
+
+
+}
 @media only screen and (max-width: 900px) {
   div.header {
     height: 6.8rem;

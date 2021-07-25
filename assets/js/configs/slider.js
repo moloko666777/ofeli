@@ -135,6 +135,10 @@ new Swiper('#instagram-slider',{
             spaceBetween: 21,
             slidesPerView: 4,
         },
+        1024: {
+            spaceBetween: 21,
+            slidesPerView: 4,
+        },
 
     }
 });
