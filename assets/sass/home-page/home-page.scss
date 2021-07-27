@@ -379,7 +379,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 23.7rem 14.9rem 0 0;
+  padding: 9.7rem 14.9rem 0 0;
   z-index: 0;
   background: #FFFDFE;
 
@@ -395,13 +395,13 @@
     }
 
     .border-wrapper {
-      width: 70rem;
+      width: 76rem;
       height: 61.3rem;
       //border: 1px solid red;
       //background: linear-gradient(to right, red, purple);
       background: linear-gradient(0deg, rgba(255, 255, 255, 1) 14%, rgba(151, 214, 203, 1) 100%);
       position: absolute;
-      top: 17.3rem;
+      top: 4.3rem;
       z-index: -1;
 
     }
@@ -1182,6 +1182,86 @@ footer {
     }
   }
 }
+
+.contact-us {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  &__form {
+    h3{
+      font-family: 'Lora', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 25px;
+      color: #4f4136;
+      margin-bottom: 0;
+    }
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4f4136;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      color: #4f4136;
+      line-height: 29px;
+      margin-bottom: 30px;
+    }
+  }
+  &__modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .3rem;
+    outline: 0;
+    padding: 40px;
+  }
+  &__input {
+    background: 0 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid #97d6cb;
+    margin-bottom: 20px;
+    height: 37px;
+  }
+  .input-wrapper {
+    background: 0 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid #97d6cb;
+    margin-bottom: 37px;
+    height: 37px;
+  }
+&__modal-footer {
+  text-align: right;
+  button {
+    cursor: pointer;
+  }
+}
+}
+
 
 @media (hover: hover) {
 

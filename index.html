@@ -523,9 +523,38 @@
                         <h2>Быть красивой и ухоженной -
                             мечта любой женщины!</h2>
                         <p>Хотите записаться к нам в салон?</p>
-                        <button>
+                        <button class="" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                             Онлайн запись
+
                         </button>
+
+
+                        <div class="modal contact-us fade" id="exampleModalToggle" aria-hidden="true"
+                             aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="contact-us__modal-content">
+                                    <div class="contact-us__form">
+                                        <h3>Быть красивой и ухоженной — мечта любой женщины!</h3>
+                                        <h4>Хотите записаться к нам в салон?</h4>
+                                        <p>Заполните форму ниже и мы, с радостью, перезвоним Вам в течении 30 минут</p>
+                                        <form class="contact-us__input-form">
+                                            <input class="contact-us__input" type="text"
+                                                   placeholder="Ваше имя">
+                                            <div class="input-wrapper">
+                                                <input id="contact-us__phone-mask" type="tel"
+                                                       placeholder="Ваш телефон"
+                                                       class="contact-us__phone contact-us__input"></div>
+
+                                        </form>
+                                    </div>
+                                    <div class="contact-us__modal-footer">
+                                        <button type="submit" disabled="disabled">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
