@@ -586,8 +586,25 @@
   }
 
   &__image {
-
     margin-bottom: 1.5rem;
+    transition: .25s;
+    &:hover{
+      transition: .25s;
+      &:before {
+        content: "";
+        position: absolute;
+        background: rgba(220, 178, 236, 0.5);
+        backdrop-filter: blur(3px);
+        width: 100%;
+        height: calc(100% - 37px);
+        transition: .25s;
+      }
+    }
+    &:hover .services__block-arrow {
+      display: block;
+
+    }
+
   }
 
   &__horizontal {
@@ -623,14 +640,19 @@
 
     &-arrow {
       transform: translateX(-100px);
-      opacity: 0;
       animation: arrow-animated .5s forwards;
+      position: absolute;
+      bottom: 100px;
+      right: 50px;
+      opacity: 0;
+      display: none;
     }
 
     svg {
-      //position: absolute;
-      //bottom: 9.8rem;
-      //left: 8.3rem;
+      position: absolute;
+      bottom: 9.8rem;
+      left: 8.3rem;
+      opacity: 0;
     }
   }
 
@@ -1289,10 +1311,13 @@ h4 {
 
   .services {
     &__holder:hover &__block {
-      //opacity: 1;
-      //transition: .25s;
+      opacity: 1;
+      transition: .25s;
+      //background: rgba(220, 178, 236, 0.7);
+      //backdrop-filter: blur(15px);
     }
   }
+
   .home-banner__description a:hover {
     box-shadow: inset 220px 0 0 0 #4b9285;
     color: #fff;
