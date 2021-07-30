@@ -1,4 +1,17 @@
 .visage {
+  &__btn {
+    display: block;
+    text-align: center;
+    width: max-content;
+    min-width: 22rem;
+    padding: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;;
+    background: #97D6CB;
+    color: $white;
+    margin: 0 auto;
+    transition: .25s;
+  }
   &__text-bottom {
     display: none;
   }
@@ -158,24 +171,24 @@
 
       }
 
-      a {
-        display: block;
-        text-align: center;
-        width: max-content;
-        min-width: 22rem;
-        padding: 1.4rem;
-        font-size: 1.6rem;
-        line-height: 2.2rem;;
-        background: #97D6CB;
-        color: $white;
-        margin: 0 auto;
-        transition: .25s;
-
-        //&:hover {
-        //  box-shadow: inset 220px 0 0 0 #4B9285;
-        //  color: #fff;
-        //}
-      }
+      //button {
+      //  display: block;
+      //  text-align: center;
+      //  width: max-content;
+      //  min-width: 22rem;
+      //  padding: 1.4rem;
+      //  font-size: 1.6rem;
+      //  line-height: 2.2rem;;
+      //  background: #97D6CB;
+      //  color: $white;
+      //  margin: 0 auto;
+      //  transition: .25s;
+      //
+      //  //&:hover {
+      //  //  box-shadow: inset 220px 0 0 0 #4B9285;
+      //  //  color: #fff;
+      //  //}
+      //}
     }
   }
   &__right-tabs {
