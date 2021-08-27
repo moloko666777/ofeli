@@ -168,7 +168,7 @@
       width: 50%;
       background: rgba(220, 178, 236, 0.7);
       backdrop-filter: blur(15px);
-      padding: 3.6rem 5.4rem 10.4rem 10.4rem;
+      padding: 1.9rem 5.4rem 10.4rem 10.4rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -181,8 +181,8 @@
       display: flex;
       margin: 0 0 auto auto;
       position: absolute;
-      right: 5.4rem;
-      top: 4.6rem;
+      right: 5.6rem;
+      top: 2.6rem;
     }
 
     &-links {
@@ -379,7 +379,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 9.7rem 14.9rem 0 0;
+  padding: 9rem 14.9rem 0 0;
   z-index: 0;
   background: #FFFDFE;
 

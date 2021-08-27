@@ -7,7 +7,7 @@ let removeScroll = document.querySelector('body');
 openMenu.addEventListener('click', function (){
     menu.classList.add('show');
     removeScroll.style.overflow = 'hidden';
-    removeScroll.style.paddingRight = '15px';
+    removeScroll.style.paddingRight = '5px';
 })
 
 closeMenu.addEventListener('click', function (){
