@@ -1,0 +1,190 @@
+@media only screen and (max-width: 900px) {
+  div.visage {
+    padding: 6.8rem 5.2rem 0 4.1rem;
+    margin-bottom: 5.6rem;
+
+    &__image {
+      width: 33.4rem;
+      height: 41.9rem;
+      margin-bottom: 0;
+    }
+
+    &__left {
+      width: 37.5%;
+
+      h3 {
+        width: 70% ;
+        left: 1.6rem;
+        bottom: 2.4rem;
+        //top: .8rem;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+
+        &:before {
+          width: 10rem;
+          bottom: 14px;
+          right: 30px;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+    &__right-price {
+      position: relative;
+      width: 47.4rem;
+      min-height: 45.7rem;
+      background-color: #F7F2F5;
+      padding: 4.2rem 4rem 3.4rem 3.8rem;
+      h4 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+        letter-spacing: 0.07em;
+        margin-bottom: 2rem;
+      }
+      ul{
+        margin-bottom: 5rem;
+        li{
+          p{
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+          }
+        }
+      }
+      a {
+        width: 19.2rem;
+        line-height: 18px;
+      }
+    }
+    &__accordion {
+      height: 25rem;
+      overflow-y: auto;
+    }
+    &__right-tabs {
+      height: 10.1rem;
+      margin: auto 4rem 0 auto;
+      //margin-right: 4rem;
+    }
+    .hairdressing-services__button{
+      width: 15.7rem;
+      height: 5.3rem;
+      &-wrapper {
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &__text-bottom {
+      display: block;
+      padding: 0 2.8rem 8.9rem 4rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #2E2621;
+    }
+    &-slider__card {
+     height: 288px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  div.visage {
+    flex-direction: column;
+    padding: 4.7rem 0 0 0;
+    margin-bottom: 5.2rem;
+    &__image {
+      width: 100%;
+      height: 39.1rem
+    }
+
+    &__left {
+      width: 100%;
+
+      h3 {
+        left: 1.6rem;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 16.6rem;
+          height: 1px;
+          background-color: #4B9285;
+          bottom: 14px;
+          right: -50px;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+
+    &__right-tabs {
+      height: 100%;
+      justify-content: center;
+    }
+    &__text-bottom {
+      display: block;
+      padding: 0 1.7rem 5rem 1.6rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #2E2621;
+    }
+    &__title-wrapper {
+      margin-left: 1rem;
+    }
+    &__right-price {
+      width: 100%;
+      height: 100%;
+      padding: 4rem 1.5rem 3.1rem 1.7rem;
+      min-height: unset;
+      h4 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 0;
+      }
+      p{
+        font-size: 13px;
+        line-height: 15px;
+      }
+      ul{
+        li{
+          margin-bottom: 0;
+          p{
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            span{
+              font-size: 1.4rem;
+              line-height: 1.6rem;
+            }
+          }
+        }
+      }
+      a{
+        font-size: 15px;
+        line-height: 17px;
+        position: unset;
+        transform: unset;
+        margin-top: 5.3rem;
+      }
+    }
+    &__in-process{
+     display: none;
+    }
+    &-slider__card {
+      height: 220px;
+    }
+    &__social-slider {
+      padding: 7rem 1.7rem 6.7rem 1.6rem;
+      p{
+        left: -28px;
+      }
+    }
+  }
+}
