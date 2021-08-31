@@ -1157,6 +1157,16 @@ div.cd-header {
   right: 0;
   top: 1rem;
 }
+  li.nav__list-item {
+    margin-bottom: 20px;
+  }
+  li.nav__list-item.active-nav a:after {
+    content: unset;
+  }
+  li.nav__list-item.active-nav a {
+    color: white;
+    font-weight: 500;
+  }
 }
 
 
