@@ -1131,11 +1131,12 @@
     font-size: 28px;
     line-height: 41px;
     font-weight: 400;
+    z-index: 10;
     button{
       color: #fff;
       font-size: 28px;
       line-height: 41px;
-      margin-right: .5rem;
+      margin-right: 5px;
       &:last-child{
         margin-right: 0;
       }
