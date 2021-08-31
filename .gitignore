@@ -1,5 +1,6 @@
 wp-config.php
 
-/.idea
+.idea/
 wp-content/themes/olefi/node_modules
 wp-content/themes/olefi/build
+front/
