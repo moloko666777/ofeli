@@ -1167,6 +1167,9 @@ div.cd-header {
     color: white;
     font-weight: 500;
   }
+  li.nav__list-item a:after {
+    content: unset;
+  }
 }
 
 
