@@ -513,6 +513,9 @@
     top: 2rem;
     width: 20%;
   }
+  .nav-active {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1170,6 +1173,12 @@ div.cd-header {
   li.nav__list-item a:after {
     content: unset;
   }
+  div.header-wrapper-nav {
+    position: fixed;
+    right: 1.8rem;
+    top: 2rem;
+  }
+
 }
 
 
