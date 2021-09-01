@@ -507,12 +507,14 @@
       }
     }
   }
-  div.cd-header {
-    position: absolute;
-    right: 0;
-    top: 2rem;
-    width: 20%;
-  }
+
+
+  //div.cd-header {
+  //  position: absolute;
+  //  right: 0;
+  //  top: 2rem;
+  //  width: 20%;
+  //}
   .nav-active {
     overflow: hidden;
   }
@@ -1173,12 +1175,12 @@ div.cd-header {
   li.nav__list-item a:after {
     content: unset;
   }
-  div.header-wrapper-nav {
-    position: fixed;
-    right: 1.8rem;
-    top: 2rem;
+  body.nav-active {
+    .header-wrapper-nav {
+      right: 1.8rem;
+      top: 2rem;
+    }
   }
-
 }
 
 

@@ -10,14 +10,13 @@ body {
   position: relative;
 }
 .nav-active {
-  //overflow: hidden;
-  //padding-right: 5px;
+  .header-wrapper-nav {
+    position: fixed;
+    right: 5.8rem;
+    top: 2.2rem;
+  }
 }
-.header-wrapper-nav {
-  position: fixed;
-  right: 4.8rem;
-  top: 3rem;
-}
+
 .menu-icon {
   height: 28px;
   width: 30px;
