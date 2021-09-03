@@ -1,3 +1,9 @@
+<?php
+
+$fb_menu = getOption('footer')['fb_menu'];
+$sb_menu = getOption('footer')['sb_menu'];
+
+?>
 <footer class="wow animate__animated animate__fadeIn">
     <div class="footer container-xxl">
         <div class="row">
@@ -50,33 +56,43 @@
             <div class="col-xxl-2 col-xl-3 col-md-4 col-lg-3">
                 <div class="footer__links">
                     <ul>
-                        <li><a href="hairdressing-services-girl.html">ПАРИКМАХЕРСКИЕ УСЛУГИ</a></li>
-                        <li><a href="nails.html">НОГТЕВОЙ СЕРВИС</a></li>
-                        <li><a href="eyebrows.html">БРОВИ И РЕСНИЦЫ</a></li>
-                        <li><a href="epilation.html">ЭПИЛЯЦИЯ ВОСКОМ</a></li>
-                        <li><a href="cosmetology.html">КОСМЕТОЛОГИЯ </a></li>
-                        <li><a href="plastic.html">КОНТУРНАЯ ПЛАСТИКА</a></li>
-                        <li><a href="visage.html">ВИЗАЖ</a></li>
+                        <?php foreach ($fb_menu as $item) : ?>
+                            <?php
+                            if(pll_current_language() == 'ua') {
+                                $item_ver = pll_get_post_translations($item);
+                                $item = $item_ver['ua'];
+                            }
+                            $post = get_post($item);
+                            ?>
+                            <li>
+                                <a href="<?=get_permalink($item); ?>"><?=mb_strtoupper($post->post_title); ?></a>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
             <div class="col-xxl-4 col-xl-2 col-md-4 col-lg-3 footer__contact">
-                <a href="#about__wrapper-top">О НАС</a>
-                <a href="contact.html">КОНТАКТЫ</a>
+                <a href="<?=get_home_url(); ?>#about__wrapper-top"><?=pll_e('О нас'); ?></a>
+                <?php foreach ($sb_menu as $item) : ?>
+                    <?php
+                    if(pll_current_language() == 'ua') {
+                        $item_ver = pll_get_post_translations($item);
+                        $item = $item_ver['ua'];
+                    }
+                    $post = get_post($item);
+                    ?>
+                    <a href="<?=get_permalink($item); ?>"><?=mb_strtoupper($post->post_title); ?></a>
+                <?php endforeach; ?>
 
                 <div class="footer-social-tablet">
                     <div class="footer-logo__hours">
-                        <div class="footer-logo__title">Часы работы</div>
-                        <p>ПН-ВС <span>10:00-20:00</span>
-                            <br>без перерывов и выходных
-                        </p>
+                        <div class="footer-logo__title"><?=pll_e('Часы работы'); ?></div>
+                        <?=getOption('footer')['tb_menu']['schedule_' . pll_current_language()] ?>
                     </div>
                     <div class="footer-logo__address">
-                        <p>г. Харьков <br>
-                            ул.Пушкина 10 <br>
-                            тел. <a href="tel:0661202020">0661202020</a></p>
+                        <?=getOption('footer')['tb_menu']['address_' . pll_current_language()] ?>
                         <div class="footer-social__instagram">
-                            <a href="https://www.instagram.com/ofeli_salon/">
+                            <a href="<?=getOption('general')['instagram_link']; ?>">
                                 <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM18.8275 14.5863C18.8275 16.9249 16.9249 18.8275 14.5862 18.8275H5.41381C3.0751 18.8275 1.17248 16.9249 1.17248 14.5863V5.41381C1.17248 3.0751 3.0751 1.17248 5.41381 1.17248H14.5863C16.9249 1.17248 18.8275 3.0751 18.8275 5.41381V14.5863Z"
                                     />
@@ -92,27 +108,15 @@
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-md-1 col-lg-3 footer-social">
-
-                <!--                <div class="footer-social__facebook">-->
-                <!--                    <a href="">Facebook</a>-->
-                <!--                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--                        <path d="M2.92969 20H9.45312V12.8906H7.10938V10.5469H9.45312V7.61719C9.45312 6.00174 10.7674 4.6875 12.3828 4.6875H15.3125V7.03125H12.9688C12.3225 7.03125 11.7969 7.55692 11.7969 8.20312V10.5469H15.2068L14.8161 12.8906H11.7969V20H17.0703C18.6858 20 20 18.6858 20 17.0703V2.92969C20 1.31424 18.6858 0 17.0703 0H2.92969C1.31424 0 0 1.31424 0 2.92969V17.0703C0 18.6858 1.31424 20 2.92969 20ZM1.17188 2.92969C1.17188 1.96045 1.96045 1.17188 2.92969 1.17188H17.0703C18.0396 1.17188 18.8281 1.96045 18.8281 2.92969V17.0703C18.8281 18.0396 18.0396 18.8281 17.0703 18.8281H12.9688V14.0625H15.8089L16.5901 9.375H12.9688V8.20312H16.4844V3.51562H12.3828C10.1212 3.51562 8.28125 5.35553 8.28125 7.61719V9.375H5.9375V14.0625H8.28125V18.8281H2.92969C1.96045 18.8281 1.17188 18.0396 1.17188 17.0703V2.92969Z"-->
-                <!--                        />-->
-                <!--                    </svg>-->
-                <!--                </div>-->
                 <div class="footer-logo__hours">
-                    <div class="footer-logo__title">Часы работы</div>
-                    <p>ПН-ВС <span>10:00-20:00</span>
-                        <br>без перерывов и выходных
-                    </p>
+                    <div class="footer-logo__title"><?=pll_e('Часы работы'); ?></div>
+                    <?=getOption('footer')['tb_menu']['schedule_' . pll_current_language()] ?>
                 </div>
                 <div class="footer-logo__address">
-                    <p>г. Харьков <br>
-                        ул.Пушкина 10 <br>
-                        тел. <a href="tel:0661202020">0661202020</a></p>
+                    <?=getOption('footer')['tb_menu']['address_' . pll_current_language()] ?>
                 </div>
                 <div class="footer-social__instagram">
-                    <a href="https://www.instagram.com/ofeli_salon/">
+                    <a href="<?=getOption('general')['instagram_link']; ?>">
                         <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM18.8275 14.5863C18.8275 16.9249 16.9249 18.8275 14.5862 18.8275H5.41381C3.0751 18.8275 1.17248 16.9249 1.17248 14.5863V5.41381C1.17248 3.0751 3.0751 1.17248 5.41381 1.17248H14.5863C16.9249 1.17248 18.8275 3.0751 18.8275 5.41381V14.5863Z"
                             />

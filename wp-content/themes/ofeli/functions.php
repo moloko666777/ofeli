@@ -50,7 +50,7 @@ if ( ! function_exists( 'olefi_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'olefi' ),
+				'menu_header' => esc_html__( 'Шапка', 'olefi' ),
 			)
 		);
 
@@ -140,11 +140,6 @@ add_action( 'widgets_init', 'olefi_widgets_init' );
  * Enqueue scripts and styles.
  */
 function olefi_scripts() {
-//	wp_enqueue_style( 'olefi-style', get_stylesheet_uri(), array(), _S_VERSION );
-//	wp_style_add_data( 'olefi-style', 'rtl', 'replace' );
-
-//	wp_enqueue_script( 'olefi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -178,3 +173,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//Polylang strings
+add_action('init', function() {
+    pll_register_string('ofeli-footer-schedule-title', 'Часы работы');
+    pll_register_string('ofeli-footer-about-us', 'О нас');
+});
+
+//Custom
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title' => 'Общие настройки',
+        'menu_title' => 'Общие настройки',
+        'menu_slug' => 'theme-general-settings',
+        'capability' => 'edit_posts',
+        'redirect' => false
+    ));
+}
+
+function getOption($name) {
+    return get_field($name, 'option');
+}
