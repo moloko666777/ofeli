@@ -1,7 +1,8 @@
 <?php
 /* Template name: Шаблон "Контакты" */
-get_header(); ?>
-
+get_header();
+$fields = get_fields();
+?>
 <main>
     <section class="">
         <div class="contact">
@@ -11,20 +12,16 @@ get_header(); ?>
                     <div class="contact__border-bottom-right"></div>
                 </div>
                 <div class="contact__title wow animate__animated animate__fadeIn">
-                    <h2>НАШИ КОНТАКТЫ</h2>
+                    <h2><?=$fields['title']; ?></h2>
                     <div class="contact__row row">
                         <div class="col-xl-6 col-md-12">
                             <div class="contact__address">
-                                <p>Адрес: <span>г. Харьков, Пушкина,100</span></p>
-                                <p>Телефон: <a href="tel:+38 (066) 1234567">+38 (066) 1234567</a></p>
-                                <p>Instagram: <a href="https://www.instagram.com/ofeli_salon"> Ofeli_salon </a></p>
+                                <?=$fields['address']; ?>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-12">
                             <div class="contact__time">
-                                <p><span>Часы работы:</span><br>
-                                    ПН-ВС 10:00-20:00 <br>
-                                    без перерывов и выходных</p>
+                                <?=$fields['time_work']; ?>
                             </div>
                         </div>
                     </div>

@@ -177,6 +177,22 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 add_action('init', function() {
     pll_register_string('ofeli-footer-schedule-title', 'Часы работы');
     pll_register_string('ofeli-footer-about-us', 'О нас');
+    pll_register_string('ofeli-online-entry', 'Онлайн запись');
+    pll_register_string('ofeli-view_instagram', 'Загляните к нам в инстаграм');
+    pll_register_string('ofeli-in_proccess_work', 'В ПРОЦЕССЕ РАБОТЫ');
+    pll_register_string('ofeli-length_hair', 'Линейка длины волос');
+    pll_register_string('ofeli-lenght_1', '1 длина до середины уха');
+    pll_register_string('ofeli-lenght_2', '2 длина по плечи');
+    pll_register_string('ofeli-lenght_3', '3 длина ниже плечей до лопаток');
+    pll_register_string('ofeli-lenght_4', '4 длина ниже лопаток');
+    pll_register_string('ofeli-lenght_5', '5 длина до пояса');
+    pll_register_string('ofeli-lenght_5_1', '1 длина ниже пояса');
+    pll_register_string('ofeli-close', 'Закрыть');
+    pll_register_string('ofeli-price_title', 'ПРАЙС');
+    pll_register_string('ofeli-child_include', 'Дети до 7 лет включительно');
+    pll_register_string('ofeli-women', 'Девушки');
+    pll_register_string('ofeli-men', 'Мужчины');
+    pll_register_string('ofeli-kids', 'Дети');
 });
 
 //Custom
