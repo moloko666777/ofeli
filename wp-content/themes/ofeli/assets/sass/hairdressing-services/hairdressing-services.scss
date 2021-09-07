@@ -171,7 +171,7 @@
     line-height: 1.8rem;
   }
   .accordion-button::after {
-    background-image: url("../../../assets/images/Vectorarr.svg");
+    background-image: url("../../build/img/Vectorarr.svg");
     background-position-y: 5px;
     background-repeat: no-repeat;
   }
@@ -281,7 +281,7 @@
   }
   &__type {
     &-image{
-      background-image: url("../../../assets/images/аad1.png");
+      background-image: url("../../build/img/аad1.png");
       background-repeat: no-repeat;
       background-position-x: center;
       width: 100%;
