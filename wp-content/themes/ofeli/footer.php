@@ -10,7 +10,7 @@ $sb_menu = getOption('footer')['sb_menu'];
             <div class="col-xxl-3 col-xl-3 col-md-4 col-lg-3">
                 <div class="footer-logo">
                     <div class="footer-logo__logo">
-                        <a href="index.html">
+                        <a href="<?=get_home_url(); ?>">
                             <svg width="175" height="76" viewBox="0 0 123 54" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
 
