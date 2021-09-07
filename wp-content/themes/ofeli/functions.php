@@ -226,7 +226,6 @@ function callback() {
     $message .= "Телефон: " . $data['phone'];
 
     wp_mail('web.bagach@gmail.com', 'Онлайн запись - Ofeli', $message);
-    die(var_dump($data));
 
     die;
 }
