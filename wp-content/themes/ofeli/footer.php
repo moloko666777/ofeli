@@ -151,21 +151,23 @@ $sb_menu = getOption('footer')['sb_menu'];
     <div class="modal-dialog modal-dialog-centered">
         <div class="contact-us__modal-content">
             <div class="contact-us__form">
-                <h3>Быть красивой и ухоженной — мечта любой женщины!</h3>
-                <h4>Хотите записаться к нам в салон?</h4>
-                <p>Заполните форму ниже и мы, с радостью, перезвоним Вам в течении 30 минут</p>
+                <h3><?=pll_e('Быть красивой и ухоженной — мечта любой женщины!'); ?></h3>
+                <h4><?=pll_e('Хотите записаться к нам в салон?'); ?></h4>
+                <p><?=pll_e('Заполните форму ниже и мы, с радостью, перезвоним Вам в течении 30 минут'); ?></p>
                 <form class="contact-us__input-form">
                     <input class="contact-us__input" type="text"
-                           placeholder="Ваше имя">
+                           name="name"
+                           placeholder="<?=pll_e('Ваше имя'); ?>">
                     <div class="input-wrapper">
                         <input id="contact-us__phone-mask" type="tel"
-                               placeholder="Ваш телефон"
+                               name="phone"
+                               placeholder="<?=pll_e('Ваш телефон'); ?>"
                                class="contact-us__phone contact-us__input"></div>
 
                 </form>
             </div>
             <div class="contact-us__modal-footer">
-                <button type="submit" disabled="disabled">Отправить</button>
+                <button type="submit" onclick="send()"><?=pll_e('Отправить'); ?></button>
             </div>
         </div>
     </div>
@@ -187,6 +189,23 @@ $sb_menu = getOption('footer')['sb_menu'];
     $(function () {
         new WOW().init();
     });
+</script>
+
+<script>
+    function send() {
+        $.ajax({
+            method: 'POST',
+            url: '<?php echo admin_url( "admin-ajax.php" ) ?>',
+            data: {
+                action: 'callback',
+                name: $('input[name="name"]').val(),
+                phone: $('input[name="phone"]').val(),
+            },
+            success: function(response) {
+
+            }
+        });
+    }
 </script>
 
 <?php wp_footer(); ?>

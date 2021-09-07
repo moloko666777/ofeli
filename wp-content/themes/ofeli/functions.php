@@ -193,6 +193,12 @@ add_action('init', function() {
     pll_register_string('ofeli-women', 'Девушки');
     pll_register_string('ofeli-men', 'Мужчины');
     pll_register_string('ofeli-kids', 'Дети');
+    pll_register_string('ofeli-callback-h3', 'Быть красивой и ухоженной — мечта любой женщины!');
+    pll_register_string('ofeli-callback-h4', 'Хотите записаться к нам в салон?');
+    pll_register_string('ofeli-callback-p', 'Заполните форму ниже и мы, с радостью, перезвоним Вам в течении 30 минут');
+    pll_register_string('ofeli-callback-name', 'Ваше имя');
+    pll_register_string('ofeli-callback-phone', 'Ваш телефон');
+    pll_register_string('ofeli-callback_send', 'Отправить');
 });
 
 //Custom
@@ -208,4 +214,19 @@ if( function_exists('acf_add_options_page') ) {
 
 function getOption($name) {
     return get_field($name, 'option');
+}
+
+add_action( 'wp_ajax_callback', 'callback' );
+add_action( 'wp_ajax_nopriv_callback', 'callback' );
+
+function callback() {
+    $data = $_POST;
+
+    $message = "Имя: " . $data['name'] . PHP_EOL;
+    $message .= "Телефон: " . $data['phone'];
+
+    wp_mail('web.bagach@gmail.com', 'Онлайн запись - Ofeli', $message);
+    die(var_dump($data));
+
+    die;
 }

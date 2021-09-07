@@ -1,6 +1,6 @@
 wp-config.php
 
 .idea/
-wp-content/themes/olefi/node_modules
-wp-content/themes/olefi/build
+wp-content/themes/ofeli/node_modules
+wp-content/themes/ofeli/build
 front/
