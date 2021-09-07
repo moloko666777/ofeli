@@ -32,9 +32,11 @@
                 applyListeners();
             };
             var applyListeners = function applyListeners() {
-                menu.addEventListener('click', function () {
-                    return toggleClass(body, 'nav-active');
-                });
+                if(menu) {
+                    menu.addEventListener('click', function () {
+                        return toggleClass(body, 'nav-active');
+                    });
+                }
             };
             var toggleClass = function toggleClass(element, stringClass) {
                 if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
