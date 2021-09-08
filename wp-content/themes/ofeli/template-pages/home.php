@@ -2,15 +2,23 @@
 /* Template name: Шаблон "Главная" */
 get_header();
 $code = pll_current_language();
-if(pll_current_language() == 'ua') {
+if($code == 'ua') {
     $page_id = get_queried_object()->ID;
     $page_ru = pll_get_post($page_id, 'ru');
     $fields = get_fields($page_ru);
 } else {
     $fields = get_fields();
 }
-?>
 
+$services = getOption('general')['home_page_services'];
+
+foreach ($services as $key => $service) {
+    $services[$key] = get_post(pll_get_post($service, $code));
+}
+
+$services_с = array_chunk($services, 2);
+
+?>
     <main>
         <section>
             <div class="home-banner wow animate__animated animate__fadeIn">
@@ -71,12 +79,13 @@ if(pll_current_language() == 'ua') {
                 <div class="services wow animate__animated animate__fadeInRightBig">
                     <div id="services-container" class="swiper-container services__container">
                         <div class="swiper-wrapper ">
+                            <?php foreach($services_с as $service) : ?>
                             <div class="swiper-slide services__swiper-slide">
-                                <h3>Услуги</h3>
+                                <h3><?=pll_e('Услуги'); ?></h3>
                                 <div class="services__holder services__horizontal">
-                                    <a href="">
+                                    <a href="<?=get_permalink($service[0]->ID); ?>">
                                         <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/young-woman-in-mask-for-face-relaxing-in-spa-salon2.png"
+                                            <img src="<?=get_field('image_for_home_page',$service[0]->ID) ;?>"
                                                  alt="services">
                                             <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
                                                  fill="none"
@@ -86,123 +95,32 @@ if(pll_current_language() == 'ua') {
                                             </svg>
                                         </div>
                                         <div class="services__text">
-                                            Косметология
+                                            <?=get_field('title', $service[0]->ID); ?>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="services__holder services__vertical">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/12.png"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
+                                <?php if(isset($service[1])) : ?>
+                                    <div class="services__holder services__vertical">
+                                        <a href="<?=get_permalink($service[1]->ID); ?>">
+                                            <div class="services__image">
+                                                <img src="<?=get_field('image_for_home_page',$service[1]->ID) ;?>"
+                                                     alt="services">
+                                                <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
+                                                          fill="white"/>
+                                                </svg>
+                                            </div>
 
-                                        <div class="services__text">
-                                            Парикмахерские услуги
-                                        </div>
-                                    </a>
-                                </div>
+                                            <div class="services__text">
+                                                <?=get_field('title', $service[1]->ID); ?>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
                             </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <h3>Услуги</h3>
-                                <div class="services__holder services__horizontal">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/14.jpg"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            Брови и ресницы
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="services__holder services__vertical">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/13.jpg"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            Визаж
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <h3>Услуги</h3>
-                                <div class="services__holder services__horizontal">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/conplast.jpg"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            Контурная пластика
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="services__holder services__vertical">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/nails.jpg"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            Ногтевой сервис
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <h3>Услуги</h3>
-                                <div class="services__holder services__vertical">
-                                    <a href="">
-                                        <div class="services__image">
-                                            <img src="<?=get_template_directory_uri(); ?>/assets/images/epil.jpg"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            Эпиляция воском
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                     <div class="swiper__navigation">

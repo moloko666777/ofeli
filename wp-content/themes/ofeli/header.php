@@ -64,9 +64,9 @@ $menu = wp_get_nav_menu_items($menu_obj);
                 </div>
 
                 <div class="header__language <?php if(!is_front_page()) : ?> header-color <?php endif; ?> col-xl-1 col-sm-4">
-                    <a href="" class="active language">ru</a>
+                    <a href="<?=$languages['pages']['ru'];?>" class="<?php if($languages['current_language'] == 'ru') { echo 'active'; } ?> language">ru</a>
                     <span></span>
-                    <a href="" class="language">ua</a>
+                    <a href="<?=$languages['pages']['ua'];?>" class="<?php if($languages['current_language'] == 'ua') { echo 'active'; } ?> language">ua</a>
                     <a href="tel:<?=getOption('header')['phone']; ?>">
                         <svg width="25" height="25" viewBox="0 0 33 33" <?php if(is_front_page()) : ?> fill="#fff" <?php endif; ?>
                              xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,9 @@ $menu = wp_get_nav_menu_items($menu_obj);
                 <div class="nav">
                     <div class="nav__content">
                         <div class="nav__list-item header__language-mobile col-xl-1 col-sm-4">
-                            <a href="" class="active language">ru</a>
+                            <a href="<?=$languages['pages']['ru'];?>" class="<?php if($languages['current_language'] == 'ru') { echo 'active'; } ?> language">ru</a>
                             <span></span>
-                            <a href="" class="language">ua</a>
+                            <a href="<?=$languages['pages']['ua'];?>" class="<?php if($languages['current_language'] == 'ua') { echo 'active'; } ?> language">ua</a>
                             <a href="tel:+38 (066) 1234567">
                                 <svg width="25" height="25" viewBox="0 0 40 40" <?php if(is_front_page()) : ?> fill="none" <?php endif; ?>
                                      xmlns="http://www.w3.org/2000/svg">

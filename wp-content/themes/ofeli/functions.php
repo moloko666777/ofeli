@@ -199,6 +199,7 @@ add_action('init', function() {
     pll_register_string('ofeli-callback-name', 'Ваше имя');
     pll_register_string('ofeli-callback-phone', 'Ваш телефон');
     pll_register_string('ofeli-callback_send', 'Отправить');
+    pll_register_string('ofeli-home_page_service_title', 'Услуги');
 });
 
 //Custom
