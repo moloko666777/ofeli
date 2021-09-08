@@ -1,33 +1,22 @@
-
-
-
-
-
-/* #Navigation
-================================================== */
-
+body {
+  overflow-x: hidden;
+}
 .cd-header{
-  //position: fixed;
-  //width:100%;
-  //top:0;
-  //left:0;
   z-index:100;
 }
-.header-wrapper{
-  //position: relative;
-  //width: calc(100% - 100px);
-  //margin-left: 50px;
-}
+
 
 .nav-but-wrap{
   position: relative;
-  //display: inline-block;
-  //float: right;
-  //padding-left: 15px;
-  //padding-top: 15px;
-  //margin-top: 26px;
-  //transition : all 0.3s ease-out;
 }
+.nav-active {
+  .header-wrapper-nav {
+    position: fixed;
+    right: 5.8rem;
+    top: 2.2rem;
+  }
+}
+
 .menu-icon {
   height: 28px;
   width: 30px;
@@ -43,7 +32,7 @@
 }
 
 .header__language.header-color{
-  button{
+  .language {
     color: #40362E;
   }
   span{
@@ -110,9 +99,6 @@
   transform: translateX(100%) translateY(-100%);
 }
 .nav:after {
-  //background: rgba(9,9,12,1);
-  //background: rgba(220, 178, 236, 0.7);
-  //backdrop-filter: blur(15px);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -127,7 +113,7 @@
   right: 0;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 .nav__list {
@@ -150,7 +136,7 @@
   color: #fff;
   overflow: hidden;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 46px;
   -webkit-transform: translate(100px, 0%);
   transform: translate(100px, 0%);
@@ -159,7 +145,7 @@
   transition: opacity .2s ease, transform .3s ease;
   transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .nav__list-item a{
   position: relative;
@@ -488,11 +474,9 @@ body.nav-active .nav__list-item:nth-child(10) {
     //position: absolute;
     //top: 30px;
 
-    .active {
-      font-weight: 700;
-    }
 
-    button {
+
+    .language {
       font-style: normal;
       font-weight: 400;
       font-size: 2rem;
@@ -501,7 +485,10 @@ body.nav-active .nav__list-item:nth-child(10) {
       margin-right: 5px;
       margin-left: 5px;
       text-transform: uppercase;
-
+      text-decoration: none;
+      &.active {
+        font-weight: 700;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -532,8 +519,6 @@ body.nav-active .nav__list-item:nth-child(10) {
       }
     }
 
-    button {
-    }
 
     a {
       margin-left: 3rem;
