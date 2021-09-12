@@ -323,31 +323,13 @@ $services_с = array_chunk($services, 2);
                             Ofeli_salon
                         </a>
                     </div>
-                    <div class="social__card scale">
-                        <a href="#">
-                            <img src="<?=get_template_directory_uri(); ?>/assets/images/photo_2020-09-17_15-58-27%202.jpg" alt="social"/>
-                        </a>
-                    </div>
-                    <div class="social__card scale">
-                        <a href="#">
-                            <img src="<?=get_template_directory_uri(); ?>/assets/images/22.jpg" alt="social"/>
-                        </a>
-                    </div>
-                    <div class="social__card scale">
-                        <a href="#">
-                            <img src="<?=get_template_directory_uri(); ?>/assets/images/33.jpg" alt="social"/>
-                        </a>
-                    </div>
-                    <div class="social__card scale">
-                        <a href="#">
-                            <img src="<?=get_template_directory_uri(); ?>/assets/images/44.jpg" alt="social"/>
-                        </a>
-                    </div>
-                    <div class="social__card scale">
-                        <a href="#">
-                            <img src="<?=get_template_directory_uri(); ?>/assets/images/photo_2020-09-18_11-24-25%202.jpg" alt="social"/>
-                        </a>
-                    </div>
+                    <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
+                        <div class="social__card scale">
+                            <a href="<?=getOption('general')['instagram_link']; ?>">
+                                <img src="<?=$photo['url']; ?>" alt="social"/>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
                 <div class="social__icon">
                     <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -362,7 +344,7 @@ $services_с = array_chunk($services, 2);
                 <p>instagram</p>
                 <h3><?=pll_e('Загляните к нам в инстаграм'); ?></h3>
                 <div class="social__link">
-                    <a href="https://www.instagram.com/ofeli_salon/">
+                    <a href="<?=getOption('general')['instagram_link']; ?>">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path d="M0.617188 7.16495L0.617188 19.089C0.617188 22.9698 3.77435 26.127 7.65514 26.127L19.5794 26.127C23.46 26.127 26.6171 22.9698 26.6171 19.089L26.6171 7.16475C26.6171 3.28416 23.46 0.126997 19.5794 0.126997L7.65514 0.126997C3.77435 0.126997 0.617188 3.28416 0.617188 7.16495H0.617188ZM19.5794 1.65123C22.6195 1.65123 25.0929 4.12462 25.0929 7.16495L25.0929 19.089C25.0929 22.1293 22.6195 24.6027 19.5794 24.6027L7.65514 24.6027C4.61482 24.6027 2.14142 22.1293 2.14142 19.089L2.14142 7.16475C2.14142 4.12462 4.61482 1.65123 7.65514 1.65123L19.5794 1.65123Z"
@@ -384,31 +366,13 @@ $services_с = array_chunk($services, 2);
                 </div>
                 <div id="instagram-slider" class="swiper-container social-slider__card-container">
                     <div class="swiper-wrapper social-slider__card-wrapper">
-                        <div class="swiper-slide social-slider__card social-slider__card-home">
-                            <a href="#">
-                                <img src="<?=get_template_directory_uri(); ?>/assets/images/photo_2020-09-17_15-58-27%202.jpg" alt="social"/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide social-slider__card social-slider__card-home">
-                            <a href="#">
-                                <img src="<?=get_template_directory_uri(); ?>/assets/images/22.jpg" alt="social"/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide social-slider__card social-slider__card-home">
-                            <a href="#">
-                                <img src="<?=get_template_directory_uri(); ?>/assets/images/33.jpg" alt="social"/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide social-slider__card social-slider__card-home">
-                            <a href="#">
-                                <img src="<?=get_template_directory_uri(); ?>/assets/images/44.jpg" alt="social"/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide social-slider__card social-slider__card-home">
-                            <a href="#">
-                                <img src="<?=get_template_directory_uri(); ?>/assets/images/880.jpg" alt="social"/>
-                            </a>
-                        </div>
+                        <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
+                            <div class="swiper-slide social-slider__card social-slider__card-home">
+                                <a href="<?=getOption('general')['instagram_link']; ?>">
+                                    <img src="<?=$photo['url']; ?>" alt="social"/>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                     <div class="social__icon">
                         <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
