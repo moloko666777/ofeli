@@ -23,7 +23,11 @@ $fields = get_fields();
                             <ul>
                                 <?php foreach($fields['pricelist'] as $item) : ?>
                                     <li>
-                                        <p><?=$item['title']; ?><span><?=$item['price']; ?></span></p>
+                                        <div class="visage__price">
+                                            <p><?=$item['title']; ?></p>
+                                            <span><?=$item['price']; ?></span>
+                                        </div>
+
                                     </li>
                                 <?php endforeach; ?>
                             </ul>

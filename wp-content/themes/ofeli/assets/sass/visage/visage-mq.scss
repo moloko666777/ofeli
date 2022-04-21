@@ -49,6 +49,10 @@
             font-size: 1.6rem;
             line-height: 1.8rem;
           }
+          span {
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+          }
         }
       }
       a {
@@ -112,7 +116,7 @@
         &:before {
           content: "";
           position: absolute;
-          width: 16.6rem;
+          width: 8.6rem;
           height: 1px;
           background-color: #4B9285;
           bottom: 14px;

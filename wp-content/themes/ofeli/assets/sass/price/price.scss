@@ -1,0 +1,158 @@
+.price {
+  padding: 34.6rem 7rem 18.7rem 7rem;
+  background: #fff;
+  &__sub-title {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 14.4rem;
+    line-height: 12.5rem;
+    color: rgba(151, 214, 203, 0.15);
+    text-transform: uppercase;
+    position: absolute;
+    left: 150px;
+    top: 37.8rem;
+    opacity: 0.85;
+  }
+  &__title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    color: #2E2621;
+    margin-bottom: 5rem;
+  }
+  &__wrapper {
+    max-width: 1040px;
+    margin-bottom: 16rem;
+    margin-top: 10rem;
+  }
+
+  &__accordion-button {
+    &.accordion-button {
+      color: #40362E;
+      box-shadow: unset;
+      background-color: #f7f2f5;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      padding: 2rem;
+    }
+
+    &.accordion-button:not(.collapsed) {
+      background-color: transparent;
+      box-shadow: unset;
+      color: #40362E;
+      opacity: 1;
+    }
+
+    &.accordion-button::after {
+      background-image: url("../../build/img/Vectorarr.svg");
+      background-repeat: no-repeat;
+      background-position-y: 5px;
+    }
+  }
+
+  &__accordion {
+    background-color: #f7f2f5;
+    padding-bottom: 1rem;
+  }
+
+  &__accordion-wrapper {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  &__accordion-body-wrapper {
+    //padding: 2rem 2rem 0 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__accordion-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      color: #40362E;
+      opacity: .5;
+    }
+
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      color: #40362E;
+    }
+  }
+
+  &__accordion-body-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+
+    p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #40362E;
+      opacity: .5;
+    }
+
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: #40362E;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .price {
+    &__sub-title {
+      left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .price {
+    padding: 7rem 1.7rem 6.7rem 1.6rem;
+    &__sub-title {
+      font-weight: 400;
+      font-size: 6rem;
+      line-height: 125px;
+      color: rgba(151, 214, 203, 0.15);
+      text-transform: uppercase;
+      top: 100px;
+      left: 0;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+    &__wrapper {
+      padding: 0;
+    }
+    &__accordion-body {
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    &__accordion-wrapper {
+      padding: 1rem 1rem 0 1rem;
+    }
+    &__accordion-button {
+      &.accordion-button {
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
+}

@@ -11,6 +11,13 @@ body {
 
 .nav-but-wrap{
   position: relative;
+  display: flex;
+  width: 90px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.header__mobile-phone {
+ display: none;
 }
 .nav-active {
   .header-wrapper-nav {
@@ -393,6 +400,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   height: 7.2rem;
   &__language {
     display: flex;
+    //display: none;
     align-items: center;
   }
   &__language-mobile{
@@ -411,6 +419,14 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   &__menu-title {
     //height: 100%;
+  }
+
+  .header__mobile-phone-color {
+    display: flex;
+    width: 90px;
+    a {
+      display: none;
+    }
   }
 
   &.header-color {
@@ -680,7 +696,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   &__image {
     position: relative;
-
     &:before {
       content: "";
       position: absolute;
