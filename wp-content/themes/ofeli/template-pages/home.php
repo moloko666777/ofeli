@@ -84,11 +84,14 @@ $services_с = array_chunk($services, 2);
                     <?php endforeach; ?>
                 </div>
                 <div class="services wow animate__animated animate__fadeInRightBig">
+                    <h3><?=pll_e('Услуги'); ?></h3>
                     <div id="services-container" class="swiper-container services__container">
                         <div class="swiper-wrapper ">
+
                             <?php foreach($services_с as $service) : ?>
-                            <div class="swiper-slide services__swiper-slide">
-                                <h3><?=pll_e('Услуги'); ?></h3>
+
+                                <div class="swiper-slide services__swiper-slide">
+<!--                                <h3>--><?//=pll_e('Услуги'); ?><!--</h3>-->
                                 <div class="services__holder services__horizontal">
                                     <a href="<?=get_permalink($service[0]->ID); ?>">
                                         <div class="services__image">
