@@ -15,7 +15,7 @@ $services = getOption('general')['home_page_services'];
 foreach ($services as $key => $service) {
     $services[$key] = get_post(pll_get_post($service, $code));
 }
-
+$servicesMobile = $services;
 $services_с = array_chunk($services, 2);
 
 ?>
@@ -152,109 +152,27 @@ $services_с = array_chunk($services, 2);
             </div>
 
             <div class="services-mobile wow animate__animated animate__fadeInRightBig">
-                <h3>Услуги</h3>
+                <h3><?=pll_e('Услуги'); ?></h3>
                 <div id="serv-slider" class="swiper-container services-mobile__container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper ">
                         <!-- Slides -->
-                        <div class="swiper-slide services-mobile__swiper-slide">
-
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/young-woman-in-mask-for-face-relaxing-in-spa-salon2.png"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Косметология
-                                    </div>
-                                </a>
+                        <?php foreach($servicesMobile as $service) : ?>
+                            <div class="swiper-slide services-mobile__swiper-slide">
+                                <h3><?=pll_e('Услуги'); ?></h3>
+                                <div class="services-mobile__holder">
+                                    <a href="">
+                                        <div class="services-mobile__image">
+                                            <img src="<?=get_field('image_for_home_page',$service->ID) ;?>"
+                                                 alt="services">
+                                        </div>
+                                        <div class="services-mobile__text">
+                                            <?=get_field('title', $service->ID); ?>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/12.png"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Парикмахерские услуги
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/13.jpg"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Визаж
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/14.jpg"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Брови и ресницы
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/conplast.jpg"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Контурная пластика
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/nails.jpg"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Ногтевой сервис
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide services-mobile__swiper-slide">
-                            <h3>Услуги</h3>
-                            <div class="services-mobile__holder">
-                                <a href="">
-                                    <div class="services-mobile__image">
-                                        <img src="<?=get_template_directory_uri(); ?>/assets/images/epil.jpg"
-                                             alt="services">
-                                    </div>
-                                    <div class="services-mobile__text">
-                                        Эпиляция воском
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
