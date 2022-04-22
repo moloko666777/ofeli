@@ -296,6 +296,16 @@ body.nav-active .nav__list-item:nth-child(10) {
   transition-delay: 1.7s;
 }
 
+body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
+  fill: #fff;
+}
+.header__mobile-phone-link.header-color svg {
+  fill: #40362E;
+}
+.header__mobile-phone-link svg {
+  fill: #fff;
+}
+
 .switch-wrap {
   position: absolute;
   top: 50%;
@@ -425,7 +435,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     display: flex;
     width: 90px;
     a {
-      display: none;
+      //display: none;
     }
   }
 
@@ -955,12 +965,13 @@ body.nav-active .nav__list-item:nth-child(10) {
     font-size: 3.6rem;
     line-height: 4rem;
     color: #40362E;
+    margin-bottom: 2rem;
     //position: absolute;
     //top: 8.8rem;
 
-    position: absolute;
-    left: 0;
-    top: 30px;
+    //position: absolute;
+    //left: 0;
+    //top: 30px;
   }
 
   &__swiper-slide {
@@ -1013,7 +1024,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
 
   &__horizontal {
-    width: 51.6rem;
+    //width: 51.6rem;
     //height: 39.7rem;
 
     img {
@@ -1024,7 +1035,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
 
   &__vertical {
-    width: 39.2rem;
+    //width: 39.2rem;
     //height: 50.5rem;
 
     img {

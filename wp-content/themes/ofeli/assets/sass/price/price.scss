@@ -33,7 +33,7 @@
       color: #40362E;
       box-shadow: unset;
       background-color: #f7f2f5;
-      font-size: 1.6rem;
+      font-size: 2rem;
       line-height: 1.8rem;
       padding: 2rem;
     }
@@ -54,15 +54,16 @@
 
   &__accordion {
     background-color: #f7f2f5;
-    padding-bottom: 1rem;
+    //padding-bottom: 1rem;
   }
 
   &__accordion-wrapper {
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem 1rem 2rem;
   }
 
   &__accordion-body-wrapper {
     //padding: 2rem 2rem 0 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -96,7 +97,7 @@
 
     p {
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.8rem;
       color: #40362E;
       opacity: .5;
