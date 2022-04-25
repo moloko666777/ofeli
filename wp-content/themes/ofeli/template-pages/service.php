@@ -19,16 +19,6 @@ $fields = get_fields();
                     <div class="visage__right wow animate__animated animate__fadeInRight">
                         <div class="visage__right-tabs"></div>
                         <div class="visage__right-price">
-<<<<<<< HEAD
-                            <h4><?=pll_e('ПРАЙС'); ?></h4>
-                            <ul>
-                                <?php foreach($fields['pricelist'] as $item) : ?>
-                                    <li>
-                                        <p><?=$item['title']; ?><span><?=$item['price']; ?></span></p>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-=======
                             <h4><?php echo  pll_e('ПРАЙС'); ?></h4>
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                  aria-labelledby="pills-home-tab">
@@ -74,7 +64,6 @@ $fields = get_fields();
                                     </div>
                                 </div>
                             </div>
->>>>>>> 3212f5eb83402769bcf274583dfd464ccd7703f7
                             <button class="visage__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <?=pll_e('Онлайн запись'); ?> </button>
                         </div>
                     </div>
