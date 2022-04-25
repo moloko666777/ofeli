@@ -1,5 +1,5 @@
 .price {
-  padding: 34.6rem 7rem 18.7rem 7rem;
+  padding: 14rem 7rem 18.7rem 7rem;
   background: #fff;
   &__sub-title {
     font-family: 'Lora', serif;
@@ -10,7 +10,7 @@
     text-transform: uppercase;
     position: absolute;
     left: 150px;
-    top: 37.8rem;
+    top: 16rem;
     opacity: 0.85;
   }
   &__title {
@@ -26,6 +26,7 @@
     max-width: 1040px;
     margin-bottom: 16rem;
     margin-top: 10rem;
+    padding: 0;
   }
 
   &__accordion-button {
@@ -58,13 +59,16 @@
   }
 
   &__accordion-wrapper {
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
   }
 
   &__accordion-body-wrapper {
     //padding: 2rem 2rem 0 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-top: 1px solid #97D6CB;
+    padding-top: 1rem;
+
   }
 
   &__accordion-body {
@@ -75,7 +79,7 @@
     p {
       font-weight: 400;
       font-size: 1.6rem;
-      line-height: 1.8rem;
+      line-height: 1.4rem;
       color: #40362E;
       opacity: .5;
     }
@@ -83,7 +87,7 @@
     span {
       display: block;
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 2.1rem;
       color: #40362E;
     }
@@ -116,6 +120,9 @@
   .price {
     &__sub-title {
       left: 0;
+    }
+    .price__accordion-body p, .price__accordion-body-sub p {
+      width: 70%;
     }
   }
 }
@@ -154,6 +161,21 @@
       &.accordion-button {
         padding: 1.5rem 1rem;
       }
+    }
+    &__accordion-body-sub {
+      p {
+        width: 70%;
+      }
+    }
+  }
+  &__accordion-body-sub {
+    p {
+      width: 70%;
+    }
+  }
+  &__accordion-body {
+    p {
+      width: 70%;
     }
   }
 }

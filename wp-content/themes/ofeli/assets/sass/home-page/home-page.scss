@@ -984,9 +984,12 @@ body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
 
   &__holder {
     position: relative;
-    margin-bottom: 6.4rem;
+    //margin-bottom: 6.4rem;
     //width:300px;
     //margin:100px auto;
+
+
+    height: 600px;
 
   }
 
@@ -1004,6 +1007,13 @@ body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
   &__image {
     margin-bottom: 1.5rem;
     transition: .25s;
+
+    height: 600px;
+
+    img{
+      object-fit: cover;
+      height: 600px;
+    }
     &:hover{
       transition: .25s;
       &:before {
@@ -1012,7 +1022,8 @@ body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
         background: rgba(220, 178, 236, 0.5);
         backdrop-filter: blur(3px);
         width: 100%;
-        height: calc(100% - 37px);
+        //height: calc(100% - 37px);
+        height: 100%;
         transition: .25s;
       }
     }

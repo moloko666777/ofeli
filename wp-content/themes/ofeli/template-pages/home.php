@@ -85,35 +85,61 @@ $services_с = array_chunk($services, 2);
                 </div>
                 <div class="services wow animate__animated animate__fadeInRightBig">
                     <h3><?=pll_e('Услуги'); ?></h3>
+<!--                    <div id="services-container" class="swiper-container services__container">-->
+<!--                        <div class="swiper-wrapper ">-->
+<!--                            --><?php //foreach($services_с as $service) : ?>
+<!--                                <div class="swiper-slide services__swiper-slide">-->
+<!--<!--
+<!--                                <div class="services__holder services__horizontal">-->
+<!--                                    <a href="--><?//=get_permalink($service[0]->ID); ?><!--">-->
+<!--                                        <div class="services__image">-->
+<!--                                            <img src="--><?//=get_field('image_for_home_page',$service[0]->ID) ;?><!--"-->
+<!--                                                 alt="services">-->
+<!--                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"-->
+<!--                                                 fill="none"-->
+<!--                                                 xmlns="http://www.w3.org/2000/svg">-->
+<!--                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"-->
+<!--                                                      fill="white"/>-->
+<!--                                            </svg>-->
+<!--                                        </div>-->
+<!--                                        <div class="services__text">-->
+<!--                                            --><?//=get_field('title', $service[0]->ID); ?>
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                --><?php //if(isset($service[1])) : ?>
+<!--                                    <div class="services__holder services__vertical">-->
+<!--                                        <a href="--><?//=get_permalink($service[1]->ID); ?><!--">-->
+<!--                                            <div class="services__image">-->
+<!--                                                <img src="--><?//=get_field('image_for_home_page',$service[1]->ID) ;?><!--"-->
+<!--                                                     alt="services">-->
+<!--                                                <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"-->
+<!--                                                     fill="none"-->
+<!--                                                     xmlns="http://www.w3.org/2000/svg">-->
+<!--                                                    <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"-->
+<!--                                                          fill="white"/>-->
+<!--                                                </svg>-->
+<!--                                            </div>-->
+<!---->
+<!--                                            <div class="services__text">-->
+<!--                                                --><?//=get_field('title', $service[1]->ID); ?>
+<!--                                            </div>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                --><?php //endif; ?>
+<!--                            </div>-->
+<!--                            --><?php //endforeach; ?>
+<!--                        </div>-->
+<!--                    </div>-->
                     <div id="services-container" class="swiper-container services__container">
                         <div class="swiper-wrapper ">
-
                             <?php foreach($services_с as $service) : ?>
-
                                 <div class="swiper-slide services__swiper-slide">
-<!--                                <h3>--><?//=pll_e('Услуги'); ?><!--</h3>-->
-                                <div class="services__holder services__horizontal">
-                                    <a href="<?=get_permalink($service[0]->ID); ?>">
-                                        <div class="services__image">
-                                            <img src="<?=get_field('image_for_home_page',$service[0]->ID) ;?>"
-                                                 alt="services">
-                                            <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
-                                                 fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M97.3536 4.35355C97.5488 4.15829 97.5488 3.84171 97.3536 3.64645L94.1716 0.464466C93.9763 0.269204 93.6597 0.269204 93.4645 0.464466C93.2692 0.659728 93.2692 0.976311 93.4645 1.17157L96.2929 4L93.4645 6.82843C93.2692 7.02369 93.2692 7.34027 93.4645 7.53553C93.6597 7.7308 93.9763 7.7308 94.1716 7.53553L97.3536 4.35355ZM0 4.5H97V3.5H0V4.5Z"
-                                                      fill="white"/>
-                                            </svg>
-                                        </div>
-                                        <div class="services__text">
-                                            <?=get_field('title', $service[0]->ID); ?>
-                                        </div>
-                                    </a>
-                                </div>
-                                <?php if(isset($service[1])) : ?>
-                                    <div class="services__holder services__vertical">
-                                        <a href="<?=get_permalink($service[1]->ID); ?>">
+                                    <!--                                <h3>--><?//=pll_e('Услуги'); ?><!--</h3>-->
+                                    <div class="services__holder">
+                                        <a href="<?=get_permalink($service[0]->ID); ?>">
                                             <div class="services__image">
-                                                <img src="<?=get_field('image_for_home_page',$service[1]->ID) ;?>"
+                                                <img src="<?=get_field('image_for_home_page',$service[0]->ID) ;?>"
                                                      alt="services">
                                                 <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
                                                      fill="none"
@@ -122,14 +148,13 @@ $services_с = array_chunk($services, 2);
                                                           fill="white"/>
                                                 </svg>
                                             </div>
-
                                             <div class="services__text">
-                                                <?=get_field('title', $service[1]->ID); ?>
+                                                <?=get_field('title', $service[0]->ID); ?>
                                             </div>
                                         </a>
                                     </div>
-                                <?php endif; ?>
-                            </div>
+
+                                </div>
                             <?php endforeach; ?>
                         </div>
                     </div>

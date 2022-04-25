@@ -1,6 +1,6 @@
 
 new Swiper('#services-container',{
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 20,
     speed: 400,
     loop: true,
