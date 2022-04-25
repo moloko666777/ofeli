@@ -18,19 +18,52 @@ $fields = get_fields();
                     </div>
                     <div class="visage__right wow animate__animated animate__fadeInRight">
                         <div class="visage__right-tabs"></div>
-                        <div class="visage__right-price test666">
-                            <h4><?=pll_e('ПРАЙС'); ?></h4>
-                            <ul>
-                                <?php foreach($fields['pricelist'] as $item) : ?>
-                                    <li>
-                                        <div class="visage__price">
-                                            <p><?=$item['title']; ?></p>
-                                            <span><?=$item['price']; ?></span>
-                                        </div>
-
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
+                        <div class="visage__right-price">
+                            <h4><?php echo  pll_e('ПРАЙС'); ?></h4>
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                 aria-labelledby="pills-home-tab">
+                                <div class="accordion visage__accordion service__accordion-top" id="accordionExample">
+                                    <div class="service-price">
+                                        <?php foreach ($fields['pricelist'] as $key => $item) : ?>
+                                            <?php if(isset($item['services']) && !empty($item['services'])) : ?>
+                                                <div class="accordion" id="accordion<?php echo $key; ?>">
+                                                    <div class="service__accordion">
+                                                        <div class="service__accordion-item" id="heading<?php echo $key; ?>">
+                                                            <button class="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $key; ?>"
+                                                                    aria-expanded="true" aria-controls="collapse<?php echo $key; ?>">
+                                                                <?php echo $item['title']; ?>
+                                                            </button>
+                                                            <span><?php echo $item['price']; ?></span>
+                                                        </div>
+                                                        <div id="collapse<?php echo $key; ?>" class="accordion-collapse collapse <?php if($key == 0) echo 'show'; ?>"
+                                                             aria-labelledby="heading<?php echo $key; ?>"
+                                                             data-bs-parent="#accordion<?php echo $key; ?>">
+                                                            <div class="service__accordion-body">
+                                                                <div>
+                                                                    <?php foreach($item['services'] as $service) : ?>
+                                                                        <div class="service__accordion-body-price">
+                                                                            <p><?php echo $service['title']; ?></p>
+                                                                            <span><?php echo $service['price']; ?></span>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php else : ?>
+                                                <div class="service__not-drop-down-wrapper">
+                                                    <div class="service__not-drop-down">
+                                                        <p><?php echo $item['title']; ?></p>
+                                                        <span><?php echo $item['price']; ?></span>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="visage__btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <?=pll_e('Онлайн запись'); ?> </button>
                         </div>
                     </div>

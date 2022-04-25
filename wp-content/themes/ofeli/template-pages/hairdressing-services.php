@@ -160,7 +160,6 @@ get_header();
                                      aria-labelledby="pills-home-tab">
                                     <div class="accordion visage__accordion service__accordion-top" id="accordionExample">
                                         <div class="service-price">
-
                                         <?php foreach ($fields['pricelist'] as $key => $item) : ?>
                                             <?php if(isset($item['services']) && !empty($item['services'])) : ?>
                                                 <div class="accordion" id="accordion<?php echo $key; ?>">
