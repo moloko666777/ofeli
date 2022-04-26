@@ -1167,8 +1167,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 0;
-    left: 1rem;
+    top: -1rem;
+    left: 0;
     font-size: 28px;
     line-height: 41px;
     font-weight: 400;
@@ -1195,11 +1195,13 @@
     }
   }
 div.cd-header {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 0;
   top: .7rem;
   padding: 0;
-  width: 90px;
+  width: 100%;
 }
   li.nav__list-item {
     margin-bottom: 20px;
