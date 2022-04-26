@@ -16,7 +16,6 @@ foreach ($services as $key => $service) {
     $services[$key] = get_post(pll_get_post($service, $code));
 }
 $servicesMobile = $services;
-$services_с = array_chunk($services, 2);
 
 ?>
     <main>
@@ -87,12 +86,12 @@ $services_с = array_chunk($services, 2);
                     <h3><?=pll_e('Услуги'); ?></h3>
                     <div id="services-container" class="swiper-container services__container">
                         <div class="swiper-wrapper ">
-                            <?php foreach($services_с as $service) : ?>
+                            <?php foreach($services as $service) : ?>
                                 <div class="swiper-slide services__swiper-slide">
                                     <div class="services__holder">
-                                        <a href="<?=get_permalink($service[0]->ID); ?>">
+                                        <a href="<?=get_permalink($service->ID); ?>">
                                             <div class="services__image">
-                                                <img src="<?=get_field('image_for_home_page',$service[0]->ID) ;?>"
+                                                <img src="<?=get_field('image_for_home_page',$service->ID) ;?>"
                                                      alt="services">
                                                 <svg class="services__block-arrow" width="98" height="8" viewBox="0 0 98 8"
                                                      fill="none"
@@ -102,7 +101,7 @@ $services_с = array_chunk($services, 2);
                                                 </svg>
                                             </div>
                                             <div class="services__text">
-                                                <?=get_field('title', $service[0]->ID); ?>
+                                                <?=get_field('title', $service->ID); ?>
                                             </div>
                                         </a>
                                     </div>
