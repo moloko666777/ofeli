@@ -7,7 +7,7 @@ $fields = get_fields();
 <main>
     <section>
         <div class="visage__wrapper">
-            <div class="visage container-xxl">
+            <div class="visage hairdressing-services container-xxl">
                 <div class="visage__left wow animate__animated animate__fadeInLeft">
                     <div class="visage__image">
                         <img src="<?=$fields['image']; ?>"
