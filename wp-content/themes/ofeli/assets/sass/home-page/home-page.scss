@@ -22,7 +22,7 @@ body {
 .nav-active {
   .header-wrapper-nav {
     position: fixed;
-    right: 5.8rem;
+    right: 5.7rem;
     top: 2.2rem;
   }
 }
@@ -298,12 +298,15 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
   fill: #fff;
+  transition: all 200ms linear;
 }
 .header__mobile-phone-link.header-color svg {
   fill: #40362E;
+  transition: all 200ms linear;
 }
 .header__mobile-phone-link svg {
   fill: #fff;
+  transition: all 200ms linear;
 }
 
 .switch-wrap {
@@ -433,10 +436,8 @@ body.nav-active .header__mobile-phone-color .header__mobile-phone-link svg {
 
   .header__mobile-phone-color {
     display: flex;
+    align-items: center;
     width: 90px;
-    a {
-      //display: none;
-    }
   }
 
   &.header-color {
