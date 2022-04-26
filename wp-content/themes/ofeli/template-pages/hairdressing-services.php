@@ -172,7 +172,7 @@ get_header();
                                                             </button>
                                                             <span><?php echo $item['price']; ?></span>
                                                         </div>
-                                                        <div id="collapse<?php echo $key; ?>" class="accordion-collapse collapse <?php if($key == 0) echo 'show'; ?>"
+                                                        <div id="collapse<?php echo $key; ?>" class="accordion-collapse collapse"
                                                              aria-labelledby="heading<?php echo $key; ?>"
                                                              data-bs-parent="#accordion<?php echo $key; ?>">
                                                             <div class="service__accordion-body">

@@ -206,6 +206,9 @@ option {
     max-width: 60rem;
     margin: 0 auto;
   }
+  div.service__accordion-item span {
+    font-size: 1.3rem;
+  }
 }
 @media only screen and (max-width: 650px) {
   .container {
@@ -324,6 +327,9 @@ option {
 .service {
   &-price {
     overflow: hidden;
+    .accordion {
+      //padding: 1rem 0;
+    }
   }
   &__accordion-top {
     height: 44rem;
@@ -380,12 +386,105 @@ option {
       font-size: 18px;
       line-height: 21px;
       color: #40362E;
+      width: 70%;
     }
     span {
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
       color: #40362E;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  div.service {
+    &-price {
+      overflow: hidden;
+
+      .accordion {
+        padding:  0;
+      }
+    }
+
+    &__accordion-top {
+      height: 44rem;
+      overflow-y: scroll;
+      padding-right: 1.6rem;
+    }
+
+    &__accordion-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.6rem;
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 21px;
+        color: #40362E;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 21px;
+        color: #40362E;
+      }
+    }
+
+    &__accordion-body-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      p {
+        width: 70%;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 18px;
+        color: rgba(64, 54, 46, 0.5);
+      }
+
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 21px;
+        color: #40362E;
+      }
+    }
+
+    &__not-drop-down {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.6rem;
+
+      &-wrapper {
+        //padding: 1rem 0;
+      }
+
+      p {
+        width: 70%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 21px;
+        color: #40362E;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 21px;
+        color: #40362E;
+      }
     }
   }
 }

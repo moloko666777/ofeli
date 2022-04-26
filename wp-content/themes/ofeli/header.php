@@ -106,7 +106,7 @@ $menu = wp_get_nav_menu_items($menu_obj);
 <!--                                </a>-->
 <!--                            </div>-->
                             <div class="header__mobile-phone-color">
-                                <a class="header__mobile-phone-link <?php if (!is_front_page()) : ?> header-color <?php endif; ?>" href="tel:+38 (066) 1234567">
+                                <a class="header__mobile-phone-link <?php if (!is_front_page()) : ?> header-color <?php endif; ?>" href="tel:+3806773995101">
                                     <svg width="25" height="25"
                                          viewBox="0 0 40 40" <?php if (is_front_page()) : ?> fill="none" <?php endif; ?>
                                          xmlns="http://www.w3.org/2000/svg">
