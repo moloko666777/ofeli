@@ -193,6 +193,12 @@ option {
     //padding-left: 2rem;
     //padding-right: 2rem;
   }
+  div.visage__right-price.service__right-price {
+    padding: 6.5rem 0.7rem 5.1rem 2rem;
+  }
+  div.service__accordion-top {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .container {
@@ -323,7 +329,11 @@ option {
     }
   }
 }
-
+.visage__right-price {
+  &.service__right-price {
+    padding: 6.5rem .7rem 5.1rem 4rem;
+  }
+}
 .service {
   &-price {
     overflow: hidden;
@@ -355,7 +365,9 @@ option {
       color: #40362E;
     }
   }
-
+  &__accordion-body {
+    margin-bottom: 2rem;
+  }
   &__accordion-body-price {
     display: flex;
     align-items: center;
@@ -396,23 +408,36 @@ option {
     }
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .service {
+    &__accordion-body-price {
+      p {
+        width: 65%;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
 
+  div.visage__right-price.service__right-price {
+    padding: 6.5rem 0.7rem 5.1rem 1rem;
+  }
   div.service {
     &-price {
       overflow: hidden;
 
       .accordion {
         padding:  0;
+
       }
     }
 
     &__accordion-top {
       height: 44rem;
       overflow-y: scroll;
-      padding-right: 1.6rem;
+      padding-right: .5rem;
+      margin-bottom: 2rem;
     }
 
     &__accordion-item {
@@ -436,7 +461,9 @@ option {
         color: #40362E;
       }
     }
-
+    &__accordion-body {
+      margin-bottom: 1rem;
+    }
     &__accordion-body-price {
       display: flex;
       align-items: center;

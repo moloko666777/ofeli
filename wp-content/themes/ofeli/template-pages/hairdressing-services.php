@@ -164,7 +164,6 @@ get_header();
                                          id="accordionExample">
                                         <div class="service-price">
                                             <?php foreach ($fields['pricelist'] as $key => $item) : ?>
-<<<<<<< HEAD
                                                 <?php if (isset($item['services']) && !empty($item['services'])) : ?>
                                                     <div class="accordion" id="accordion<?php echo $key; ?>">
                                                         <div class="service__accordion">
@@ -237,16 +236,6 @@ get_header();
 
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                      aria-labelledby="pills-home-tab">
-<<<<<<< HEAD
-                                    <ul>
-                                        <?php foreach ($fields['pricelist'] as $item) : ?>
-                                            <li>
-                                                <p><?php echo $item['title']; ?>
-                                                    <span><?php echo $item['price']; ?></span></p>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-=======
                                     <div class="accordion visage__accordion service__accordion-top" id="accordionExample">
                                         <div class="service-price">
                                             <?php foreach ($fields['pricelist'] as $key => $item) : ?>
@@ -288,7 +277,6 @@ get_header();
                                             <?php endforeach; ?>
                                         </div>
                                     </div>
->>>>>>> d4ccf8358d15f4d475b6705089e4301e88e6cdef
                                 </div>
                             </div>
                             <div>
