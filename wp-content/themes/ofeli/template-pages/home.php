@@ -141,7 +141,7 @@ $servicesMobile = $services;
                             <div class="swiper-slide services-mobile__swiper-slide">
                                 <h3><?=pll_e('Услуги'); ?></h3>
                                 <div class="services-mobile__holder">
-                                    <a href="">
+                                    <a href="<?=get_permalink($service->ID); ?>">
                                         <div class="services-mobile__image">
                                             <img src="<?=get_field('image_for_home_page',$service->ID) ;?>"
                                                  alt="services">
