@@ -18,7 +18,7 @@ $fields = get_fields();
                     </div>
                     <div class="visage__right wow animate__animated animate__fadeInRight">
                         <div class="visage__right-tabs"></div>
-                        <div class="visage__right-price test666">
+                        <div class="visage__right-price">
                             <h4><?=pll_e('ПРАЙС'); ?></h4>
                             <ul>
                                 <?php foreach($fields['pricelist'] as $item) : ?>

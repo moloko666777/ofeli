@@ -54,7 +54,7 @@
     &__title {
       max-width: 100%;
       min-height: 38.9rem;
-      padding: 0 2rem 8.9rem 5rem;
+      padding: 0 1rem 8.9rem 4rem;
       background-color: #F7F2F5;
       h2{
         font-size: 1.8rem;
@@ -71,6 +71,14 @@
         font-size: 1.5rem;
         line-height: 1.8rem;
         margin-bottom: .5rem;
+        span {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
+        a {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
       }
     }
     &__border-top-left {
@@ -89,6 +97,15 @@
         left: 1.6rem;
       }
     }
-
+    &__time {
+      p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        span {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
   }
 }

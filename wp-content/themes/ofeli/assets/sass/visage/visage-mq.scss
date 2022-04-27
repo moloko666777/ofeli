@@ -23,7 +23,7 @@
         &:before {
           width: 10rem;
           bottom: 14px;
-          right: 30px;
+          right: -70px;
         }
       }
       p {
@@ -61,7 +61,7 @@
       }
     }
     &__accordion {
-      height: 25rem;
+      //height: 25rem;
       overflow-y: auto;
     }
     &__right-tabs {
@@ -151,7 +151,7 @@
       h4 {
         font-size: 2rem;
         line-height: 2.3rem;
-        margin-bottom: 0;
+        //margin-bottom: 0;
       }
       p{
         font-size: 13px;

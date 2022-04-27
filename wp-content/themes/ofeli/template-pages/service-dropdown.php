@@ -29,7 +29,7 @@ $fields = get_fields();
                                             <div class="accordion" id="accordion<?php echo $key; ?>">
                                                 <div class="service__accordion">
                                                     <div class="service__accordion-item" id="heading<?php echo $key; ?>">
-                                                        <button class="accordion-button" type="button"
+                                                        <button class="accordion-button collapsed" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $key; ?>"
                                                                 aria-expanded="true" aria-controls="collapse<?php echo $key; ?>">
                                                             <?php echo $item['title']; ?>

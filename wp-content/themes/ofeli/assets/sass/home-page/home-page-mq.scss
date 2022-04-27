@@ -82,6 +82,15 @@
     &__holder {
       height: unset;
     }
+    &__container {
+      .swiper-wrapper {
+        justify-content: unset;
+        align-items: unset;
+      }
+    }
+    &__image:hover:before {
+      height: calc(100% - 22px);
+    }
   }
 
 }
