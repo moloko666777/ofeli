@@ -557,7 +557,10 @@
   //  width: 20%;
   //}
   .nav-active {
+    height: 100%;
     overflow: hidden;
+    width: 100%;
+    position: fixed;
     &.header-wrapper-nav {
       position: fixed;
       right: 55px;

@@ -167,13 +167,15 @@ get_header();
                                                         <div class="service__accordion">
                                                             <div class="service__accordion-item"
                                                                  id="heading<?php echo $key; ?>">
-<!--                                                                <button class="accordion-button collapsed" type="button"-->
-<!--                                                                        data-bs-toggle="collapse"-->
-<!--                                                                        data-bs-target="#collapse--><?php //echo $key; ?><!--"-->
-<!--                                                                        aria-expanded="true"-->
-<!--                                                                        aria-controls="collapse--><?php //echo $key; ?><!--">-->
-<!--                                                                    --><?php //echo $item['title']; ?>
-<!--                                                                </button>-->
+                                                                <!--                                                                <button class="accordion-button collapsed" type="button"-->
+                                                                <!--                                                                        data-bs-toggle="collapse"-->
+                                                                <!--                                                                        data-bs-target="#collapse-->
+                                                                <?php //echo $key; ?><!--"-->
+                                                                <!--                                                                        aria-expanded="true"-->
+                                                                <!--                                                                        aria-controls="collapse-->
+                                                                <?php //echo $key; ?><!--">-->
+                                                                <!--                                                                    --><?php //echo $item['title']; ?>
+                                                                <!--                                                                </button>-->
                                                                 <button class="accordion-button collapsed" type="button"
                                                                         data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseOne<?php echo $key; ?>"
@@ -181,7 +183,7 @@ get_header();
                                                                         aria-controls="collapseOne<?php echo $key; ?>">
                                                                     <?php echo $item['title']; ?>
                                                                 </button>
-                                                                    <span><?php echo $item['price']; ?></span>
+                                                                <span><?php echo $item['price']; ?></span>
                                                             </div>
                                                             <div id="collapseOne<?php echo $key; ?>"
                                                                  class="accordion-collapse collapse"
@@ -236,9 +238,12 @@ get_header();
                                      aria-labelledby="pills-home-tab">
                                     <ul>
                                         <?php foreach ($fields['pricelist'] as $item) : ?>
-                                            <li>
-                                                <p><?php echo  $item['title']; ?><span><?php echo  $item['price']; ?></span></p>
-                                            </li>
+                                        <li>
+                                            <div class="visage__price">
+                                                <p><?= $item['title']; ?></p>
+                                                <span><?= $item['price']; ?></span>
+                                            </div>
+                                        </li>
                                         <?php endforeach; ?>
                                     </ul>
                                 </div>
