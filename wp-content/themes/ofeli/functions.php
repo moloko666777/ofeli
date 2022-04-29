@@ -200,6 +200,10 @@ add_action('init', function() {
     pll_register_string('ofeli-callback-phone', 'Ваш телефон');
     pll_register_string('ofeli-callback_send', 'Отправить');
     pll_register_string('ofeli-home_page_service_title', 'Услуги');
+    pll_register_string('ofeli-404-not-found', 'Страница не  найдена...');
+    pll_register_string('ofeli-404-not-found-to-home', 'Вернуться на главную');
+    pll_register_string('ofeli-online-call-success-true', 'Спасибо за заявку. В ближайшее время мы с Вами свяжемся!');
+    pll_register_string('ofeli-online-call-success-false', 'Произошла ошибка. Повторите ещё раз!');
 });
 
 //Custom

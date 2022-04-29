@@ -188,7 +188,7 @@ $sb_menu = getOption('footer')['sb_menu'];
                 <h3></h3>
             </div>
             <div class="contact-us__modal-footer">
-                <button onclick="$('#onlineCallStatus').modal('hide')">Закрыть</button>
+                <button onclick="$('#onlineCallStatus').modal('hide')"><?php echo pll_e('Закрыть'); ?></button>
             </div>
         </div>
     </div>
@@ -232,9 +232,9 @@ $sb_menu = getOption('footer')['sb_menu'];
                 $('input[name="phone"]').val('')
 
                 if(response.status) {
-                    modal.find('h3').text('Удача')
+                    modal.find('h3').text('<?php echo pll_e('Спасибо за заявку. В ближайшее время мы с Вами свяжемся!'); ?>')
                 } else {
-                    modal.find('h3').text('Неудача')
+                    modal.find('h3').text('<?php echo pll_e('Произошла ошибка. Повторите ещё раз!'); ?>')
                 }
             }
         });

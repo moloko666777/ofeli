@@ -18,12 +18,12 @@ get_header();
                     404
                 </div>
                 <div class="not-found__sub-title">
-                    Страница не  найдена...
+                    <?php echo pll_e('Страница не  найдена...'); ?>
                 </div>
                 <div class="not-found__button">
-                    <button>
-                        Вернуться на главную
-                    </button>
+                    <a href="<?php echo home_url(); ?>">
+                        <?php echo pll_e('Вернуться на главную'); ?>
+                    </a>
                 </div>
             </div>
 		</section>
