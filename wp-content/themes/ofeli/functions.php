@@ -223,10 +223,18 @@ add_action( 'wp_ajax_nopriv_callback', 'callback' );
 function callback() {
     $data = $_POST;
 
-    $message = "Имя: " . $data['name'] . PHP_EOL;
-    $message .= "Телефон: " . $data['phone'];
+    if(empty($data['name']) || empty($data['phone'])) {
+        $status = false;
+    } else {
+        $message = "Имя: " . $data['name'] . PHP_EOL;
+        $message .= "Телефон: " . $data['phone'];
 
-    wp_mail('web.bagach@gmail.com', 'Онлайн запись - Ofeli', $message);
+        $status = wp_mail(get_option('admin_email'), 'Онлайн запись - Ofeli', $message);
+    }
+
+    wp_send_json([
+        'status' => $status
+    ]);
 
     die;
 }

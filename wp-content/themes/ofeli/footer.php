@@ -154,20 +154,41 @@ $sb_menu = getOption('footer')['sb_menu'];
                 <h3><?=pll_e('Быть красивой и ухоженной — мечта любой женщины!'); ?></h3>
                 <h4><?=pll_e('Хотите записаться к нам в салон?'); ?></h4>
                 <p><?=pll_e('Заполните форму ниже и мы, с радостью, перезвоним Вам в течении 30 минут'); ?></p>
-                <form class="contact-us__input-form">
+                <form id="onlineCall" class="contact-us__input-form">
                     <input class="contact-us__input" type="text"
                            name="name"
-                           placeholder="<?=pll_e('Ваше имя'); ?>">
+                           placeholder="<?=pll_e('Ваше имя'); ?>"
+                           required
+                    >
                     <div class="input-wrapper">
                         <input id="contact-us__phone-mask" type="tel"
                                name="phone"
                                placeholder="<?=pll_e('Ваш телефон'); ?>"
-                               class="contact-us__phone contact-us__input"></div>
+                               class="contact-us__phone contact-us__input"
+                               pattern="\d*"
+                               oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                               required
+                        >
+                    </div>
 
                 </form>
             </div>
             <div class="contact-us__modal-footer">
-                <button type="submit" onclick="send()"><?=pll_e('Отправить'); ?></button>
+                <button type="submit" form="onlineCall"><?=pll_e('Отправить'); ?></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal contact-us fade" id="onlineCallStatus" aria-hidden="true"
+     aria-labelledby="onlineCallStatusLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="contact-us__modal-content">
+            <div class="contact-us__form">
+                <h3></h3>
+            </div>
+            <div class="contact-us__modal-footer">
+                <button onclick="$('#onlineCallStatus').modal('hide')">Закрыть</button>
             </div>
         </div>
     </div>
@@ -192,7 +213,9 @@ $sb_menu = getOption('footer')['sb_menu'];
 </script>
 
 <script>
-    function send() {
+    $('#onlineCall').on('submit', function(e) {
+        e.preventDefault();
+
         $.ajax({
             method: 'POST',
             url: '<?php echo admin_url( "admin-ajax.php" ) ?>',
@@ -202,10 +225,20 @@ $sb_menu = getOption('footer')['sb_menu'];
                 phone: $('input[name="phone"]').val(),
             },
             success: function(response) {
+                let modal = $('#onlineCallStatus');
+                $('#exampleModalToggle').modal('hide')
+                modal.modal('show')
+                $('input[name="name"]').val('')
+                $('input[name="phone"]').val('')
 
+                if(response.status) {
+                    modal.find('h3').text('Удача')
+                } else {
+                    modal.find('h3').text('Неудача')
+                }
             }
         });
-    }
+    })
 </script>
 
 <?php wp_footer(); ?>
