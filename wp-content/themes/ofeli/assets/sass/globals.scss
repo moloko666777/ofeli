@@ -413,7 +413,7 @@ option {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../build/img/404.png");
+  background-image: url("../../build/img/404.jpg");
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -435,7 +435,7 @@ option {
     margin-bottom: 4rem;
   }
   &__button {
-    button {
+    a {
       font-size: 1.6rem;
       line-height: 2.2rem;
       text-align: center;

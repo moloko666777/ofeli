@@ -14,7 +14,7 @@ get_header();
 
 		<section class="error-404 not-found">
             <div class="not-found__wrapper container-xxl">
-                <div class="not-found__title">
+                <div class="not-found__title ">
                     404
                 </div>
                 <div class="not-found__sub-title">
