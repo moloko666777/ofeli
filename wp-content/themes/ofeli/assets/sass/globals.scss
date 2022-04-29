@@ -199,6 +199,12 @@ option {
   div.service__accordion-top {
     margin-bottom: 2rem;
   }
+  section.not-found {
+    background-position-x: 50%;
+    div.not-found__wrapper {
+      height: 85vh;
+    }
+  }
 }
 @media only screen and (max-width: 900px) {
   .container {
@@ -558,6 +564,15 @@ option {
         line-height: 21px;
         color: #40362E;
       }
+    }
+  }
+  section.not-found {
+    background-position-x: 48%;
+    div.not-found__wrapper {
+      height: 85vh;
+    }
+    .not-found__sub-title {
+      font-size: 25px;
     }
   }
 }
