@@ -232,9 +232,9 @@ $sb_menu = getOption('footer')['sb_menu'];
                 $('input[name="phone"]').val('')
 
                 if(response.status) {
-                    modal.find('h3').text('<?php echo pll_e('Спасибо за заявку. В ближайшее время мы с Вами свяжемся!'); ?>')
+                    modal.find('h3').text("<?php echo pll_e('Спасибо за заявку. В ближайшее время мы с Вами свяжемся!'); ?>")
                 } else {
-                    modal.find('h3').text('<?php echo pll_e('Произошла ошибка. Повторите ещё раз!'); ?>')
+                    modal.find('h3').text("<?php echo pll_e('Произошла ошибка. Повторите ещё раз!'); ?>")
                 }
             }
         });

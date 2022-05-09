@@ -30,14 +30,14 @@ $fields = get_fields();
                                                 <div class="service__accordion">
                                                     <div class="service__accordion-item" id="heading<?php echo $key; ?>">
                                                         <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $key; ?>"
-                                                                aria-expanded="true" aria-controls="collapse<?php echo $key; ?>">
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne<?php echo $key; ?>"
+                                                                aria-expanded="true" aria-controls="collapseOne<?php echo $key; ?>">
                                                             <?php echo $item['title']; ?>
                                                         </button>
                                                         <span><?php echo $item['price']; ?></span>
                                                     </div>
-                                                    <div id="collapse<?php echo $key; ?>" class="accordion-collapse collapse <?php if($key == 0) echo 'show'; ?>"
-                                                         aria-labelledby="heading<?php echo $key; ?>"
+                                                    <div id="collapseOne<?php echo $key; ?>" class="accordion-collapse collapse <?php if($key == 0) echo 'show'; ?>"
+                                                         aria-labelledby="headingOne<?php echo $key; ?>"
                                                          data-bs-parent="#accordion<?php echo $key; ?>">
                                                         <div class="service__accordion-body">
                                                             <div>
