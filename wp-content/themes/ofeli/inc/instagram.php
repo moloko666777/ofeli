@@ -55,13 +55,61 @@ class InstagramAPI {
         $this->service->setAccessToken($this->token);
     }
 
+    private function getPosts() {
+        global $wpdb;
+        $wpdb_prefix = $wpdb->prefix;
+        $wpdb_tablename = $wpdb_prefix . 'instagram_posts';
+        return $wpdb->get_results("SELECT * FROM `{$wpdb_tablename}`");
+    }
+
+    private function insertPosts($posts) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'instagram_posts';
+
+        foreach ($posts as $post) {
+            $wpdb->insert(
+                $table_name,
+                array(
+                    'image' => $post->media_url,
+                    'link' => $post->permalink,
+                )
+            );
+        }
+    }
+
     public function getUserMedia() {
+        $this->deploy();
         if(!empty($this->token)) {
-            $this->getAccess();
-            return $this->service->getUserMedia('me', 4)->data;
+            $rows = $this->getPosts();
+
+            if(empty($rows)) {
+                $this->getAccess();
+                $this->insertPosts($this->service->getUserMedia('me', 4)->data);
+            }
+
+            return $this->getPosts();
         } else {
             return [];
         }
+    }
+
+    private function deploy() {
+        global $wpdb;
+        $table_name = $wpdb->prefix . "instagram_posts";
+
+        global $wpdb;
+
+        $charset_collate = $wpdb->get_charset_collate();
+
+        $sql = "CREATE TABLE IF NOT EXISTS $table_name (
+          id mediumint(9) NOT NULL AUTO_INCREMENT,
+          image varchar(1000) NOT NULL,
+          link varchar(1000) NOT NULL,
+          PRIMARY KEY  (id)
+        ) $charset_collate;";
+
+        require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+        dbDelta( $sql );
     }
 }
 
@@ -78,5 +126,3 @@ if(isset($_GET['code'])) {
     $api->setAccess($code);
     header('Location: ' . site_url());
 }
-
-$api = new InstagramAPI();
