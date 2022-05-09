@@ -228,16 +228,16 @@ $servicesMobile = $services;
                             Ofeli_salon
                         </a>
                     </div>
-                    <?php $instagramService = new InstagramAPI(); ?>
-                    <?php if(!empty($instagramService->getUserMedia())) : ?>
-                        <?php foreach($instagramService->getUserMedia() as $photo) : ?>
+                    <?php /*$instagramService = new InstagramAPI(); */?><!--
+                    <?php /*if(!empty($instagramService->getUserMedia())) : */?>
+                        <?php /*foreach($instagramService->getUserMedia() as $photo) : */?>
                             <div class="social__card scale">
-                                <a href="<?=$photo->permalink; ?>">
-                                    <img src="<?=$photo->media_url; ?>" alt="social"/>
+                                <a href="<?/*=$photo->permalink; */?>">
+                                    <img src="<?/*=$photo->media_url; */?>" alt="social"/>
                                 </a>
                             </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
+                        <?php /*endforeach; */?>
+                    --><?php /*endif; */?>
                 </div>
                 <div class="social__icon">
                     <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,13 +274,13 @@ $servicesMobile = $services;
                 </div>
                 <div id="instagram-slider" class="swiper-container social-slider__card-container">
                     <div class="swiper-wrapper social-slider__card-wrapper">
-                        <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
+                        <?php /*foreach(getOption('general')['instagram_photos'] as $photo) : */?><!--
                             <div class="swiper-slide social-slider__card social-slider__card-home">
-                                <a href="<?=getOption('general')['instagram_link']; ?>">
-                                    <img src="<?=$photo['url']; ?>" alt="social"/>
+                                <a href="<?/*=getOption('general')['instagram_link']; */?>">
+                                    <img src="<?/*=$photo['url']; */?>" alt="social"/>
                                 </a>
                             </div>
-                        <?php endforeach; ?>
+                        --><?php /*endforeach; */?>
                     </div>
                     <div class="social__icon">
                         <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
