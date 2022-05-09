@@ -228,13 +228,16 @@ $servicesMobile = $services;
                             Ofeli_salon
                         </a>
                     </div>
-                    <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
-                        <div class="social__card scale">
-                            <a href="<?=getOption('general')['instagram_link']; ?>">
-                                <img src="<?=$photo['url']; ?>" alt="social"/>
-                            </a>
-                        </div>
-                    <?php endforeach; ?>
+                    <?php $instagramService = new InstagramAPI(); ?>
+                    <?php if(!empty($instagramService->getUserMedia())) : ?>
+                        <?php foreach($instagramService->getUserMedia() as $photo) : ?>
+                            <div class="social__card scale">
+                                <a href="<?=$photo->permalink; ?>">
+                                    <img src="<?=$photo->media_url; ?>" alt="social"/>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="social__icon">
                     <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
