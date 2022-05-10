@@ -126,3 +126,26 @@ if(isset($_GET['code'])) {
     $api->setAccess($code);
     header('Location: ' . site_url());
 }
+
+function getInstagramPhotos() {
+    $instagram = new InstagramAPI();
+    return $instagram->getUserMedia();
+}
+
+// Cron
+add_action( 'instagram_posts_cron', 'truncate_instagram_posts' );
+
+function schedule_instagram_cron() {
+    if ( ! wp_next_scheduled('instagram_posts_cron') ) {
+        //condition to makes sure that the task is not re-created if it already exists
+        wp_schedule_event( time(), 'hourly', 'instagram_posts_cron' );
+    }
+}
+add_action( 'init', 'schedule_instagram_cron' );
+
+function truncate_instagram_posts() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'instagram_posts';
+    $wpdb->query('TRUNCATE TABLE ' . $table_name);
+    getInstagramPhotos();
+}
