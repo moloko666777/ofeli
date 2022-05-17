@@ -26,6 +26,16 @@ $fields = get_fields();
                                         <div class="visage__price">
                                             <p><?=$item['title']; ?></p>
                                             <span><?=$item['price']; ?></span>
+                                            <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
+                                                <div class="notes">
+                                                    <?php foreach($service['notes'] as $note) : ?>
+                                                        <div class="note">
+                                                            <p><?php echo $note['note']; ?></p>
+                                                            <span><?php echo $note['price']; ?></span>
+                                                        </div>
+                                                    <?php endforeach; ?>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
 
                                     </li>

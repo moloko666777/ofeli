@@ -45,6 +45,16 @@ $fields = get_fields();
                                                                     <div class="service__accordion-body-price">
                                                                         <p><?php echo $service['title']; ?></p>
                                                                         <span><?php echo $service['price']; ?></span>
+                                                                        <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
+                                                                            <div class="notes">
+                                                                                <?php foreach($service['notes'] as $note) : ?>
+                                                                                    <div class="note">
+                                                                                        <p><?php echo $note['note']; ?></p>
+                                                                                        <span><?php echo $note['price']; ?></span>
+                                                                                    </div>
+                                                                                <?php endforeach; ?>
+                                                                            </div>
+                                                                        <?php endif; ?>
                                                                     </div>
                                                                 <?php endforeach; ?>
                                                             </div>
@@ -57,6 +67,16 @@ $fields = get_fields();
                                                 <div class="service__not-drop-down">
                                                     <p><?php echo $item['title']; ?></p>
                                                     <span><?php echo $item['price']; ?></span>
+                                                    <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
+                                                        <div class="notes">
+                                                            <?php foreach($service['notes'] as $note) : ?>
+                                                                <div class="note">
+                                                                    <p><?php echo $note['note']; ?></p>
+                                                                    <span><?php echo $note['price']; ?></span>
+                                                                </div>
+                                                            <?php endforeach; ?>
+                                                        </div>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         <?php endif; ?>
