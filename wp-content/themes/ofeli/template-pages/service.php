@@ -23,10 +23,11 @@ $fields = get_fields();
                             <ul>
                                 <?php foreach($fields['pricelist'] as $item) : ?>
                                     <li>
-                                        <div class="visage__price">
+                                        <div class="visage__price<?php if($item['is_note']) : ?> is_note <?php endif; ?>">
                                             <p><?=$item['title']; ?></p>
+                                            <?php if(!$item['is_note']) : ?>
                                             <span><?=$item['price']; ?></span>
-                                            <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
+                                                <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
                                                 <div class="notes">
                                                     <?php foreach($service['notes'] as $note) : ?>
                                                         <div class="note">
@@ -35,6 +36,7 @@ $fields = get_fields();
                                                         </div>
                                                     <?php endforeach; ?>
                                                 </div>
+                                            <?php endif; ?>
                                             <?php endif; ?>
                                         </div>
 

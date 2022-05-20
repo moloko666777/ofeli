@@ -25,7 +25,7 @@ $fields = get_fields();
                             <div class="accordion visage__accordion service__accordion-top" id="accordionExample">
                                 <div class="service-price">
                                     <?php foreach ($fields['pricelist'] as $key => $item) : ?>
-                                        <?php if(isset($item['services']) && !empty($item['services'])) : ?>
+                                        <?php if(isset($item['services']) && !empty($item['services']) && !$item['is_note']) : ?>
                                             <div class="accordion" id="accordion<?php echo $key; ?>">
                                                 <div class="service__accordion">
                                                     <div class="service__accordion-item" id="heading<?php echo $key; ?>">
@@ -64,10 +64,11 @@ $fields = get_fields();
                                             </div>
                                         <?php else : ?>
                                             <div class="service__not-drop-down-wrapper">
-                                                <div class="service__not-drop-down">
+                                                <div class="service__not-drop-down<?php if($item['is_note']) : ?> is_note <?php endif; ?>">
                                                     <p><?php echo $item['title']; ?></p>
-                                                    <span><?php echo $item['price']; ?></span>
-                                                    <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
+                                                    <?php if(!$item['is_note']) : ?>
+                                                        <span><?php echo $item['price']; ?></span>
+                                                        <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
                                                         <div class="notes">
                                                             <?php foreach($service['notes'] as $note) : ?>
                                                                 <div class="note">
@@ -76,6 +77,7 @@ $fields = get_fields();
                                                                 </div>
                                                             <?php endforeach; ?>
                                                         </div>
+                                                    <?php endif; ?>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
