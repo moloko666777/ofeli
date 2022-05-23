@@ -459,12 +459,50 @@ option {
 
   }
 }
+.service__accordion-body-price, .service__accordion-item, .service__not-drop-down {
+  flex-wrap: wrap;
+}
+
+.notes {
+  width: 100%;
+
+  .note {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: #40362e;
+      font-size: 13px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .service {
     &__accordion-body-price {
       p {
         width: 65%;
+      }
+      .notes {
+        width: 100%;
+
+        .note {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            color: #40362e;
+            font-size: 13px !important;
+          }
+
+          span {
+            font-size: 13px !important;
+          }
+        }
       }
     }
   }
@@ -577,24 +615,4 @@ option {
   }
 }
 
-.service__accordion-body-price, .service__accordion-item, .service__not-drop-down {
-  flex-wrap: wrap;
-}
 
-.notes {
-  width: 100%;
-
-  .note {
-    display: flex;
-    justify-content: space-between;
-
-    p {
-      color: #40362e;
-      font-size: 14px;
-    }
-
-    span {
-      font-size: 16px;
-    }
-  }
-}
