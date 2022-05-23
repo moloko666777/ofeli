@@ -66,8 +66,8 @@ $fields = get_fields();
                                             <div class="service__not-drop-down-wrapper">
                                                 <div class="service__not-drop-down<?php if($item['is_note']) : ?> is_note <?php endif; ?>">
                                                     <p><?php echo $item['title']; ?></p>
+                                                    <span><?php echo $item['price']; ?></span>
                                                     <?php if(!$item['is_note']) : ?>
-                                                        <span><?php echo $item['price']; ?></span>
                                                         <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
                                                         <div class="notes">
                                                             <?php foreach($service['notes'] as $note) : ?>

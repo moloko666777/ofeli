@@ -25,8 +25,8 @@ $fields = get_fields();
                                     <li>
                                         <div class="visage__price<?php if($item['is_note']) : ?> is_note <?php endif; ?>">
                                             <p><?=$item['title']; ?></p>
-                                            <?php if(!$item['is_note']) : ?>
                                             <span><?=$item['price']; ?></span>
+                                            <?php if(!$item['is_note']) : ?>
                                                 <?php if(isset($service['notes']) && !empty($service['notes'])) : ?>
                                                 <div class="notes">
                                                     <?php foreach($service['notes'] as $note) : ?>
