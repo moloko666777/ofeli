@@ -472,14 +472,31 @@ option {
 
     p {
       color: #40362e;
-      font-size: 13px;
+      font-size: 16px;
     }
 
     span {
-      font-size: 13px;
+      font-size: 16px;
     }
   }
 }
+
+.price__accordion-body-sub {
+  &.price__accordion-body-sub-note  {
+    margin: 0;
+    p {
+      //color: #40362e;
+      margin: 0;
+      //opacity: 1;
+    }
+    span {
+      //color: #40362e;
+      margin: 0;
+      //opacity: 1;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 767px) {
   .service {
