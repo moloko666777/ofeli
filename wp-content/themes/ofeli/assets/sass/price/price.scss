@@ -114,6 +114,12 @@
       line-height: 2.1rem;
       color: #40362E;
     }
+
+    &-note {
+      p,span {
+        font-weight: bold;
+      }
+    }
   }
 }
 @media only screen and (max-width: 1024px) {

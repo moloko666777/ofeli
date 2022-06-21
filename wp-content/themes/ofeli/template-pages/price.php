@@ -33,7 +33,7 @@ $fields = get_fields();
                                             </div>
                                             <?php if(!empty($child['services'])) : ?>
                                                 <?php foreach ($child['services'] as $sub) : ?>
-                                                    <div class="price__accordion-body-sub">
+                                                    <div class="price__accordion-body-sub<?php if($sub['is_note']) : ?> price__accordion-body-sub-note<?php endif; ?>">
                                                         <p><?php echo $sub['title']; ?></p>
                                                         <span><?php echo $sub['price']; ?></span>
                                                     </div>
