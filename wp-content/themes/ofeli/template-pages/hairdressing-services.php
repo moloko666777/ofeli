@@ -205,7 +205,11 @@ get_header();
                                                     </div>
                                                 <?php else : ?>
                                                     <div class="service__not-drop-down-wrapper">
-                                                        <div class="service__not-drop-down<?php if($item['is_note']) : ?> is_note <?php endif; ?>">
+                                                        <?php $marginNone = ''; ?>
+                                                        <?php if(isset($fields['pricelist'][$key+1]) && $fields['pricelist'][$key+1]['is_note']) {
+                                                            $marginNone = ' m-0 ';
+                                                        } ?>
+                                                        <div class="service__not-drop-down <?php echo $marginNone ; ?><?php if($item['is_note']) : ?> is_note <?php endif; ?>">
                                                             <p><?php echo $item['title']; ?></p>
                                                             <span><?php echo $item['price']; ?></span>
                                                             <?php if(!$item['is_note']) : ?>
