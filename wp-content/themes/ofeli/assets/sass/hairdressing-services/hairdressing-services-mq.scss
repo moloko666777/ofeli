@@ -206,24 +206,24 @@
 
     &__type-line-text {
       width: 17rem;
-      &:nth-child(1) {
-        padding-top: 5rem;
-      }
-      &:nth-child(2) {
-        padding-top: 2.4rem;
-      }
-      &:nth-child(3) {
-        padding-top: 3rem;
-      }
-      &:nth-child(4) {
-        padding-top: 1.7rem;
-      }
-      &:nth-child(5) {
-        padding-top: 2.4rem;
-      }
-      &:nth-child(6) {
-        padding-top: 1.4rem;
-      }
+      //&:nth-child(1) {
+      //  padding-top: 5rem;
+      //}
+      //&:nth-child(2) {
+      //  padding-top: 2.5em;
+      //}
+      //&:nth-child(3) {
+      //  padding-top: 3rem;
+      //}
+      //&:nth-child(4) {
+      //  padding-top: 1.7rem;
+      //}
+      //&:nth-child(5) {
+      //  padding-top: 2.4rem;
+      //}
+      //&:nth-child(6) {
+      //  padding-top: 1.4rem;
+      //}
     }
     &__button-wrapper {
       margin-right: 1rem;
@@ -240,9 +240,147 @@
     margin: 2rem 1.7rem;
   }
   .notes .note p {
-    font-size: 13px;
+    font-size: 13px !important;
   }
   .notes .note span {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 }
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  div.hairdressing-services {
+    &__type-image {
+      height: 69rem;
+      bottom: 0;
+    }
+    &__type-line {
+      bottom: 0;
+    }
+    &__type-line-text {
+      &:nth-child(1) {
+        padding-top: 11rem;
+      }
+      &:nth-child(2) {
+        padding-top: 8rem;
+      }
+      &:nth-child(3) {
+        padding-top: 6rem;
+      }
+      &:nth-child(4) {
+        padding-top: 4.5rem;
+      }
+      &:nth-child(5) {
+        padding-top: 4.6rem;
+      }
+      &:nth-child(6) {
+        padding-top: 2.3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 767px) {
+  div.hairdressing-services {
+    &__type-image {
+      height: 53rem;
+    }
+    &__type-line {
+      bottom: 40px;
+    }
+    &__type-line-text {
+      &:nth-child(1) {
+        padding-top: 0;
+      }
+      &:nth-child(2) {
+        padding-top: 6.3rem;
+      }
+      &:nth-child(3) {
+        padding-top: 3rem;
+      }
+      &:nth-child(4) {
+        padding-top: 4.5rem;
+      }
+      &:nth-child(5) {
+        padding-top: 3.4rem;
+      }
+      &:nth-child(6) {
+        padding-top: 2.3rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 428px) and (max-width: 467px) {
+  div.hairdressing-services {
+    &__type-image {
+      height: 48rem;
+    }
+    &__type-line-text {
+      &:nth-child(1) {
+        padding-top: 0;
+      }
+      &:nth-child(2) {
+        padding-top: 5.3rem;
+      }
+      &:nth-child(3) {
+        padding-top: 3rem;
+      }
+      &:nth-child(4) {
+        padding-top: 3.2rem;
+      }
+      &:nth-child(5) {
+        padding-top: 2.9rem;
+      }
+      &:nth-child(6) {
+        padding-top: 1.7rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 390px) and (max-width: 427px) {
+  div.hairdressing-services {
+    &__type-line-text {
+      &:nth-child(1) {
+        padding-top: 3.2rem;
+      }
+      &:nth-child(2) {
+        padding-top: 5rem;
+      }
+      &:nth-child(3) {
+        padding-top: 3rem;
+      }
+      &:nth-child(4) {
+        padding-top: 1.7rem;
+      }
+      &:nth-child(5) {
+        padding-top: 2.9rem;
+      }
+      &:nth-child(6) {
+        padding-top: 1.6rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 389px) {
+  div.hairdressing-services {
+    &__type-line-text {
+      &:nth-child(1) {
+        padding-top: 5rem;
+      }
+      &:nth-child(2) {
+        padding-top: 2.6rem;
+      }
+      &:nth-child(3) {
+        padding-top: 3rem;
+      }
+      &:nth-child(4) {
+        padding-top: 1.7rem;
+      }
+      &:nth-child(5) {
+        padding-top: 2.4rem;
+      }
+      &:nth-child(6) {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
