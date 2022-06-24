@@ -180,7 +180,7 @@ $servicesMobile = $services;
                     </div>
 
                     <div class="booking__image-wrapper wow animate__animated animate__fadeInDown">
-                        <img src="<?=get_template_directory_uri(); ?>/assets/images/onlinezap.jpg" alt="about image"/>
+                        <img src="<?=get_template_directory_uri(); ?>/assets/images/oneaa.webp" alt="about image"/>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ $servicesMobile = $services;
 
             <div class="booking-mobile">
                 <div class="booking-mobile__image-wrapper">
-                    <img src="<?=get_template_directory_uri(); ?>/assets/images/onlinezap.jpg" alt="about image"/>
+                    <img src="<?=get_template_directory_uri(); ?>/assets/images/oneaa.webp" alt="about image"/>
                     <div class="booking-mobile__description">
                         <div class="booking-mobile__description-wrapper">
                             <h2><?=$fields['entry']["title_{$code}"]; ?></h2>
@@ -273,13 +273,13 @@ $servicesMobile = $services;
                 <div id="instagram-slider" class="swiper-container social-slider__card-container">
                     <div class="swiper-wrapper social-slider__card-wrapper">
                         <?php if (!empty(getInstagramPhotos())) : ?>
-                        <?php foreach(getInstagramPhotos() as $photo) : ?>
-                            <div class="swiper-slide social-slider__card social-slider__card-home">
-                                <a href="<?=$photo->link; ?>">
-                                    <img src="<?=$photo->image; ?>" alt="social"/>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php foreach(getInstagramPhotos() as $photo) : ?>
+                                <div class="swiper-slide social-slider__card social-slider__card-home">
+                                    <a href="<?=$photo->link; ?>">
+                                        <img src="<?=$photo->image; ?>" alt="social"/>
+                                    </a>
+                                </div>
+                            <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
                     <div class="social__icon">
