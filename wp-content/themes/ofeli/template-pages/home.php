@@ -180,7 +180,7 @@ $servicesMobile = $services;
                     </div>
 
                     <div class="booking__image-wrapper wow animate__animated animate__fadeInDown">
-                        <img src="<?=get_template_directory_uri(); ?>/assets/images/onlinezap.jpg" alt="about image"/>
+                        <img src="<?=get_template_directory_uri(); ?>/assets/images/oneaa.webp" alt="about image"/>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ $servicesMobile = $services;
 
             <div class="booking-mobile">
                 <div class="booking-mobile__image-wrapper">
-                    <img src="<?=get_template_directory_uri(); ?>/assets/images/onlinezap.jpg" alt="about image"/>
+                    <img src="<?=get_template_directory_uri(); ?>/assets/images/oneaa.webp" alt="about image"/>
                     <div class="booking-mobile__description">
                         <div class="booking-mobile__description-wrapper">
                             <h2><?=$fields['entry']["title_{$code}"]; ?></h2>
@@ -227,15 +227,13 @@ $servicesMobile = $services;
                             Ofeli_salon
                         </a>
                     </div>
-                    <?php if(!empty(getInstagramPhotos())) : ?>
-                        <?php foreach(getInstagramPhotos() as $photo) : ?>
-                            <div class="social__card scale">
-                                <a href="<?=$photo->link; ?>">
-                                    <img src="<?=$photo->image; ?>" alt="social"/>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
+                    <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
+                        <div class="social__card scale">
+                            <a href="<?=getOption('general')['instagram_link']; ?>">
+                                <img src="<?=$photo['url']; ?>" alt="social"/>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
                 <div class="social__icon">
                     <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,15 +270,13 @@ $servicesMobile = $services;
                 </div>
                 <div id="instagram-slider" class="swiper-container social-slider__card-container">
                     <div class="swiper-wrapper social-slider__card-wrapper">
-                        <?php if (!empty(getInstagramPhotos())) : ?>
-                        <?php foreach(getInstagramPhotos() as $photo) : ?>
+                        <?php foreach(getOption('general')['instagram_photos'] as $photo) : ?>
                             <div class="swiper-slide social-slider__card social-slider__card-home">
-                                <a href="<?=$photo->link; ?>">
-                                    <img src="<?=$photo->image; ?>" alt="social"/>
+                                <a href="<?=getOption('general')['instagram_link']; ?>">
+                                    <img src="<?=$photo['url']; ?>" alt="social"/>
                                 </a>
                             </div>
                         <?php endforeach; ?>
-                        <?php endif; ?>
                     </div>
                     <div class="social__icon">
                         <svg width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">

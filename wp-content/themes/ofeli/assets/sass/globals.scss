@@ -630,9 +630,14 @@ option {
       span {
         font-weight: 500;
         font-size: 1.3rem;
-        line-height: 21px;
+        line-height: 15px;
         color: #40362E;
       }
+    }
+  }
+  div.price__accordion-body-sub {
+    span {
+      line-height: 15px;
     }
   }
   section.not-found {
@@ -645,3 +650,4 @@ option {
     }
   }
 }
+

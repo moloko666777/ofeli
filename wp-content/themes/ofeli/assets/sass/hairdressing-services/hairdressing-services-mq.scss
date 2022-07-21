@@ -333,6 +333,9 @@
         padding-top: 1.7rem;
       }
     }
+    &__modal-content {
+      height: calc(100vh - 140px)!important;
+    }
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 427px) {

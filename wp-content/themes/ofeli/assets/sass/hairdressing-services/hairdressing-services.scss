@@ -286,7 +286,7 @@
       background-repeat: no-repeat;
       background-position-x: center;
       width: 100%;
-      height: 69rem;
+      height: 70rem;
       position: absolute;
       bottom: 0;
     }
@@ -353,5 +353,77 @@
     width: 80rem;
     height: .2rem;
     background: linear-gradient(90deg, rgba(196, 64, 141, 0) 34.5%, #C4408D 52.9%, rgba(196, 64, 141, 0) 95.61%);
+  }
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 414px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .hairdressing-services__modal-content {
+    background: #fafafa;
+    //height: 510px !important;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    transform: translateY(-50%);
+  }
+  .modal-fullscreen-xxl-down {
+    width: 100vw;
+    max-width: none;
+    //height: 510px;
+    margin: 0;
+  }
+}
+@media only screen
+and (device-width : 375px)
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  .hairdressing-services__modal-content {
+    background: #fafafa;
+    //height: 680px !important;
+    height: calc(100vh - 140px) !important;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    transform: translateY(-50%);
+  }
+  .modal-fullscreen-xxl-down {
+    width: 100vw;
+    max-width: none;
+    //height: 680px;
+    height: 100%;
+    margin: 0;
   }
 }
